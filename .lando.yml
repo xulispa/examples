@@ -1,0 +1,24 @@
+name: examples
+recipe: drupal10
+config:
+  via: nginx
+  webroot: ./web
+  database: mariadb
+  services:
+    appserver:
+      type: php:8.1
+      via: nginx
+      webroot: ./web
+      ssl: true
+      build_as_root:
+        - apt-get update -y
+        - pecl install uploadprogress
+    database:
+      type: mariadb
+    phpmyadmin:
+      type: phpmyadmin
+tooling:
+  drush:
+    service: appserver
+    env:
+      DRUSH_OPTIONS_URI: "https://examples.lndo.site/"
