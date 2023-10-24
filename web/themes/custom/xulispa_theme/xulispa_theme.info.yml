@@ -1,0 +1,36 @@
+name: Xulispa, nêgo! Theme
+type: theme
+description: Theme for Xulispa, nêgo! website.
+package: Xulispa
+base theme: druppio_small_business
+version: 9.x-1.0
+core_version_requirement: ^10
+
+ckeditor5-stylesheets:
+  - css/base-ckeditor5.css
+
+libraries:
+  - xulispa_theme/xulispa_theme
+  - xulispa_theme/xulispa_material
+  - druppio_small_business/druppio_small_business
+  - druppio_small_business/rellax
+  - druppio_small_business/cycle
+
+libraries-override:
+  druppio_small_business/druppio_small_business:
+    js:
+      js/druppio_small_business.js: false
+
+regions:
+  branding: 'Branding'
+  navigation: 'Navigation'
+  header: 'Header'
+  helper: 'Helper Section'
+  section_first: 'First Section'
+  section_second: 'Second Section'
+  section_third: 'Third Section'
+  section_fourth: 'Fourth Section'
+  content: 'Content'
+  section_fifth: 'Fifth Section'
+  footer_first: 'Footer First'
+  footer_second: 'Footer Second'

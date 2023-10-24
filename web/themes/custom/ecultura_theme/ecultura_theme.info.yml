@@ -1,0 +1,127 @@
+name: eCultura! theme
+description: eCultura! theme.
+screenshot: screenshot.png
+type: theme
+
+base theme: socialbase
+
+core_version_requirement: ^10
+
+libraries:
+  - ecultura_theme/brand
+  - ecultura_theme/site-footer
+
+libraries-extend:
+  socialbase/base:
+    - ecultura_theme/base
+  socialbase/alert:
+    - ecultura_theme/alert
+  socialbase/badge:
+    - ecultura_theme/badge
+  socialbase/button:
+    - ecultura_theme/button
+  socialbase/cards:
+    - ecultura_theme/cards
+  socialbase/form-controls:
+    - ecultura_theme/form-controls
+  socialbase/list:
+    - ecultura_theme/list
+  socialbase/spinner:
+    - ecultura_theme/spinner
+  # Extend molecules
+  socialbase/block--informblock:
+    - ecultura_theme/block--informblock
+  socialbase/breadcrumb:
+    - ecultura_theme/breadcrumb
+  socialbase/dropdown:
+    - ecultura_theme/dropdown
+  socialbase/file:
+    - ecultura_theme/file
+  socialbase/form-elements:
+    - ecultura_theme/form-elements
+  socialbase/form--input-groups:
+    - ecultura_theme/form--input-groups
+  socialbase/like:
+    - ecultura_theme/like
+  # attach the datepicker stylesheet to all date fields
+  core/drupal.date:
+    - ecultura_theme/form--datepicker
+  # extend the core datepicker with a stylesheet
+  core/jquery.ui.datepicker:
+    - ecultura_theme/form--timepicker
+  socialbase/form--password:
+    - ecultura_theme/form--password
+  socialbase/pagination:
+    - ecultura_theme/pagination
+  socialbase/popover:
+    - ecultura_theme/popover
+  socialbase/nav-book:
+    - ecultura_theme/nav-book
+  socialbase/nav-tabs:
+    - ecultura_theme/nav-tabs
+  socialbase/navbar:
+    - ecultura_theme/navbar
+  socialbase/select2:
+    - ecultura_theme/select2
+  socialbase/teaser:
+    - ecultura_theme/teaser
+  socialbase/tour:
+    - ecultura_theme/tour
+  # Extend Organisms
+  socialbase/comment:
+    - ecultura_theme/comment
+  socialbase/hero:
+    - ecultura_theme/hero
+  socialbase/message:
+    - ecultura_theme/message
+  socialbase/meta:
+    - ecultura_theme/meta
+  socialbase/modal:
+    - ecultura_theme/modal
+  socialbase/offcanvas:
+    - ecultura_theme/offcanvas
+  socialbase/stream:
+    - ecultura_theme/stream
+  socialbase/page-node:
+    - ecultura_theme/page-node
+
+ckeditor_stylesheets:
+  - assets/css/ckeditor.css
+
+# This section is used by the contrib module, Component Libraries. It allows you
+# to reference .twig files in your components/ directory.
+component-libraries:
+  base:
+    paths:
+      - components/01-base
+  atoms:
+    paths:
+      - components/02-atoms
+  molecules:
+    paths:
+      - components/03-molecules
+  organisms:
+    paths:
+      - components/04-organisms
+  templates:
+    paths:
+      - components/05-templates
+  pages:
+    paths:
+      - components/06-pages
+
+regions:
+  hidden: Hidden
+  header: Header
+  breadcrumb: Breadcrumb
+  hero: Hero
+  secondary_navigation: Secondary navigation
+  content_top: Content top
+  title: Page title
+  content: Content
+  complementary_top: Complementary top
+  complementary_bottom: Complementary bottom
+  content_bottom: Content bottom
+  sidebar_first: Sidebar First
+  sidebar_second: Sidebar Second
+  footer: Footer

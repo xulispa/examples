@@ -1,0 +1,146 @@
+[type="reset"],
+[type="submit"],
+a.button,
+button:not([class*="h5p-"]),
+html [type="button"]:not([class*="h5p-"]) {
+  @extend .btn;
+  cursor: pointer;
+
+  &:hover {
+    text-decoration: none;
+  }
+
+  &:not([class*="btn-"]):not([class*="mat-"]):not(.link):not(.close):not(.trigger):not(.toolbar-icon) {
+    @extend .btn-light;
+    background: $leaf-green;
+  }
+
+  &.link {
+    @extend .btn-link;
+    padding: 0;
+    border: 0;
+    line-height: inherit;
+    vertical-align: unset;
+    font-family: inherit;
+    font-weight: inherit;
+    cursor: pointer;
+    background: $leaf-green;
+  }
+
+  &:focus {
+    outline: none;
+    box-shadow: none;
+  }
+
+  & + .button {
+    margin-left: 1rem;
+    background: $leaf-green;
+  }
+}
+
+.btn-group {
+  & + .button {
+    margin-left: 1rem;
+    background: $leaf-green;
+  }
+}
+
+a.button#edit-delete {
+  @extend .btn-outline-danger;
+  background: $leaf-green;
+}
+
+input#edit-preview {
+  @extend .btn-outline-success;
+  background: $leaf-green;
+}
+
+a.button {
+  @extend .btn;
+  @extend .btn-link;
+  background: $leaf-green;
+}
+
+form#view-edit-form {
+  [type="reset"],
+  [type="submit"],
+  a.button,
+  button:not([class*="h5p-"]),
+  html [type="button"]:not([class*="h5p-"]) {
+    @extend .btn;
+
+    &:hover {
+      text-decoration: none;
+    }
+
+    &:not([class*="btn-"]):not([class*="mat-"]):not(.link):not(.close):not(.trigger):not(.toolbar-icon) {
+      @extend .btn-light;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 0;
+    }
+
+    &.link {
+      @extend .btn-link;
+    }
+
+    &:focus {
+    }
+
+    & + .button {
+    }
+  }
+
+  .btn-group {
+    & + .button {
+      margin-left: 1rem;
+    }
+  }
+
+  a.button#edit-delete {
+    @extend .btn-outline-danger;
+  }
+
+  input#edit-preview {
+    @extend .btn-outline-success;
+  }
+
+  a.button {
+    @extend .btn;
+    @extend .btn-link;
+  }
+}
+  //@extend form;
+  //#edit-changed {
+  //  line-height: 1.4555;
+  //  padding: 10px 20px 15px;
+  //  background: antiquewhite;
+  //  margin: 0;
+  //
+  //}
+  //h1.unit-title {
+  //  margin-top: 25px;
+  //}
+  //button#dropdownMenuButton {
+  //  .btn.btn-success.dropdown-toggle {
+  //    .btn:not(:disabled):not(.disabled),
+  //    :not(:disabled):not(.disabled)[type="reset"],
+  //    :not(:disabled):not(.disabled)[type="submit"],
+  //    a.button:not(:disabled):not(.disabled),
+  //    button:not(:disabled):not(.disabled):not([class*="h5p-"]),
+  //    html :not(:disabled):not(.disabled)[type="button"]:not([class*="h5p-"]),
+  //    .btn-group.operations > a:not(:disabled):not(.disabled) {
+  //
+  //    }
+  //    display: flex;
+  //    align-items: center;
+  //    justify-content: center;
+  //    margin-bottom: 0;
+  //    &:after {
+  //      width: calc(100% - 200px);
+  //      float: left;
+  //    }
+  //  }
+  //}
+//}

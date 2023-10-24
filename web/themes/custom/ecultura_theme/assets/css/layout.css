@@ -1,0 +1,354 @@
+/*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  vertical-align: baseline;
+}
+
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+[hidden],
+template {
+  display: none;
+}
+
+pre {
+  overflow: auto;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  font: inherit;
+  margin: 0;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  line-height: inherit;
+}
+
+button {
+  overflow: visible;
+}
+
+button,
+select {
+  text-transform: none;
+}
+
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+input {
+  line-height: normal;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+input[type="search"] {
+  -webkit-appearance: textfield;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+}
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+legend {
+  border: 0;
+  padding: 0;
+}
+
+textarea {
+  overflow: auto;
+}
+
+optgroup {
+  font-weight: bold;
+}
+
+/*! Source: https://github.com/h5bp/html5-boilerplate/blob/master/src/css/main.css */
+
+.container, .region--content-top,
+.region--content-bottom,
+.region--hero,
+.region--secondary-navigation {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.main-container {
+  overflow: hidden;
+  min-height: 100%;
+  min-height: calc(100vh - 50px);
+  padding-top: 50px;
+  padding-bottom: 100px;
+  position: relative;
+  z-index: 0;
+  width: 100%;
+}
+
+.region--title {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  max-width: 100%;
+}
+
+.region--content,
+.region--content-bottom,
+.region--sidebar-first,
+.region--sidebar-second {
+  margin-top: 1rem;
+}
+
+.layout--with-complementary > .region--content {
+  padding-left: 1em;
+  padding-right: 1em;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  max-width: 100%;
+}
+
+.region--complementary {
+  padding-left: 1em;
+  padding-right: 1em;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  max-width: 100%;
+}
+
+.layout--with-two-columns .region--content,
+.layout--with-two-columns .region--sidebar-first,
+.layout--with-two-columns .region--sidebar-second {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+.layout--with-three-columns .region--content,
+.layout--with-three-columns .region--sidebar-first,
+.layout--with-three-columns .region--sidebar-second {
+  padding-left: 1em;
+  padding-right: 1em;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+}
+
+.region--complementary-bottom {
+  display: none;
+}
+
+@media (min-width: 900px) {
+  .container, .region--content-top,
+  .region--content-bottom,
+  .region--hero,
+  .region--secondary-navigation {
+    max-width: 1200px;
+  }
+  .region--title {
+    margin-top: 1rem;
+  }
+  .layout--with-complementary > .region--content {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 66.66667%;
+            flex: 0 0 66.66667%;
+    max-width: 66.66667%;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .region--complementary {
+    margin-top: 1rem;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 33.33333%;
+            flex: 0 1 33.33333%;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    max-width: 33.33333%;
+  }
+  .layout--with-two-columns .region--content,
+  .layout--with-two-columns .region--sidebar-first,
+  .layout--with-two-columns .region--sidebar-second {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 50%;
+            flex: 0 0 50%;
+    max-width: 50%;
+  }
+  .layout--with-three-columns .region--content,
+  .layout--with-three-columns .region--sidebar-first,
+  .layout--with-three-columns .region--sidebar-second {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 33.33333%;
+            flex: 0 0 33.33333%;
+    max-width: 33.33333%;
+  }
+  .region--complementary-bottom {
+    display: block;
+  }
+  .region--complementary-top {
+    margin-top: 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  .layout--with-complementary > .region--content {
+    padding-left: 0;
+  }
+  .region--complementary {
+    padding-right: 0;
+  }
+  .layout--with-two-columns .region--content {
+    padding-left: 0;
+  }
+  .layout--with-two-columns .region--sidebar-first,
+  .layout--with-two-columns .region--sidebar-second {
+    padding-right: 0;
+  }
+  .layout--with-three-columns .region--content {
+    padding-left: 0;
+  }
+  .layout--with-three-columns .region--sidebar-second {
+    padding-right: 0;
+  }
+}
+
+@media print {
+  *,
+  *:before,
+  *:after {
+    background: transparent !important;
+    color: #000 !important;
+    -webkit-box-shadow: none !important;
+            box-shadow: none !important;
+    text-shadow: none !important;
+  }
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+  a[href]:after {
+    content: " (" attr(href) ")";
+  }
+  abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+  a[href^="#"]:after,
+  a[href^="javascript:"]:after {
+    content: "";
+  }
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+  thead {
+    display: table-header-group;
+  }
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+  img {
+    max-width: 100% !important;
+  }
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+  .navbar {
+    display: none;
+  }
+  .btn > .caret,
+  .dropup > .btn > .caret {
+    border-top-color: #000 !important;
+  }
+  .label {
+    border: 1px solid #000;
+  }
+  .table {
+    border-collapse: collapse !important;
+  }
+  .table td,
+  .table th {
+    background-color: #fff !important;
+  }
+  .table-bordered th,
+  .table-bordered td {
+    border: 1px solid #ddd !important;
+  }
+}

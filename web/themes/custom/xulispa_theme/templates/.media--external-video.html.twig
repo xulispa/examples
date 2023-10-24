@@ -1,0 +1,123 @@
+{#
+/**
+ * @file
+ * Theme override to display a media item.
+ *
+ * Available variables:
+ * - name: Name of the media.
+ * - content: Media content.
+ *
+ * @see template_preprocess_media()
+ *
+ * @ingroup themeable
+ */
+#}
+
+{# {{ dd(media._referringItem|raw) }} #}
+
+{%
+  set classes = [
+  	'responsive',
+  	'fill',
+    'media',
+    'media--type-' ~ media.bundle()|clean_class,
+    not media.isPublished() ? 'media--unpublished',
+    view_mode ? 'media--view-mode-' ~ view_mode|clean_class,
+  ]
+%}
+{# {%
+  set attribute = [
+    'data-oembed-url' ? external_url,
+  ]
+%} #}
+
+{% set extvid = elements['field_media_video_embed_field'][0] %}
+{% set attr = extvid['#attributes'] %}
+{# {% set attributes = elements['field_media_video_embed_field'][0]['#attributes'] %} #}
+{% set width = attr['width'] %}
+{% set height = attr['height'] %}
+{% set url = media.field_media_video_embed_field|raw.value %}
+{# {% set src = 'http://noembed.com/embed?url=' ~ url %} #}
+{# {% set src = 'http://noembed.com/embed?url=' ~ attr['src']|raw %} #}
+{% set src = attr['src']|raw %}
+{% set items = content['field_media_video_embed_field']['#items'] %}
+{% set external_id = media.mid|raw.value %}
+{% set title = attr['title'] %}
+{% set external_type = media.bundle()|clean_class %}
+
+{# {{ dd(attr) }}
+{{ dd(src) }}
+{{ dd(title) }}
+{{ dd(url) }}
+{{ dd(items) }} #}
+
+<div{{ attributes }}>
+  {{ title_suffix.contextual_links }}
+  <!DOCTYPE html>
+  <html>
+    <head>
+      <css-placeholder token="{{ placeholder_token }}">
+    </head>
+    <body style="margin: 0">
+      <iframe{{ attributes.addClass(classes) }}src="{{ src }}"title="{{ title }}"width="{{ width }}"height="{{ height }}"></iframe>
+      {# <iframe src="{{ src }}" frameborder="0" allowtransparency="" width="100%" height="100%" class="media-oembed-content responsive fill" title="{{ title }}" style="width:100%; height:100%;"></iframe> #}
+      {# {{ content }} #}
+    </body>
+  </html>
+
+  {# {{ content }} #}
+</div>
+
+{# {{ dd(content) }} #}
+{# {{ kint(_context|keys) }} #}
+{# {{ dd(media) }} #}
+{# {{ dd(content['field_media_video_embed_field'][0]['#attributes']) }} #}
+
+{# {{ dd(external_items) }} #}
+{# {{ dd(external_items[0]) }} #}
+
+{# {{ dd(content['field_media_video_embed_field']['#items'].list.value) }} #}
+{# {{ dd(external_url) }} #}
+{# {{ dd(external_id) }} #}
+{# {{ dd(external_title) }} #}
+{# {{ dd(external_type) }} #}
+{# {{ dd(media.mid.value) }} #}
+{# {{ dd(_context.media.mid|raw.__get('_referringItem')) }} #}
+{# {{ dd(media.mid|raw.value) }} #}
+{# {{ dd(drupal_field('field_media_oembed_video', 'media', media.mid|raw.value)) }} #}
+
+{# <article{{ attributes.addClass(classes) }}{{ attributes.addAttribute(attribute) }}>
+  {{ title_suffix.contextual_links }}
+  {% if content %}
+    <iframe src="{{ src }}" frameborder="0" allowtransparency="" width="100%" height="100%" class="media-oembed-content responsive fill" title="{{ external_title }}" style="width:100%; height:100%;"></iframe> #}
+    {# <video id="{{ external_id }}" controls="controls" preload="auto" class="responsive fill" width="100%" style="width: 100%; height: 100%;">
+ 	    <source src="{{ external_url }}" type="video/youtube" />
+    </video> #}
+    {# {{ content|raw }}
+  {% endif %}
+</article> #}
+
+
+  {# <iframe id="{{ external_id }}" frameborder="0" allowfullscreen="1" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" title="{{ external_title }}" width="100%" height="100%" stretching="responsive fill" preload="auto" src="{{ external_url }}" class="responsive fill" style="width:100%; height:100%;"></iframe> #}
+
+
+  {# <iframe{{ content.attributes }}id="{{ external_id }}" frameborder="0" allowfullscreen="1" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" title="{{ external_title }}" width="100%" height="100%" stretching="responsive fill" preload="auto" {% if external_url is not empty %} src="{{ external_url }}{% if query is not empty %}?{{ query | url_encode }}{% endif %}{% if fragment is not empty %}#{{ fragment }}{% endif %}"{% endif %} class="responsive fill" style="width:100%; height:100%;"></iframe> #}
+
+{# <iframe{{ attributes.addClass(classes) }}>
+	{{ title_suffix.contextual_links }}
+	{% spaceless %}
+		{% if content %}
+			{{ content }}
+		{% endif %}
+	{% endspaceless %}
+</iframe> #}
+
+
+{# <iframe{{ content.attributes }}{% if external_url is not empty %} src="{{ external_url }}{% if query is not empty %}?{{ query | url_encode }}{% endif %}{% if fragment is not empty %}#{{ fragment }}{% endif %}"{% endif %} class="responsive fill" style="width:100%; height:100%;"></iframe> #}
+
+
+
+
+{# <video id="{{ external_id }}" controls="controls" preload="auto" class="responsive fill" width="100%" style="width: 100%; height: 100%;">
+ 	<source src="{{ external_url }}" type="video/vimeo" />
+</video> #}

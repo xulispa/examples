@@ -1,0 +1,36 @@
+{#
+/**
+ * @file
+ * Default theme implementation to display a Bootstrap Dropdown component.
+ *
+ * Available variables:
+ * - alignment: (optional) The alignment of the dropdown menu.
+ * - attributes: An array of HTML attributes intended to be added to the main
+ *   container tag of this template.
+ * - items: The dropdown menu items.
+ * - toggle: The toggle element.
+ *
+ * @ingroup templates
+ */
+#}
+
+{# {%
+  set classes = [
+    'nav',
+    'navbar-user',
+    'btn-group',
+    'dropdown',
+    alignment == 'up' ? 'dropup',
+    alignment == 'right' ? 'btn-group--primary',
+    btn_context == 'operations' ? 'btn-group--operations',
+  ]
+%} #}
+<ul class="navbar nav">
+  <li class="dropdown">
+    <a href="" data-toggle="dropdown" aria-expanded="true" aria-haspopup="true" role="button" class="dropdown-toggle clearfix" title="Choose language"><svg class="navbar-nav__icon flag-icon"><use xlink:href="#icon-flag"></use></svg><span class="sr-only"></span></a>
+      {{ items }}
+    </a>
+  </li>
+</ul>
+
+{# {{ dump(_context) }} #}

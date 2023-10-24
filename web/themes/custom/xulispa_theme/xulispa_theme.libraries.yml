@@ -1,0 +1,20 @@
+xulispa_theme:
+  version: 1.0
+  css:
+    theme:
+      css/xulispa-styles.css: {}
+    layout:
+      css/layout/xulispa-layout.css: {}
+      css/layout/xulispa-maintenance.css: {}
+  js:
+    js/xulispa_theme.js: {}
+xulispa_frontpage:
+  version: 1.0
+  js:
+    js/xulispa_frontpage.js: {}
+xulispa_material:
+  css:
+    theme:
+      'https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css': {type: external}
+  js:
+    'https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js': {type: external}

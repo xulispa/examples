@@ -1,0 +1,58 @@
+body.maintenance-page {
+  text-align: center;
+  background: #d3cdea;
+}
+div.maintenance-page-layout-container {
+  max-width: 600px;
+  display: block;
+  margin: 2em auto 4em;
+  text-align: center;
+  font-size: 1.05em;
+  line-height: 1.65;
+}
+div.maintenance-page-logo {
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+  width: 280px;
+}
+div.maintenance-page-logo img {
+  margin: 3em auto;
+  position: fixed;
+  z-index: -5000;
+  text-align: center;
+  display: block;
+  width: 280px;
+}
+h1.maintenance-page-site-name {
+  font-size: 6em;
+  letter-spacing: 7px;
+  margin: 0 0 25px;
+  padding: 0;
+  text-shadow: 10px 10px 30px #0000003d, -10px -10px 30px #0000003d;
+}
+h1.maintenance-page-site-name a,
+h1.maintenance-page-site-name a:hover,
+h1.maintenance-page-site-name a:focus,
+h1.maintenance-page-site-name a:active {
+  color: #337ab7;
+  -webkit-text-stroke: 1px #4a4a4a6e;
+}
+div.maintenance-page-site-slogan {
+  margin: 0.5em 0 1em;
+  font-size: 1.1em;
+  font-family: "Megrim", fantasy;
+  font-weight: 900;
+  text-shadow: 5px 5px 20px #337ab7, -5px -5px 20px #337ab7;
+  letter-spacing: 10px;
+  text-transform: lowercase;
+}
+h3.maintenance-page-title {
+  font-size: 2.3em;
+  text-transform: lowercase;
+  letter-spacing: 5px;
+  font-weight: 500;
+  text-shadow: 1px 1px 2px #337ab7, -1px -1px 2px #337ab7;
+  margin: 0 0 1em;
+  padding: 0;
+}

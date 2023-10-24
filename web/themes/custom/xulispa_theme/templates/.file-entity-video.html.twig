@@ -1,0 +1,27 @@
+{#
+/**
+* @file
+* Default theme implementation to display the file entity as a video tag.
+*
+* Available variables:
+* - attributes: An array of HTML attributes, intended to be added to the
+*   video tag.
+* - files: And array of files to be added as sources for the video tag. Each
+*   element is an array with the following elements:
+*   - file: The full file object.
+*   - source_attributes: An array of HTML attributes for to be added to the
+*     source tag.
+*
+* @ingroup themeable
+*/
+#}
+{% for file in files %}
+	{# {{ dd(file.file|keys) }}
+	{{ dd(file.source_attributes.src.value) }} #}
+{% endfor %}
+
+{% for file in files %}
+	<video id="{{ file.file.fid.value }}" controls="controls" preload="metadata" width="100%" height="100%">
+		<source src="{{ file.source_attributes.src.value }}" type="{{ file.source_attributes.type.value }}" />
+	</video>
+{% endfor %}

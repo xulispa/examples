@@ -1,0 +1,21 @@
+base theme: false
+type: theme
+
+name: 'Drupal de Elite Theme'
+description: 'HTML5, SASS, Responsive grid theme for Drupal de Elite.'
+package: 'Drupal de Elite'
+core_version_requirement: ^10
+
+libraries:
+  - druelitelmstheme/global
+  - druelitelmstheme/druelitelmstheme_settings
+
+regions:
+  help: 'Help'
+  branding: 'Branding'
+  menu: 'Menu'
+  admin_opigno: 'Admin opigno menu'
+  status_messages: 'Status messages'
+  top: 'Top'
+  sidebar_first: 'Sidebar first'
+  content: 'Content'
