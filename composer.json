@@ -12,13 +12,81 @@
         {
             "type": "composer",
             "url": "https://packages.drupal.org/8"
+        },
+        {
+            "type": "composer",
+            "url": "https://asset-packagist.org"
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "sachinchoolur/lightgallery",
+                "version": "1.10.0",
+                "type": "drupal-library",
+                "source": {
+                    "url": "https://github.com/sachinchoolur/lightGallery",
+                    "type": "git",
+                    "reference": "1.10.0"
+                }
+            }
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "enyo/dropzone",
+                "version": "v5.5.0",
+                "type": "drupal-library",
+                "source": {
+                    "url": "https://github.com/enyo/dropzone.git",
+                    "type": "git",
+                    "reference": "origin/master"
+                }
+            }
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "dimsemenov/photoswipe",
+                "version": "4.1.1",
+                "type": "drupal-library",
+                "dist": {
+                    "url": "https://github.com/dimsemenov/PhotoSwipe/archive/v4.1.1.zip",
+                    "type": "zip"
+                }
+            }
+
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "dinbror/blazy",
+                "version": "1.8.2",
+                "type": "drupal-library",
+                "dist": {
+                    "url": "https://github.com/dinbror/blazy/archive/1.8.2.zip",
+                    "type": "zip"
+                }
+            }
         }
     ],
     "require": {
         "composer/installers": "^2.0",
+        "cweagans/composer-patches": "^1.7",
+        "drupal/admin_toolbar": "^3.4",
+        "drupal/blazy": "^2.21",
+        "drupal/bootstrap5": "^3.0",
         "drupal/core-composer-scaffold": "^10.1",
         "drupal/core-project-message": "^10.1",
-        "drupal/core-recommended": "^10.1"
+        "drupal/core-recommended": "^10.1",
+        "drupal/dropzonejs": "^2.8",
+        "drupal/lightgallery": "^1.4",
+        "drupal/photoswipe": "^4.0",
+        "drupal/views_bulk_operations": "^4.2",
+        "drush/drush": "^12.4",
+        "npm-asset/blazy": "^1.8",
+        "npm-asset/dropzone": "^5.9",
+        "npm-asset/lightgallery": "^2.7",
+        "npm-asset/photoswipe": "^5.4"
     },
     "conflict": {
         "drupal/drupal": "*"
@@ -31,7 +99,8 @@
             "drupal/core-composer-scaffold": true,
             "drupal/core-project-message": true,
             "phpstan/extension-installer": true,
-            "dealerdirect/phpcodesniffer-composer-installer": true
+            "dealerdirect/phpcodesniffer-composer-installer": true,
+            "cweagans/composer-patches": true
         },
         "sort-packages": true
     },
@@ -90,6 +159,21 @@
                 "  * Remove the plugin that prints this message:",
                 "      composer remove drupal/core-project-message"
             ]
+        },
+        "enable-patching": true,
+        "composer-exit-on-patch-failure": true,
+        "patchLevel": {
+            "drupal/core": "-p2"
+        },
+        "patches": {
+            "drupal/views_bulk_operations": {
+                "Undefined index": "https://www.drupal.org/files/issues/2020-10-16/3177297-3_0.patch"
+            }
         }
+
+    },
+    "require-dev": {
+        "drupal/devel": "^5.1",
+        "drupal/devel_kint_extras": "^1.1"
     }
 }
