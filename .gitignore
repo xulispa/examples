@@ -10,27 +10,30 @@
 /web/sites/*/*services*.yml
 
 # Ignore paths that may contain user-generated content
-/web/sites/*/files
-/web/sites/*/public
-/web/sites/*/private
-/web/sites/*/files-public
-/web/sites/*/files-private
+/web/sites/*/files/
+/web/sites/*/public/
+/web/sites/*/private/
+/web/sites/*/files-public/
+/web/sites/*/files-private/
+/private/
 
 # Ignore paths that may contain temporary files
-/web/sites/*/translations
-/web/sites/*/tmp
-/web/sites/*/cache
+/web/sites/*/translations/
+/web/sites/*/tmp/
+/web/sites/*/cache/
 
 # Ignore drupal core (if not versioning drupal sources)
-/web/vendor
-/web/core
+/web/core/
 /web/modules/README.txt
+/web/modules/contrib/
 /web/profiles/README.txt
+/web/profiles/contrib/
 /web/sites/development.services.yml
 /web/sites/example.settings.local.php
 /web/sites/example.sites.php
 /web/sites/README.txt
 /web/themes/README.txt
+/web/themes/contrib/
 /web/.csslintrc
 /web/.editorconfig
 /web/.eslintignore
@@ -39,8 +42,6 @@
 /web/.htaccess
 /web/.ht.router.php
 /web/autoload.php
-/web/composer.json
-/web/composer.lock
 /web/example.gitignore
 /web/index.php
 /web/INSTALL.txt
@@ -51,12 +52,12 @@
 /web/web.config
 
 # Ignore vendor dependencies and scripts
-/vendor
+/vendor/
 /composer.phar
-/composer
+/composer/
 /robo.phar
-/robo
+/robo/
 /drush.phar
-/drush
+/drush/
 /drupal.phar
-/drupal
+/drupal/
