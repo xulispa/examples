@@ -1,0 +1,136 @@
+<?php
+
+/**
+ * @file
+ * Contains xulispacore.module.
+ */
+
+use Drupal\Core\Url;;
+use Drupal\Core\Entity\t;
+use Drupal\file\Entity\File;
+use Drupal\Core\Render\Element;
+use Drupal\Core\Form\FormInterface;
+use Drupal\Core\Template\Attribute;
+use Drupal\Component\Utility\Crypt;
+use Drupal\Core\Entity\EntityTypeManager;
+use GuzzleHttp\Exception\RequestException;
+use Drupal\Core\Controller\ControllerBase;
+use Drupal\Core\Entity\EntityTypeInterface;
+use Drupal\field\FieldStorageConfigInterface;
+use Drupal\Core\Routing\RouteMatchInterface;
+use Drupal\paragraphs\Entity\ParagraphsType;
+use Drupal\Core\StringTranslation\TranslatableMarkup;
+use Drupal\Core\StringTranslation\TranslationManager;
+
+/**
+ * Implements hook_help().
+ */
+function xulispacore_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the xulispacore module.
+    case 'help.page.xulispacore':
+      $output = '';
+      $output .= '<h3>' . new TranslatableMarkup('About') . '</h3>';
+      $output .= '<p>' . new TranslatableMarkup('Helper module') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function xulispacore_theme() {
+  return [
+    'xulispacore' => [
+      'render element' => 'children',
+    ],
+  ];
+}
+
+/**
+ * Implements hook_form_alter().
+ */
+function xulispacore_form_alter(&$form, &$form_state, $form_id) {
+
+  if ($form['#id'] === 'views-exposed-form-search-search-page') {
+    $key = ($form['#id'] === 'views-exposed-form-search-search-page') ? 'actions' : 'basic';
+    if (!isset($form[$key]['submit']['#attributes'])) {
+      $form[$key]['submit']['#attributes'] = new Attribute();
+    }
+    $form[$key]['submit']['#attributes']->addClass(['search-form-submit', 'form-inline']);
+  }
+}
+
+/**
+ * Implements hook_preprocess_HOOK().
+ */
+function xulispacore_preprocess_page_title(&$variables) {
+  $current_path = \Drupal::request()->getpathInfo();
+  if ($current_path == '/busca') {
+    if (\Drupal::request()->query->has('search')) {
+
+      // Get the searched string.
+      $keywords = \Drupal::request()->query->get('search');
+
+      // As of https://drupal.stackexchange.com/a/232304/15055 we probably
+      // need to ensure the cache gets busted.
+      $variables['#cache']['contexts'][] = 'url.query_args:search';
+
+      // Set the new title.
+      $new_title = new TranslatableMarkup('Search result for (@keywords)', ['@keywords' => $keywords]);
+      $variables['title'] = $new_title;
+    }
+  }
+}
+
+/**
+ * Implements hook_preprocess_HOOK().
+ */
+function xulispacore_preprocess_paragraph(&$variables) {
+  if (isset($variables['elements']['field_text']) && $variables['elements']['field_text']['#bundle'] === 'text') {
+    $object = $variables['elements']['field_text']['#object'];
+    $id = $object->id();
+    $entity = $object->load($id);
+    $field_data = $entity->field_text;
+
+    foreach($field_data as $field) {
+      $variables['elements']['#attached']['library'][] = 'clipboardjs/drupal';
+      $variables['clip_id'] = $object->bundle() . $id;
+      $variables['clip_text'] = $field->value;
+      // $variables['elements']['#theme'] = 'xulispacore_clipboard';
+      // $variables['theme_hook_suggestions'][] = 'xulispacore_clipboard';
+      $variables['module_path'] = base_path() . drupal_get_path('module', 'clipboardjs');
+
+      'xulispacore_clipboard' => [
+        'variables' => [
+          'clip_alert_style' => 'tooltip',
+          'clip_alert_text' => t('Copy was successful!'),
+          'clip_height' => 25,
+          'clip_width' => 25,
+        ],
+        'base hook' => 'paragrah'
+      ],
+      $variables['#attached']['library'][] = 'clipboardjs/drupal';
+      $field_data = $field;
+      $field_data = $field->field_text;
+
+      // dump($id);
+      // dump($field);
+      // dump($variables);
+      // die();
+    }
+  }
+}
+
+/**
+ * Implements hook_theme_suggestions_HOOK_alter_().
+ */
+function xulispacore_theme_suggestions_paragraph_alter(array &$suggestions, array $variables) {
+  if ($variables['elements']['field_text']['#bundle'] === 'text') {
+    $suggestions = 'xulispacore_clipboard';
+  }
+  // dump($variables);
+  // die();
+}

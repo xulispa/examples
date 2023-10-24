@@ -1,0 +1,83 @@
+{
+    "_links": {
+        "self": {
+            "href": "https:\/\/xulispa.lndo.site\/tags\/agile?_format=hal_json"
+        },
+        "type": {
+            "href": "http:\/\/drupal.org\/rest\/type\/taxonomy_term\/tags"
+        },
+        "http:\/\/drupal.org\/rest\/relation\/taxonomy_term\/tags\/parent": [
+            null
+        ]
+    },
+    "tid": [
+        {
+            "value": "14"
+        }
+    ],
+    "uuid": [
+        {
+            "value": "4eff38c0-7af1-4a68-a5b0-5b6ad9722871"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "pt-br",
+            "lang": "pt-br"
+        }
+    ],
+    "vid": [
+        {
+            "target_id": "tags"
+        }
+    ],
+    "status": [
+        {
+            "value": "1",
+            "lang": "pt-br"
+        }
+    ],
+    "name": [
+        {
+            "value": "Agile",
+            "lang": "pt-br"
+        }
+    ],
+    "weight": [
+        {
+            "value": "0"
+        }
+    ],
+    "_embedded": {
+        "http:\/\/drupal.org\/rest\/relation\/taxonomy_term\/tags\/parent": [
+            null
+        ]
+    },
+    "changed": [
+        {
+            "value": "1504403413",
+            "lang": "pt-br"
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": "1",
+            "lang": "pt-br"
+        }
+    ],
+    "metatag": [
+        {
+            "value": {
+                "title": "Agile | Xulispa, n\u00eago!"
+            }
+        }
+    ],
+    "path": [
+        {
+            "alias": "\/tags\/agile",
+            "pid": "341",
+            "langcode": "pt-br",
+            "lang": "pt-br"
+        }
+    ]
+}

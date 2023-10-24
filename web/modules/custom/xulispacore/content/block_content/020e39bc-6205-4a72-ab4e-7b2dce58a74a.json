@@ -1,0 +1,88 @@
+{
+    "_links": {
+        "self": {
+            "href": "https:\/\/xulispa.lndo.site\/block\/13?_format=hal_json"
+        },
+        "type": {
+            "href": "http:\/\/drupal.org\/rest\/type\/block_content\/basic"
+        }
+    },
+    "id": [
+        {
+            "value": "13"
+        }
+    ],
+    "uuid": [
+        {
+            "value": "020e39bc-6205-4a72-ab4e-7b2dce58a74a"
+        }
+    ],
+    "revision_id": [
+        {
+            "value": "13"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "pt-br",
+            "lang": "pt-br"
+        }
+    ],
+    "type": [
+        {
+            "target_id": "basic"
+        }
+    ],
+    "revision_created": [
+        {
+            "value": "1502387732"
+        }
+    ],
+    "status": [
+        {
+            "value": "1",
+            "lang": "pt-br"
+        }
+    ],
+    "info": [
+        {
+            "value": "Onde atuei",
+            "lang": "pt-br"
+        }
+    ],
+    "changed": [
+        {
+            "value": "1503899640",
+            "lang": "pt-br"
+        }
+    ],
+    "reusable": [
+        {
+            "value": "1"
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": "1",
+            "lang": "pt-br"
+        }
+    ],
+    "revision_translation_affected": [
+        {
+            "value": "1",
+            "lang": "pt-br"
+        }
+    ],
+    "metatag": [
+        {
+            "value": {
+                "title": "| Xulispa, n\u00eago!"
+            }
+        }
+    ],
+    "field_subtitle": [
+        {
+            "value": "-"
+        }
+    ]
+}

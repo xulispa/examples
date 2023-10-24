@@ -1,0 +1,92 @@
+{
+    "_links": {
+        "self": {
+            "href": "https:\/\/xulispa.lndo.site\/block\/16?_format=hal_json"
+        },
+        "type": {
+            "href": "http:\/\/drupal.org\/rest\/type\/block_content\/basic"
+        }
+    },
+    "id": [
+        {
+            "value": "16"
+        }
+    ],
+    "uuid": [
+        {
+            "value": "6b1bbaf6-f738-43f9-b18c-891f075192f8"
+        }
+    ],
+    "revision_id": [
+        {
+            "value": "16"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "pt-br",
+            "lang": "pt-br"
+        }
+    ],
+    "type": [
+        {
+            "target_id": "basic"
+        }
+    ],
+    "revision_created": [
+        {
+            "value": "1502389783"
+        }
+    ],
+    "status": [
+        {
+            "value": "1",
+            "lang": "pt-br"
+        }
+    ],
+    "info": [
+        {
+            "value": "Rodap\u00e9 social",
+            "lang": "pt-br"
+        }
+    ],
+    "changed": [
+        {
+            "value": "1504411111",
+            "lang": "pt-br"
+        }
+    ],
+    "reusable": [
+        {
+            "value": "1"
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": "1",
+            "lang": "pt-br"
+        }
+    ],
+    "revision_translation_affected": [
+        {
+            "value": "1",
+            "lang": "pt-br"
+        }
+    ],
+    "metatag": [
+        {
+            "value": {
+                "title": "| Xulispa, n\u00eago!"
+            }
+        }
+    ],
+    "body": [
+        {
+            "value": "<ul> \r\n<li><a href=\"https:\/\/www.facebook.com\/leonardoxulispa\" target=\"_blank\">https:\/\/www.facebook.com\/<\/a><\/li>\r\n<li><a href=\"https:\/\/twitter.com\/xulispanego\" target=\"_blank\">https:\/\/twitter.com<\/a><\/li>\r\n<li><a href=\"https:\/\/www.instagram.com\/xulispa\" target=\"_blank\">https:\/\/www.instagram.com\/<\/a><\/li>\r\n<li><a href=\"https:\/\/www.linkedin.com\/in\/xulispa\" target=\"_blank\">https:\/\/www.linkedin.com\/<\/a><\/li>\r\n<\/ul>",
+            "format": "full_html_without_ckeditor",
+            "processed": "<ul><li><a href=\"https:\/\/www.facebook.com\/leonardoxulispa\" target=\"_blank\">https:\/\/www.facebook.com\/<\/a><\/li>\n<li><a href=\"https:\/\/twitter.com\/xulispanego\" target=\"_blank\">https:\/\/twitter.com<\/a><\/li>\n<li><a href=\"https:\/\/www.instagram.com\/xulispa\" target=\"_blank\">https:\/\/www.instagram.com\/<\/a><\/li>\n<li><a href=\"https:\/\/www.linkedin.com\/in\/xulispa\" target=\"_blank\">https:\/\/www.linkedin.com\/<\/a><\/li>\n<\/ul>",
+            "summary": "",
+            "lang": "pt-br"
+        }
+    ]
+}

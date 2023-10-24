@@ -1,0 +1,92 @@
+{
+    "_links": {
+        "self": {
+            "href": "https:\/\/xulispa.lndo.site\/block\/15?_format=hal_json"
+        },
+        "type": {
+            "href": "http:\/\/drupal.org\/rest\/type\/block_content\/basic"
+        }
+    },
+    "id": [
+        {
+            "value": "15"
+        }
+    ],
+    "uuid": [
+        {
+            "value": "d21c2542-e8aa-4cdd-84b9-2df5a114bf29"
+        }
+    ],
+    "revision_id": [
+        {
+            "value": "15"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "pt-br",
+            "lang": "pt-br"
+        }
+    ],
+    "type": [
+        {
+            "target_id": "basic"
+        }
+    ],
+    "revision_created": [
+        {
+            "value": "1502389359"
+        }
+    ],
+    "status": [
+        {
+            "value": "1",
+            "lang": "pt-br"
+        }
+    ],
+    "info": [
+        {
+            "value": "Cr\u00e9ditos",
+            "lang": "pt-br"
+        }
+    ],
+    "changed": [
+        {
+            "value": "1553298053",
+            "lang": "pt-br"
+        }
+    ],
+    "reusable": [
+        {
+            "value": "1"
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": "1",
+            "lang": "pt-br"
+        }
+    ],
+    "revision_translation_affected": [
+        {
+            "value": "1",
+            "lang": "pt-br"
+        }
+    ],
+    "metatag": [
+        {
+            "value": {
+                "title": "| Xulispa, n\u00eago!"
+            }
+        }
+    ],
+    "body": [
+        {
+            "value": "<p>\u24b8 Copyright <script>document.write(new Date().getFullYear())<\/script> - <a href=\"http:\/\/www.xulispa.com.br\" target=\"_blank\">Xulispa, n\u00eago!<\/a>. Alguns direitos reservados. Feito com <a href=\"https:\/\/www.drupal.org\/\" target=\"_blank\">Drupal<\/a>.<\/p>\r\n",
+            "format": "full_html",
+            "processed": "<p>\u24b8 Copyright <script>\n<!--\/\/--><![CDATA[\/\/ ><!--\ndocument.write(new Date().getFullYear())\n\/\/--><!]]>\n<\/script> - <a href=\"http:\/\/www.xulispa.com.br\" target=\"_blank\">Xulispa, n\u00eago!<\/a>. Alguns direitos reservados. Feito com <a href=\"https:\/\/www.drupal.org\/\" target=\"_blank\">Drupal<\/a>.<\/p>\n",
+            "summary": "",
+            "lang": "pt-br"
+        }
+    ]
+}

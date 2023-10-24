@@ -1,0 +1,300 @@
+{
+    "_links": {
+        "self": {
+            "href": "https:\/\/xulispa.lndo.site\/portfolio\/business-manager-tallernetbr?_format=hal_json"
+        },
+        "type": {
+            "href": "http:\/\/drupal.org\/rest\/type\/node\/work"
+        },
+        "http:\/\/drupal.org\/rest\/relation\/node\/work\/revision_uid": [
+            {
+                "href": "https:\/\/xulispa.lndo.site\/quem\/leonardo-silva?_format=hal_json"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/work\/uid": [
+            {
+                "href": "https:\/\/xulispa.lndo.site\/quem\/leonardo-silva?_format=hal_json",
+                "lang": "pt-br"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/work\/field_gallery": [
+            {
+                "href": "https:\/\/xulispa.lndo.site\/arquivo\/imagem\/marcatallerpng?_format=hal_json"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/work\/field_tags": [
+            {
+                "href": "https:\/\/xulispa.lndo.site\/tags\/comercial?_format=hal_json"
+            },
+            {
+                "href": "https:\/\/xulispa.lndo.site\/tags\/gerente?_format=hal_json"
+            },
+            {
+                "href": "https:\/\/xulispa.lndo.site\/tags\/taller?_format=hal_json"
+            },
+            {
+                "href": "https:\/\/xulispa.lndo.site\/tags\/negocios?_format=hal_json"
+            }
+        ]
+    },
+    "nid": [
+        {
+            "value": "103"
+        }
+    ],
+    "uuid": [
+        {
+            "value": "76eef346-5019-4f4b-ae64-5aafa5fa4451"
+        }
+    ],
+    "vid": [
+        {
+            "value": "162"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "pt-br",
+            "lang": "pt-br"
+        }
+    ],
+    "type": [
+        {
+            "target_id": "work"
+        }
+    ],
+    "revision_timestamp": [
+        {
+            "value": "1553282026"
+        }
+    ],
+    "_embedded": {
+        "http:\/\/drupal.org\/rest\/relation\/node\/work\/revision_uid": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "https:\/\/xulispa.lndo.site\/quem\/leonardo-silva?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "77920eae-c117-4b73-996d-ee62e72fa420"
+                    }
+                ]
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/work\/uid": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "https:\/\/xulispa.lndo.site\/quem\/leonardo-silva?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "77920eae-c117-4b73-996d-ee62e72fa420"
+                    }
+                ],
+                "lang": "pt-br"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/work\/field_gallery": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "https:\/\/xulispa.lndo.site\/arquivo\/imagem\/marcatallerpng?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/file\/image"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "70a1995c-551c-44b6-8478-74baf4b24382"
+                    }
+                ],
+                "alt": null,
+                "title": null,
+                "width": "2000",
+                "height": "3660"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/work\/field_tags": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "https:\/\/xulispa.lndo.site\/tags\/comercial?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/taxonomy_term\/tags"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "4f694dbd-5e3a-442e-a9a4-c24fdfe3bb77"
+                    }
+                ]
+            },
+            {
+                "_links": {
+                    "self": {
+                        "href": "https:\/\/xulispa.lndo.site\/tags\/gerente?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/taxonomy_term\/tags"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "fa1d856e-1b01-4976-b1a0-46a059045deb"
+                    }
+                ]
+            },
+            {
+                "_links": {
+                    "self": {
+                        "href": "https:\/\/xulispa.lndo.site\/tags\/taller?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/taxonomy_term\/tags"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "ea7570e4-bbb0-4ce6-adcf-58c7b6f42d8b"
+                    }
+                ]
+            },
+            {
+                "_links": {
+                    "self": {
+                        "href": "https:\/\/xulispa.lndo.site\/tags\/negocios?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/taxonomy_term\/tags"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "9b0a0e9a-b417-4b67-b61b-236b9bf5a467"
+                    }
+                ]
+            }
+        ]
+    },
+    "status": [
+        {
+            "value": "1",
+            "lang": "pt-br"
+        }
+    ],
+    "title": [
+        {
+            "value": "Business Manager",
+            "lang": "pt-br"
+        }
+    ],
+    "created": [
+        {
+            "value": "1504408783",
+            "lang": "pt-br"
+        }
+    ],
+    "changed": [
+        {
+            "value": "1553282026",
+            "lang": "pt-br"
+        }
+    ],
+    "promote": [
+        {
+            "value": "1",
+            "lang": "pt-br"
+        }
+    ],
+    "sticky": [
+        {
+            "value": "0",
+            "lang": "pt-br"
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": "1",
+            "lang": "pt-br"
+        }
+    ],
+    "revision_translation_affected": [
+        {
+            "value": "1",
+            "lang": "pt-br"
+        }
+    ],
+    "metatag": [
+        {
+            "value": {
+                "title": "Business Manager | Xulispa, n\u00eago!",
+                "description": "Respons\u00e1vel por:\n\nDescoberta de clientes potenciais;\n\tElaborac\u0327a\u0303o de propostas;\n\tRelacionamento com clientes;\n\tSuporte financeiro;"
+            }
+        }
+    ],
+    "path": [
+        {
+            "alias": "\/portfolio\/business-manager-tallernetbr",
+            "pid": "348",
+            "langcode": "pt-br",
+            "lang": "pt-br"
+        }
+    ],
+    "body": [
+        {
+            "value": "<p>Respons\u00e1vel por:<\/p>\r\n\r\n<ul>\r\n\t<li>Descoberta de clientes potenciais;<\/li>\r\n\t<li>Elaborac\u0327a\u0303o de propostas;<\/li>\r\n\t<li>Relacionamento com clientes;<\/li>\r\n\t<li>Suporte financeiro;<\/li>\r\n<\/ul>\r\n",
+            "format": "full_html",
+            "processed": "<p>Respons\u00e1vel por:<\/p>\n\n<ul><li>Descoberta de clientes potenciais;<\/li>\n\t<li>Elaborac\u0327a\u0303o de propostas;<\/li>\n\t<li>Relacionamento com clientes;<\/li>\n\t<li>Suporte financeiro;<\/li>\n<\/ul>",
+            "summary": "",
+            "lang": "pt-br"
+        }
+    ],
+    "field_client": [
+        {
+            "value": "Taller"
+        }
+    ],
+    "field_date": [
+        {
+            "value": "2015-03-01"
+        }
+    ],
+    "field_date_end": [
+        {
+            "value": "2015-08-01"
+        }
+    ],
+    "field_link": [
+        {
+            "uri": "http:\/\/taller.net.br",
+            "title": "Veja o site",
+            "options": {
+                "attributes": {
+                    "target": "_blank",
+                    "rel": "nofollow",
+                    "class": [
+                        ""
+                    ]
+                }
+            },
+            "lang": "pt-br"
+        }
+    ],
+    "field_sub_title": [
+        {
+            "value": "taller.net.br"
+        }
+    ]
+}

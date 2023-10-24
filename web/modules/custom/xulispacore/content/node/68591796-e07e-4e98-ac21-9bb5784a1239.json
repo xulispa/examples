@@ -1,0 +1,188 @@
+{
+    "_links": {
+        "self": {
+            "href": "https:\/\/xulispa.lndo.site\/servico\/consultoria-em-drupal?_format=hal_json"
+        },
+        "type": {
+            "href": "http:\/\/drupal.org\/rest\/type\/node\/clients"
+        },
+        "http:\/\/drupal.org\/rest\/relation\/node\/clients\/revision_uid": [
+            {
+                "href": "https:\/\/xulispa.lndo.site\/quem\/leonardo-silva?_format=hal_json"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/clients\/uid": [
+            {
+                "href": "https:\/\/xulispa.lndo.site\/quem\/leonardo-silva?_format=hal_json",
+                "lang": "pt-br"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/clients\/field_client_image": [
+            {
+                "href": "https:\/\/xulispa.lndo.site\/arquivo\/imagem\/consultoriajpg?_format=hal_json"
+            }
+        ]
+    },
+    "nid": [
+        {
+            "value": "18"
+        }
+    ],
+    "uuid": [
+        {
+            "value": "68591796-e07e-4e98-ac21-9bb5784a1239"
+        }
+    ],
+    "vid": [
+        {
+            "value": "189"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "pt-br",
+            "lang": "pt-br"
+        }
+    ],
+    "type": [
+        {
+            "target_id": "clients"
+        }
+    ],
+    "revision_timestamp": [
+        {
+            "value": "1553571730"
+        }
+    ],
+    "_embedded": {
+        "http:\/\/drupal.org\/rest\/relation\/node\/clients\/revision_uid": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "https:\/\/xulispa.lndo.site\/quem\/leonardo-silva?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "77920eae-c117-4b73-996d-ee62e72fa420"
+                    }
+                ]
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/clients\/uid": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "https:\/\/xulispa.lndo.site\/quem\/leonardo-silva?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "77920eae-c117-4b73-996d-ee62e72fa420"
+                    }
+                ],
+                "lang": "pt-br"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/clients\/field_client_image": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "https:\/\/xulispa.lndo.site\/arquivo\/imagem\/consultoriajpg?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/file\/image"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "76b49b03-a809-4ada-bd0f-a1cf0b4fbd69"
+                    }
+                ],
+                "alt": null,
+                "title": null,
+                "width": "7360",
+                "height": "4912"
+            }
+        ]
+    },
+    "status": [
+        {
+            "value": "1",
+            "lang": "pt-br"
+        }
+    ],
+    "title": [
+        {
+            "value": "Consultoria em Drupal",
+            "lang": "pt-br"
+        }
+    ],
+    "created": [
+        {
+            "value": "1502549236",
+            "lang": "pt-br"
+        }
+    ],
+    "changed": [
+        {
+            "value": "1553571730",
+            "lang": "pt-br"
+        }
+    ],
+    "promote": [
+        {
+            "value": "1",
+            "lang": "pt-br"
+        }
+    ],
+    "sticky": [
+        {
+            "value": "0",
+            "lang": "pt-br"
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": "1",
+            "lang": "pt-br"
+        }
+    ],
+    "revision_translation_affected": [
+        {
+            "value": "1",
+            "lang": "pt-br"
+        }
+    ],
+    "metatag": [
+        {
+            "value": {
+                "title": "Consultoria em Drupal | Xulispa, n\u00eago!",
+                "description": "Consultoria e mentoria em Drupal para projetos novos ou em andamento."
+            }
+        }
+    ],
+    "path": [
+        {
+            "alias": "\/servico\/consultoria-em-drupal",
+            "pid": "7",
+            "langcode": "pt-br",
+            "lang": "pt-br"
+        }
+    ],
+    "body": [
+        {
+            "value": "<p>Consultoria e mentoria em Drupal para projetos novos ou em andamento.<\/p>\r\n",
+            "format": "full_html",
+            "processed": "<p>Consultoria e mentoria em Drupal para projetos novos ou em andamento.<\/p>\n",
+            "summary": "",
+            "lang": "pt-br"
+        }
+    ]
+}

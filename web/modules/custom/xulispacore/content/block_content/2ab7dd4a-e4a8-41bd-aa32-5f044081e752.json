@@ -1,0 +1,97 @@
+{
+    "_links": {
+        "self": {
+            "href": "https:\/\/xulispa.lndo.site\/block\/12?_format=hal_json"
+        },
+        "type": {
+            "href": "http:\/\/drupal.org\/rest\/type\/block_content\/basic"
+        }
+    },
+    "id": [
+        {
+            "value": "12"
+        }
+    ],
+    "uuid": [
+        {
+            "value": "2ab7dd4a-e4a8-41bd-aa32-5f044081e752"
+        }
+    ],
+    "revision_id": [
+        {
+            "value": "12"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "pt-br",
+            "lang": "pt-br"
+        }
+    ],
+    "type": [
+        {
+            "target_id": "basic"
+        }
+    ],
+    "revision_created": [
+        {
+            "value": "1502385991"
+        }
+    ],
+    "status": [
+        {
+            "value": "1",
+            "lang": "pt-br"
+        }
+    ],
+    "info": [
+        {
+            "value": "Como fa\u00e7o",
+            "lang": "pt-br"
+        }
+    ],
+    "changed": [
+        {
+            "value": "1553281575",
+            "lang": "pt-br"
+        }
+    ],
+    "reusable": [
+        {
+            "value": "1"
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": "1",
+            "lang": "pt-br"
+        }
+    ],
+    "revision_translation_affected": [
+        {
+            "value": "1",
+            "lang": "pt-br"
+        }
+    ],
+    "metatag": [
+        {
+            "value": {
+                "title": "| Xulispa, n\u00eago!"
+            }
+        }
+    ],
+    "body": [
+        {
+            "value": "<p>Me disponho a fazer somente aquilo que vai&nbsp;de&nbsp;encontro as cren\u00e7as e valores parte da vida pessoal&nbsp;e prezo pela excel\u00eancia e alta qualidade. Abuso de&nbsp;habilidades, juntas ou misturadas, melhor aproveitadas e evolu\u00eddas com experi\u00eancia, estudos e pr\u00e1ticas cont\u00ednuas.<\/p>\r\n\r\n<h2>M\u00e9todos e processos<\/h2>\r\n\r\n<p><progress max=\"100\" value=\"90\"><\/progress><\/p>\r\n\r\n<h2>CMS's<\/h2>\r\n\r\n<p><progress max=\"100\" value=\"100\"><\/progress><br \/>\r\nDrupal, Wordpress<\/p>\r\n\r\n<h2>Ferramentas \/ Utilit\u00e1rios<\/h2>\r\n\r\n<p><progress max=\"100\" value=\"90\"><\/progress><br \/>\r\nTrello, Jira, Asana, Pipedrive, Git, IDE's, VMware, VirtualBox, Docker, Vagrant, Ansible<\/p>\r\n\r\n<h2>Sistemas operacionais<\/h2>\r\n\r\n<p><progress max=\"100\" value=\"90\"><\/progress><br \/>\r\nLinux, Windows, OSX<\/p>\r\n\r\n<h2>Linguagens<\/h2>\r\n\r\n<p><progress max=\"100\" value=\"80\"><\/progress><br \/>\r\nPHP, HTML, CSS, JS<\/p>\r\n",
+            "format": "full_html",
+            "processed": "<p>Me disponho a fazer somente aquilo que vai\u00a0de\u00a0encontro as cren\u00e7as e valores parte da vida pessoal\u00a0e prezo pela excel\u00eancia e alta qualidade. Abuso de\u00a0habilidades, juntas ou misturadas, melhor aproveitadas e evolu\u00eddas com experi\u00eancia, estudos e pr\u00e1ticas cont\u00ednuas.<\/p>\n\n<h2>M\u00e9todos e processos<\/h2>\n\n<p><progress max=\"100\" value=\"90\"><\/progress><\/p>\n\n<h2>CMS's<\/h2>\n\n<p><progress max=\"100\" value=\"100\"><\/progress><br \/>\nDrupal, Wordpress<\/p>\n\n<h2>Ferramentas \/ Utilit\u00e1rios<\/h2>\n\n<p><progress max=\"100\" value=\"90\"><\/progress><br \/>\nTrello, Jira, Asana, Pipedrive, Git, IDE's, VMware, VirtualBox, Docker, Vagrant, Ansible<\/p>\n\n<h2>Sistemas operacionais<\/h2>\n\n<p><progress max=\"100\" value=\"90\"><\/progress><br \/>\nLinux, Windows, OSX<\/p>\n\n<h2>Linguagens<\/h2>\n\n<p><progress max=\"100\" value=\"80\"><\/progress><br \/>\nPHP, HTML, CSS, JS<\/p>\n",
+            "summary": "",
+            "lang": "pt-br"
+        }
+    ],
+    "field_subtitle": [
+        {
+            "value": "-"
+        }
+    ]
+}

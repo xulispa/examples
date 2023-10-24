@@ -1,0 +1,88 @@
+{
+    "_links": {
+        "self": {
+            "href": "https:\/\/xulispa.lndo.site\/block\/11?_format=hal_json"
+        },
+        "type": {
+            "href": "http:\/\/drupal.org\/rest\/type\/block_content\/basic"
+        }
+    },
+    "id": [
+        {
+            "value": "11"
+        }
+    ],
+    "uuid": [
+        {
+            "value": "dde13471-c70f-44b6-b1d8-b11c229dae1f"
+        }
+    ],
+    "revision_id": [
+        {
+            "value": "11"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "pt-br",
+            "lang": "pt-br"
+        }
+    ],
+    "type": [
+        {
+            "target_id": "basic"
+        }
+    ],
+    "revision_created": [
+        {
+            "value": "1502385411"
+        }
+    ],
+    "status": [
+        {
+            "value": "1",
+            "lang": "pt-br"
+        }
+    ],
+    "info": [
+        {
+            "value": "O que ofere\u00e7o",
+            "lang": "pt-br"
+        }
+    ],
+    "changed": [
+        {
+            "value": "1503899518",
+            "lang": "pt-br"
+        }
+    ],
+    "reusable": [
+        {
+            "value": "1"
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": "1",
+            "lang": "pt-br"
+        }
+    ],
+    "revision_translation_affected": [
+        {
+            "value": "1",
+            "lang": "pt-br"
+        }
+    ],
+    "metatag": [
+        {
+            "value": {
+                "title": "| Xulispa, n\u00eago!"
+            }
+        }
+    ],
+    "field_subtitle": [
+        {
+            "value": "-"
+        }
+    ]
+}

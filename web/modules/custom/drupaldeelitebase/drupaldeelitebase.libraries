@@ -1,0 +1,14 @@
+main:
+  version: 1.x
+  js:
+    js/main.js: {}
+  dependencies:
+    - polyfill/babel
+    - polyfill/fetch
+
+anonymous:
+  version: 1.x
+  js:
+    js/anonymous.js: {}
+  dependencies:
+    - polyfill/webcomponents

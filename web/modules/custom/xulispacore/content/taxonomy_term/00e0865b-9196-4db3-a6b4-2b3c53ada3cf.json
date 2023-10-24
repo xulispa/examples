@@ -1,0 +1,83 @@
+{
+    "_links": {
+        "self": {
+            "href": "https:\/\/xulispa.lndo.site\/tags\/um-job-bem-legal?_format=hal_json"
+        },
+        "type": {
+            "href": "http:\/\/drupal.org\/rest\/type\/taxonomy_term\/tags"
+        },
+        "http:\/\/drupal.org\/rest\/relation\/taxonomy_term\/tags\/parent": [
+            null
+        ]
+    },
+    "tid": [
+        {
+            "value": "4"
+        }
+    ],
+    "uuid": [
+        {
+            "value": "00e0865b-9196-4db3-a6b4-2b3c53ada3cf"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "pt-br",
+            "lang": "pt-br"
+        }
+    ],
+    "vid": [
+        {
+            "target_id": "tags"
+        }
+    ],
+    "status": [
+        {
+            "value": "1",
+            "lang": "pt-br"
+        }
+    ],
+    "name": [
+        {
+            "value": "Um job bem legal",
+            "lang": "pt-br"
+        }
+    ],
+    "weight": [
+        {
+            "value": "0"
+        }
+    ],
+    "_embedded": {
+        "http:\/\/drupal.org\/rest\/relation\/taxonomy_term\/tags\/parent": [
+            null
+        ]
+    },
+    "changed": [
+        {
+            "value": "1504322691",
+            "lang": "pt-br"
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": "1",
+            "lang": "pt-br"
+        }
+    ],
+    "metatag": [
+        {
+            "value": {
+                "title": "Um job bem legal | Xulispa, n\u00eago!"
+            }
+        }
+    ],
+    "path": [
+        {
+            "alias": "\/tags\/um-job-bem-legal",
+            "pid": "328",
+            "langcode": "pt-br",
+            "lang": "pt-br"
+        }
+    ]
+}

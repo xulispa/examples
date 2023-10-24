@@ -1,0 +1,83 @@
+{
+    "_links": {
+        "self": {
+            "href": "https:\/\/xulispa.lndo.site\/tags\/trabalho?_format=hal_json"
+        },
+        "type": {
+            "href": "http:\/\/drupal.org\/rest\/type\/taxonomy_term\/tags"
+        },
+        "http:\/\/drupal.org\/rest\/relation\/taxonomy_term\/tags\/parent": [
+            null
+        ]
+    },
+    "tid": [
+        {
+            "value": "2"
+        }
+    ],
+    "uuid": [
+        {
+            "value": "34869994-6963-43d7-a5e0-accadf1c4991"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "pt-br",
+            "lang": "pt-br"
+        }
+    ],
+    "vid": [
+        {
+            "target_id": "tags"
+        }
+    ],
+    "status": [
+        {
+            "value": "1",
+            "lang": "pt-br"
+        }
+    ],
+    "name": [
+        {
+            "value": "Trabalho",
+            "lang": "pt-br"
+        }
+    ],
+    "weight": [
+        {
+            "value": "0"
+        }
+    ],
+    "_embedded": {
+        "http:\/\/drupal.org\/rest\/relation\/taxonomy_term\/tags\/parent": [
+            null
+        ]
+    },
+    "changed": [
+        {
+            "value": "1503897128",
+            "lang": "pt-br"
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": "1",
+            "lang": "pt-br"
+        }
+    ],
+    "metatag": [
+        {
+            "value": {
+                "title": "Trabalho | Xulispa, n\u00eago!"
+            }
+        }
+    ],
+    "path": [
+        {
+            "alias": "\/tags\/trabalho",
+            "pid": "117",
+            "langcode": "pt-br",
+            "lang": "pt-br"
+        }
+    ]
+}

@@ -1,0 +1,62 @@
+<?php
+
+/**
+ * @file
+ * Primary module hooks for eCultura Base module.
+ *
+ * @DCG
+ * This file is no longer required in Drupal 8.
+ * @see https://www.drupal.org/node/2217931
+ */
+
+//use Drupal\Component\Utility\Html;
+//
+///**
+// * Implements hook_preprocess_HOOK().
+// *
+// * @param $variables
+// */
+//function ecultura_base_preprocess_form_element_label(&$variables) {
+//  // Edit the profile tag displays to show the hierarchy to users.
+//  // Only do this if it starts with a - to indicate it's a child.
+//  if (isset($variables['element']['#id'])) {
+//    if (substr($variables['element']['#id'], 0, 1) === 'edit-profile-tag-' && substr($variables['element']['#title'], 0, 1) === '-') {
+//      $variables['title']['#markup'] = substr($variables['title']['#markup'], 1);
+//    }
+//  }
+//}
+//
+///**
+// * @param $title
+// *
+// * @return string
+// */
+//function ecultura_base_get_visibility_icon($title) {
+//  // Set the materialize icon.
+//  switch ($title) {
+//    case 'Community':
+//      $icon = 'community';
+//      break;
+//
+//    case 'Comunidade':
+//      $icon = 'community';
+//      break;
+//
+//    case 'Recipient':
+//      $icon = 'community';
+//      break;
+//
+//    case 'Group members':
+//      $icon = 'lock';
+//      break;
+//
+//    case 'Público':
+//      $icon = 'public';
+//      break;
+//
+//    default:
+//      $icon = strtolower(Html::escape($title));
+//  }
+//
+//  return $icon;
+//}

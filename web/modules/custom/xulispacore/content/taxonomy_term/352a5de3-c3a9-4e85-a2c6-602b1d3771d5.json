@@ -1,0 +1,83 @@
+{
+    "_links": {
+        "self": {
+            "href": "https:\/\/xulispa.lndo.site\/tags\/treinamentos?_format=hal_json"
+        },
+        "type": {
+            "href": "http:\/\/drupal.org\/rest\/type\/taxonomy_term\/tags"
+        },
+        "http:\/\/drupal.org\/rest\/relation\/taxonomy_term\/tags\/parent": [
+            null
+        ]
+    },
+    "tid": [
+        {
+            "value": "9"
+        }
+    ],
+    "uuid": [
+        {
+            "value": "352a5de3-c3a9-4e85-a2c6-602b1d3771d5"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "pt-br",
+            "lang": "pt-br"
+        }
+    ],
+    "vid": [
+        {
+            "target_id": "tags"
+        }
+    ],
+    "status": [
+        {
+            "value": "1",
+            "lang": "pt-br"
+        }
+    ],
+    "name": [
+        {
+            "value": "Treinamentos",
+            "lang": "pt-br"
+        }
+    ],
+    "weight": [
+        {
+            "value": "0"
+        }
+    ],
+    "_embedded": {
+        "http:\/\/drupal.org\/rest\/relation\/taxonomy_term\/tags\/parent": [
+            null
+        ]
+    },
+    "changed": [
+        {
+            "value": "1504402258",
+            "lang": "pt-br"
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": "1",
+            "lang": "pt-br"
+        }
+    ],
+    "metatag": [
+        {
+            "value": {
+                "title": "Treinamentos | Xulispa, n\u00eago!"
+            }
+        }
+    ],
+    "path": [
+        {
+            "alias": "\/tags\/treinamentos",
+            "pid": "334",
+            "langcode": "pt-br",
+            "lang": "pt-br"
+        }
+    ]
+}

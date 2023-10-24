@@ -1,0 +1,83 @@
+{
+    "_links": {
+        "self": {
+            "href": "https:\/\/xulispa.lndo.site\/tags\/categoria?_format=hal_json"
+        },
+        "type": {
+            "href": "http:\/\/drupal.org\/rest\/type\/taxonomy_term\/tags"
+        },
+        "http:\/\/drupal.org\/rest\/relation\/taxonomy_term\/tags\/parent": [
+            null
+        ]
+    },
+    "tid": [
+        {
+            "value": "5"
+        }
+    ],
+    "uuid": [
+        {
+            "value": "67ef96c3-12b0-482e-9e24-c485f13aeaf0"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "pt-br",
+            "lang": "pt-br"
+        }
+    ],
+    "vid": [
+        {
+            "target_id": "tags"
+        }
+    ],
+    "status": [
+        {
+            "value": "1",
+            "lang": "pt-br"
+        }
+    ],
+    "name": [
+        {
+            "value": "Categoria",
+            "lang": "pt-br"
+        }
+    ],
+    "weight": [
+        {
+            "value": "0"
+        }
+    ],
+    "_embedded": {
+        "http:\/\/drupal.org\/rest\/relation\/taxonomy_term\/tags\/parent": [
+            null
+        ]
+    },
+    "changed": [
+        {
+            "value": "1504322691",
+            "lang": "pt-br"
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": "1",
+            "lang": "pt-br"
+        }
+    ],
+    "metatag": [
+        {
+            "value": {
+                "title": "Categoria | Xulispa, n\u00eago!"
+            }
+        }
+    ],
+    "path": [
+        {
+            "alias": "\/tags\/categoria",
+            "pid": "329",
+            "langcode": "pt-br",
+            "lang": "pt-br"
+        }
+    ]
+}

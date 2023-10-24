@@ -1,0 +1,4 @@
+administer ecultura_base configuration:
+  title: 'Administer ecultura_base configuration'
+  description: 'Optional description.'
+  restrict access: true

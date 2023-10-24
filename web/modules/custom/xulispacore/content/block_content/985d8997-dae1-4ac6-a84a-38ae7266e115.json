@@ -1,0 +1,97 @@
+{
+    "_links": {
+        "self": {
+            "href": "https:\/\/xulispa.lndo.site\/block\/14?_format=hal_json"
+        },
+        "type": {
+            "href": "http:\/\/drupal.org\/rest\/type\/block_content\/basic"
+        }
+    },
+    "id": [
+        {
+            "value": "14"
+        }
+    ],
+    "uuid": [
+        {
+            "value": "985d8997-dae1-4ac6-a84a-38ae7266e115"
+        }
+    ],
+    "revision_id": [
+        {
+            "value": "14"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "pt-br",
+            "lang": "pt-br"
+        }
+    ],
+    "type": [
+        {
+            "target_id": "basic"
+        }
+    ],
+    "revision_created": [
+        {
+            "value": "1502388052"
+        }
+    ],
+    "status": [
+        {
+            "value": "1",
+            "lang": "pt-br"
+        }
+    ],
+    "info": [
+        {
+            "value": "Por que",
+            "lang": "pt-br"
+        }
+    ],
+    "changed": [
+        {
+            "value": "1504321034",
+            "lang": "pt-br"
+        }
+    ],
+    "reusable": [
+        {
+            "value": "1"
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": "1",
+            "lang": "pt-br"
+        }
+    ],
+    "revision_translation_affected": [
+        {
+            "value": "1",
+            "lang": "pt-br"
+        }
+    ],
+    "metatag": [
+        {
+            "value": {
+                "title": "| Xulispa, n\u00eago!"
+            }
+        }
+    ],
+    "body": [
+        {
+            "value": "<p>Sou entusiasta em empreendedorismo, apaixonado por cultura e tecnologia. Me dedico a evoluir processos variados e promover fluidez na interac\u0327o\u0303es entre pessoas.&nbsp;Sou entusiasta em empreendedorismo, apaixonado por cultura e tecnologia. Me dedico a evoluir processos variados e promover fluidez na interac\u0327o\u0303es entre pessoas.<\/p>\r\n",
+            "format": "full_html",
+            "processed": "<p>Sou entusiasta em empreendedorismo, apaixonado por cultura e tecnologia. Me dedico a evoluir processos variados e promover fluidez na interac\u0327o\u0303es entre pessoas.\u00a0Sou entusiasta em empreendedorismo, apaixonado por cultura e tecnologia. Me dedico a evoluir processos variados e promover fluidez na interac\u0327o\u0303es entre pessoas.<\/p>\n",
+            "summary": "",
+            "lang": "pt-br"
+        }
+    ],
+    "field_subtitle": [
+        {
+            "value": "-"
+        }
+    ]
+}

@@ -1,0 +1,104 @@
+{
+    "_links": {
+        "self": {
+            "href": "https:\/\/xulispa.lndo.site\/block\/9?_format=hal_json"
+        },
+        "type": {
+            "href": "http:\/\/drupal.org\/rest\/type\/block_content\/basic"
+        }
+    },
+    "id": [
+        {
+            "value": "9"
+        }
+    ],
+    "uuid": [
+        {
+            "value": "93a5895c-2e06-4d15-829f-f4fb34ace7b8"
+        }
+    ],
+    "revision_id": [
+        {
+            "value": "9"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "pt-br",
+            "lang": "pt-br"
+        }
+    ],
+    "type": [
+        {
+            "target_id": "basic"
+        }
+    ],
+    "revision_created": [
+        {
+            "value": "1502375586"
+        }
+    ],
+    "status": [
+        {
+            "value": "1",
+            "lang": "pt-br"
+        }
+    ],
+    "info": [
+        {
+            "value": "Quem \u00e9 Leonardo Silva",
+            "lang": "pt-br"
+        }
+    ],
+    "changed": [
+        {
+            "value": "1553280881",
+            "lang": "pt-br"
+        }
+    ],
+    "reusable": [
+        {
+            "value": "1"
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": "1",
+            "lang": "pt-br"
+        }
+    ],
+    "revision_translation_affected": [
+        {
+            "value": "1",
+            "lang": "pt-br"
+        }
+    ],
+    "metatag": [
+        {
+            "value": {
+                "title": "| Xulispa, n\u00eago!"
+            }
+        }
+    ],
+    "body": [
+        {
+            "value": "<p>Empreendedor entusiasta, apaixonado por cultura e tecnologia. Me dedico a evoluir processos variados e promover fluidez na interac\u0327o\u0303es entre pessoas. Adoto pra\u0301ticas de incentivo a fim de aproveitar habilidades pessoais e melhorar continuamente a produtividade de times, com intuito de desenvolver produtos com alto valor agregado.<br \/>\r\n&nbsp;<\/p>\r\n\r\n<hr \/>\r\n<p><br \/>\r\nTambe\u0301m atuo como desenvolvedor web, quando conveniente, com prefere\u0302ncia aos sistemas baseados em <a href=\"https:\/\/www.drupal.org\" rel=\"nofollow\" target=\"_blank\" title=\"Drupal\">Drupal<\/a>.<br \/>\r\n&nbsp;<\/p>\r\n\r\n<hr \/>\r\n<p><br \/>\r\nAtualmente atuo no <a href=\"https:\/\/drupaldeelite.com.br\" rel=\"nofollow\" target=\"_blank\" title=\"Drupal de Elite\">Drupal de Elite<\/a>, onde ministro cursos e presto servi\u00e7os de consultoria. Outras refer\u00eancias recentes s\u00e3o os trabalhos realizados na <a href=\"https:\/\/impulso.work\" rel=\"nofollow\" target=\"_blank\" title=\"Impulso\">Impulso<\/a> e <a href=\"https:\/\/taller.net.br\" rel=\"nofollow\" target=\"_blank\" title=\"Taller\">Taller<\/a>, como gerente de neg\u00f3cios.<br \/>\r\n&nbsp;<\/p>\r\n\r\n<hr \/>\r\n<p><br \/>\r\nFique \u00e0 vontade para me <a href=\"#section_fifth\" title=\"Contato\">mandar uma mensagem<\/a>!<\/p>\r\n",
+            "format": "full_html",
+            "processed": "<p>Empreendedor entusiasta, apaixonado por cultura e tecnologia. Me dedico a evoluir processos variados e promover fluidez na interac\u0327o\u0303es entre pessoas. Adoto pra\u0301ticas de incentivo a fim de aproveitar habilidades pessoais e melhorar continuamente a produtividade de times, com intuito de desenvolver produtos com alto valor agregado.<br \/>\n\u00a0<\/p>\n\n<hr \/><p><br \/>\nTambe\u0301m atuo como desenvolvedor web, quando conveniente, com prefere\u0302ncia aos sistemas baseados em <a href=\"https:\/\/www.drupal.org\" rel=\"nofollow\" target=\"_blank\" title=\"Drupal\">Drupal<\/a>.<br \/>\n\u00a0<\/p>\n\n<hr \/><p><br \/>\nAtualmente atuo no <a href=\"https:\/\/drupaldeelite.com.br\" rel=\"nofollow\" target=\"_blank\" title=\"Drupal de Elite\">Drupal de Elite<\/a>, onde ministro cursos e presto servi\u00e7os de consultoria. Outras refer\u00eancias recentes s\u00e3o os trabalhos realizados na <a href=\"https:\/\/impulso.work\" rel=\"nofollow\" target=\"_blank\" title=\"Impulso\">Impulso<\/a> e <a href=\"https:\/\/taller.net.br\" rel=\"nofollow\" target=\"_blank\" title=\"Taller\">Taller<\/a>, como gerente de neg\u00f3cios.<br \/>\n\u00a0<\/p>\n\n<hr \/><p><br \/>\nFique \u00e0 vontade para me <a href=\"#section_fifth\" title=\"Contato\">mandar uma mensagem<\/a>!<\/p>\n",
+            "summary": "",
+            "lang": "pt-br"
+        }
+    ],
+    "field_link": [
+        {
+            "uri": "internal:\/quem\/leonardo-silva",
+            "title": "mais",
+            "options": []
+        }
+    ],
+    "field_subtitle": [
+        {
+            "value": "-"
+        }
+    ]
+}

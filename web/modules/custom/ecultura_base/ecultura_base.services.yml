@@ -1,0 +1,6 @@
+services:
+  ecultura_base.event_subscriber:
+    class: Drupal\ecultura_base\EventSubscriber\EculturaBaseSubscriber
+    arguments: ['@messenger']
+    tags:
+      - { name: event_subscriber }

@@ -1,0 +1,5 @@
+name: eCultura Base Module
+type: module
+description: eCultura general functions and customizations.
+package: eCultura
+core_version_requirement: ^10

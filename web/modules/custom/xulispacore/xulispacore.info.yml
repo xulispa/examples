@@ -1,0 +1,75 @@
+name: 'Xulispa Nego Core Module'
+type: module
+description: 'Helper module'
+core_version_requirement: ^10
+package: 'Xulispa'
+
+dependencies:
+  - drupal:default_content
+  - drupal:file_entity
+  - drupal:block_content
+  - drupal:config
+  - drupal:image
+  - drupal:node
+  - drupal:menu_link_content
+  - drupal:system
+
+default_content:
+  node:
+    - 601d47c4-61b2-49e6-bff2-392db9ad5fa1
+    - 68591796-e07e-4e98-ac21-9bb5784a1239
+    - e720bf80-1542-4cbd-8d75-c3116d79ff17
+    - b34e1dde-566b-4729-977d-be93addaa12d
+    - 173e53a5-29fe-446e-9a66-1b478f90ab6d
+    - 20d3a843-158d-4156-8282-33e8b4bf7224
+    - 76eef346-5019-4f4b-ae64-5aafa5fa4451
+    - e9b7f85f-e347-4a84-912e-e4e242e5e6ca
+    - 47957384-44a7-44f8-9c7e-8a50438aa3c7
+    - 362d18d6-077a-4f5c-b502-4187fd3b2c64
+    - 560d4ab4-cdf0-40da-9147-f681b1f91e19
+    - 6913b237-c98e-4295-94ba-5e8395d54854
+    - 7a73ce5d-d87c-4233-8320-07bd28ba3a5c
+    - e15a517e-b753-4d80-b20c-870a61830dba
+    - 8f96ba26-50d4-43cc-ab0e-b2409fa39ee7
+  file:
+    - ef4cf6e4-ebf3-4dab-83b8-bea6b8ee49a9
+    - c857b65c-ab2e-4e20-b717-402a9fe278c1
+    - 721d5706-4b8c-4361-865e-a29138092c57
+    - 0726b23d-ae70-499c-9a70-c803b0ff59ed
+    - 44f5cab7-9721-47d1-9e70-724ef33317e0
+    - c9299e07-90af-477d-8892-1a336b873042
+  menu_link_content:
+    - f18c16ae-a74f-4947-a081-55a67f1a935b
+    - 8f8fcd67-9c89-47a3-b9ae-079303827682
+    - 69a04c35-6a72-4e85-ae08-6a4f38615a7d
+    - 05fc06c8-d26c-4052-ac45-43b2880fd51c
+    - 49f39053-be70-4272-bc28-d4f4e757b9fd
+  block_content:
+    - 93a5895c-2e06-4d15-829f-f4fb34ace7b8
+    - e308d0be-71a1-4db1-8d2f-083db09ce7c0
+    - dde13471-c70f-44b6-b1d8-b11c229dae1f
+    - 2ab7dd4a-e4a8-41bd-aa32-5f044081e752
+    - 020e39bc-6205-4a72-ab4e-7b2dce58a74a
+    - 985d8997-dae1-4ac6-a84a-38ae7266e115
+    - d21c2542-e8aa-4cdd-84b9-2df5a114bf29
+    - 6b1bbaf6-f738-43f9-b18c-891f075192f8
+  taxonomy_term:
+    - cea45817-7cbd-4bd9-8af3-5e317f8bb692
+    - 34869994-6963-43d7-a5e0-accadf1c4991
+    - babe500a-3906-4555-b413-a9ca460590f5
+    - 00e0865b-9196-4db3-a6b4-2b3c53ada3cf
+    - 67ef96c3-12b0-482e-9e24-c485f13aeaf0
+    - 781e57e9-cb7b-4ff7-8bfc-0507af2aed19
+    - 6ebb8cd9-506f-40d2-8502-0faef77cef0d
+    - a885a0a8-c242-42f4-acae-4b53a0acdc14
+    - 352a5de3-c3a9-4e85-a2c6-602b1d3771d5
+    - 477c9a09-d38e-4733-839e-70a03ae87c65
+    - fe6c5398-528c-42b9-aa3e-0a2bea9fdac1
+    - c899cce1-0fe7-4c51-83e0-f366fa0b9002
+    - bd9e008a-6b6a-43c2-8c8b-f3e16d202fce
+    - 4eff38c0-7af1-4a68-a5b0-5b6ad9722871
+    - 871ad139-da00-415a-b415-bbc07c85f3d8
+    - 4f694dbd-5e3a-442e-a9a4-c24fdfe3bb77
+    - fa1d856e-1b01-4976-b1a0-46a059045deb
+    - ea7570e4-bbb0-4ce6-adcf-58c7b6f42d8b
+    - 9b0a0e9a-b417-4b67-b61b-236b9bf5a467

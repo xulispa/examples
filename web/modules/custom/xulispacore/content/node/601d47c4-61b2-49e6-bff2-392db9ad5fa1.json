@@ -1,0 +1,205 @@
+{
+    "_links": {
+        "self": {
+            "href": "https:\/\/xulispa.lndo.site\/xulispa-nego?_format=hal_json"
+        },
+        "type": {
+            "href": "http:\/\/drupal.org\/rest\/type\/node\/header"
+        },
+        "http:\/\/drupal.org\/rest\/relation\/node\/header\/revision_uid": [
+            {
+                "href": "https:\/\/xulispa.lndo.site\/quem\/leonardo-silva?_format=hal_json"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/header\/uid": [
+            {
+                "href": "https:\/\/xulispa.lndo.site\/quem\/leonardo-silva?_format=hal_json",
+                "lang": "pt-br"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/header\/field_background_image_s_": [
+            {
+                "href": "https:\/\/xulispa.lndo.site\/arquivo\/imagem\/xadrezjpg-0?_format=hal_json"
+            }
+        ]
+    },
+    "nid": [
+        {
+            "value": "17"
+        }
+    ],
+    "uuid": [
+        {
+            "value": "601d47c4-61b2-49e6-bff2-392db9ad5fa1"
+        }
+    ],
+    "vid": [
+        {
+            "value": "181"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "pt-br",
+            "lang": "pt-br"
+        }
+    ],
+    "type": [
+        {
+            "target_id": "header"
+        }
+    ],
+    "revision_timestamp": [
+        {
+            "value": "1553557856"
+        }
+    ],
+    "_embedded": {
+        "http:\/\/drupal.org\/rest\/relation\/node\/header\/revision_uid": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "https:\/\/xulispa.lndo.site\/quem\/leonardo-silva?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "77920eae-c117-4b73-996d-ee62e72fa420"
+                    }
+                ]
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/header\/uid": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "https:\/\/xulispa.lndo.site\/quem\/leonardo-silva?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "77920eae-c117-4b73-996d-ee62e72fa420"
+                    }
+                ],
+                "lang": "pt-br"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/header\/field_background_image_s_": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "https:\/\/xulispa.lndo.site\/arquivo\/imagem\/xadrezjpg-0?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/file\/image"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "44f5cab7-9721-47d1-9e70-724ef33317e0"
+                    }
+                ],
+                "alt": null,
+                "title": null,
+                "width": "2560",
+                "height": "1600"
+            }
+        ]
+    },
+    "status": [
+        {
+            "value": "1",
+            "lang": "pt-br"
+        }
+    ],
+    "title": [
+        {
+            "value": "Xulispa, n\u00eago!",
+            "lang": "pt-br"
+        }
+    ],
+    "created": [
+        {
+            "value": "1502374601",
+            "lang": "pt-br"
+        }
+    ],
+    "changed": [
+        {
+            "value": "1553557856",
+            "lang": "pt-br"
+        }
+    ],
+    "promote": [
+        {
+            "value": "1",
+            "lang": "pt-br"
+        }
+    ],
+    "sticky": [
+        {
+            "value": "0",
+            "lang": "pt-br"
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": "1",
+            "lang": "pt-br"
+        }
+    ],
+    "revision_translation_affected": [
+        {
+            "value": "1",
+            "lang": "pt-br"
+        }
+    ],
+    "metatag": [
+        {
+            "value": {
+                "title": "Xulispa, n\u00eago! | Xulispa, n\u00eago!",
+                "description": "Paix\u00e3o por cultura e tecnologia"
+            }
+        }
+    ],
+    "path": [
+        {
+            "alias": "\/xulispa-nego",
+            "pid": "6",
+            "langcode": "pt-br",
+            "lang": "pt-br"
+        }
+    ],
+    "body": [
+        {
+            "value": "<p>Paix\u00e3o por cultura e tecnologia<\/p>\r\n",
+            "format": "full_html",
+            "processed": "<p>Paix\u00e3o por cultura e tecnologia<\/p>\n",
+            "summary": "",
+            "lang": "pt-br"
+        }
+    ],
+    "field_link": [
+        {
+            "uri": "internal:\/#section_first",
+            "title": "arrow_right",
+            "options": {
+                "attributes": {
+                    "id": "go",
+                    "name": "navigate",
+                    "class": [
+                        "material-icons",
+                        "md-light",
+                        "md-48"
+                    ]
+                }
+            }
+        }
+    ]
+}

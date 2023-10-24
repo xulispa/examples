@@ -1,0 +1,18 @@
+drupaldeelitebase.default_controller:
+  path: 'drupaldeelitebase/default_content'
+  defaults:
+    _controller: '\Drupal\drupaldeelitebase\Controller\Routing::content'
+    _title: 'Default Controller'
+  requirements:
+    _permission: 'access content'
+drupaldeelitebase.default_form:
+ path: 'drupaldeelitebase/default_form'
+ defaults:
+    _title: 'DeliteCheckoutFlow'
+    _form: '\Drupal\drupaldeelitebase\Form\DeliteCheckoutFlow'
+ requirements:
+    _permission: 'access content'
+
+
+  
+   

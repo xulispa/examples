@@ -1,0 +1,294 @@
+{
+    "_links": {
+        "self": {
+            "href": "https:\/\/xulispa.lndo.site\/portfolio\/consultor-fundador-drupaldeelitecombr?_format=hal_json"
+        },
+        "type": {
+            "href": "http:\/\/drupal.org\/rest\/type\/node\/work"
+        },
+        "http:\/\/drupal.org\/rest\/relation\/node\/work\/revision_uid": [
+            {
+                "href": "https:\/\/xulispa.lndo.site\/quem\/leonardo-silva?_format=hal_json"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/work\/uid": [
+            {
+                "href": "https:\/\/xulispa.lndo.site\/quem\/leonardo-silva?_format=hal_json",
+                "lang": "pt-br"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/work\/field_gallery": [
+            {
+                "href": "https:\/\/xulispa.lndo.site\/arquivo\/imagem\/logo-altapng?_format=hal_json"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/work\/field_tags": [
+            {
+                "href": "https:\/\/xulispa.lndo.site\/tags\/drupal?_format=hal_json"
+            },
+            {
+                "href": "https:\/\/xulispa.lndo.site\/tags\/consultoria?_format=hal_json"
+            },
+            {
+                "href": "https:\/\/xulispa.lndo.site\/tags\/cursos?_format=hal_json"
+            },
+            {
+                "href": "https:\/\/xulispa.lndo.site\/tags\/treinamentos?_format=hal_json"
+            }
+        ]
+    },
+    "nid": [
+        {
+            "value": "101"
+        }
+    ],
+    "uuid": [
+        {
+            "value": "173e53a5-29fe-446e-9a66-1b478f90ab6d"
+        }
+    ],
+    "vid": [
+        {
+            "value": "175"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "pt-br",
+            "lang": "pt-br"
+        }
+    ],
+    "type": [
+        {
+            "target_id": "work"
+        }
+    ],
+    "revision_timestamp": [
+        {
+            "value": "1553296720"
+        }
+    ],
+    "_embedded": {
+        "http:\/\/drupal.org\/rest\/relation\/node\/work\/revision_uid": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "https:\/\/xulispa.lndo.site\/quem\/leonardo-silva?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "77920eae-c117-4b73-996d-ee62e72fa420"
+                    }
+                ]
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/work\/uid": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "https:\/\/xulispa.lndo.site\/quem\/leonardo-silva?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "77920eae-c117-4b73-996d-ee62e72fa420"
+                    }
+                ],
+                "lang": "pt-br"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/work\/field_gallery": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "https:\/\/xulispa.lndo.site\/arquivo\/imagem\/logo-altapng?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/file\/image"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "c857b65c-ab2e-4e20-b717-402a9fe278c1"
+                    }
+                ],
+                "alt": null,
+                "title": null,
+                "width": "2436",
+                "height": "2436"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/work\/field_tags": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "https:\/\/xulispa.lndo.site\/tags\/drupal?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/taxonomy_term\/tags"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "781e57e9-cb7b-4ff7-8bfc-0507af2aed19"
+                    }
+                ]
+            },
+            {
+                "_links": {
+                    "self": {
+                        "href": "https:\/\/xulispa.lndo.site\/tags\/consultoria?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/taxonomy_term\/tags"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "6ebb8cd9-506f-40d2-8502-0faef77cef0d"
+                    }
+                ]
+            },
+            {
+                "_links": {
+                    "self": {
+                        "href": "https:\/\/xulispa.lndo.site\/tags\/cursos?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/taxonomy_term\/tags"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "a885a0a8-c242-42f4-acae-4b53a0acdc14"
+                    }
+                ]
+            },
+            {
+                "_links": {
+                    "self": {
+                        "href": "https:\/\/xulispa.lndo.site\/tags\/treinamentos?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/taxonomy_term\/tags"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "352a5de3-c3a9-4e85-a2c6-602b1d3771d5"
+                    }
+                ]
+            }
+        ]
+    },
+    "status": [
+        {
+            "value": "1",
+            "lang": "pt-br"
+        }
+    ],
+    "title": [
+        {
+            "value": "Consultor Fundador",
+            "lang": "pt-br"
+        }
+    ],
+    "created": [
+        {
+            "value": "1504402253",
+            "lang": "pt-br"
+        }
+    ],
+    "changed": [
+        {
+            "value": "1553296720",
+            "lang": "pt-br"
+        }
+    ],
+    "promote": [
+        {
+            "value": "1",
+            "lang": "pt-br"
+        }
+    ],
+    "sticky": [
+        {
+            "value": "1",
+            "lang": "pt-br"
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": "1",
+            "lang": "pt-br"
+        }
+    ],
+    "revision_translation_affected": [
+        {
+            "value": "1",
+            "lang": "pt-br"
+        }
+    ],
+    "metatag": [
+        {
+            "value": {
+                "title": "Consultor Fundador | Xulispa, n\u00eago!",
+                "description": "Fun\u00e7\u00f5es desenvolvidas:"
+            }
+        }
+    ],
+    "path": [
+        {
+            "alias": "\/portfolio\/consultor-fundador-drupaldeelitecombr",
+            "pid": "335",
+            "langcode": "pt-br",
+            "lang": "pt-br"
+        }
+    ],
+    "body": [
+        {
+            "value": "<p>Fun\u00e7\u00f5es desenvolvidas:<\/p>\r\n\r\n<ul>\r\n\t<li>Elaborac\u0327a\u0303o de cursos e treinamentos em <a data-mce-href=\"https:\/\/www.drupal.org\/\" href=\"https:\/\/www.drupal.org\/\" rel=\"nofollow noopener\" target=\"_blank\">Drupal<\/a>;<\/li>\r\n\t<li>Consultoria em desenvolvimento <a data-mce-href=\"https:\/\/www.drupal.org\/\" href=\"https:\/\/www.drupal.org\/\" rel=\"nofollow noopener\" style=\"\" target=\"_blank\">Drupal<\/a>;<\/li>\r\n\t<li>Aplicac\u0327a\u0303o de cursos e treinamentos para empresas, entre elas:\r\n\t<ul>\r\n\t\t<li><a data-mce-href=\"https:\/\/www.atech.com.br\/\" href=\"https:\/\/www.atech.com.br\/\" rel=\"nofollow noopener\" style=\"outline-width: 0px !important; user-select: auto !important;\" target=\"_blank\">Atech<\/a> (Outubro - 2016);<\/li>\r\n\t\t<li><a data-mce-href=\"http:\/\/www.natura.com.br\/\" href=\"http:\/\/www.natura.com.br\/\" rel=\"nofollow noopener\" target=\"_blank\">Natura<\/a> (Novembro - 2016);<\/li>\r\n\t\t<li><a data-mce-href=\"https:\/\/www.facebook.com\/luegoprodutora\/app\/160799214112882\/\" href=\"https:\/\/www.facebook.com\/luegoprodutora\/app\/160799214112882\/\" rel=\"nofollow noopener\" target=\"_blank\">Luego<\/a> (Maio e Junho - 2017);<\/li>\r\n\t<\/ul>\r\n\t<\/li>\r\n\t<li>Elaborac\u0327a\u0303o de propostas comerciais;<\/li>\r\n\t<li>Desenvolvimento do website da empresa;&nbsp;<\/li>\r\n<\/ul>\r\n",
+            "format": "full_html",
+            "processed": "<p>Fun\u00e7\u00f5es desenvolvidas:<\/p>\n\n<ul><li>Elaborac\u0327a\u0303o de cursos e treinamentos em <a data-mce-href=\"https:\/\/www.drupal.org\/\" href=\"https:\/\/www.drupal.org\/\" rel=\"nofollow noopener\" target=\"_blank\">Drupal<\/a>;<\/li>\n\t<li>Consultoria em desenvolvimento <a data-mce-href=\"https:\/\/www.drupal.org\/\" href=\"https:\/\/www.drupal.org\/\" rel=\"nofollow noopener\" style=\"\" target=\"_blank\">Drupal<\/a>;<\/li>\n\t<li>Aplicac\u0327a\u0303o de cursos e treinamentos para empresas, entre elas:\n\t<ul><li><a data-mce-href=\"https:\/\/www.atech.com.br\/\" href=\"https:\/\/www.atech.com.br\/\" rel=\"nofollow noopener\" style=\"outline-width: 0px !important; user-select: auto !important;\" target=\"_blank\">Atech<\/a> (Outubro - 2016);<\/li>\n\t\t<li><a data-mce-href=\"http:\/\/www.natura.com.br\/\" href=\"http:\/\/www.natura.com.br\/\" rel=\"nofollow noopener\" target=\"_blank\">Natura<\/a> (Novembro - 2016);<\/li>\n\t\t<li><a data-mce-href=\"https:\/\/www.facebook.com\/luegoprodutora\/app\/160799214112882\/\" href=\"https:\/\/www.facebook.com\/luegoprodutora\/app\/160799214112882\/\" rel=\"nofollow noopener\" target=\"_blank\">Luego<\/a> (Maio e Junho - 2017);<\/li>\n\t<\/ul><\/li>\n\t<li>Elaborac\u0327a\u0303o de propostas comerciais;<\/li>\n\t<li>Desenvolvimento do website da empresa;\u00a0<\/li>\n<\/ul>",
+            "summary": "",
+            "lang": "pt-br"
+        }
+    ],
+    "field_client": [
+        {
+            "value": "Drupal de Elite"
+        }
+    ],
+    "field_date": [
+        {
+            "value": "2015-07-01"
+        }
+    ],
+    "field_link": [
+        {
+            "uri": "https:\/\/drupaldeelite.com.br",
+            "title": "Visite o site",
+            "options": {
+                "attributes": {
+                    "target": "_blank",
+                    "class": [
+                        ""
+                    ]
+                }
+            },
+            "lang": "pt-br"
+        }
+    ],
+    "field_sub_title": [
+        {
+            "value": "drupaldeelite.com.br"
+        }
+    ]
+}

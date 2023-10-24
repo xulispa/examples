@@ -1,0 +1,354 @@
+{
+    "_links": {
+        "self": {
+            "href": "https:\/\/xulispa.lndo.site\/portfolio\/agile-coach-budbudsus?_format=hal_json"
+        },
+        "type": {
+            "href": "http:\/\/drupal.org\/rest\/type\/node\/work"
+        },
+        "http:\/\/drupal.org\/rest\/relation\/node\/work\/revision_uid": [
+            {
+                "href": "https:\/\/xulispa.lndo.site\/quem\/leonardo-silva?_format=hal_json"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/work\/uid": [
+            {
+                "href": "https:\/\/xulispa.lndo.site\/quem\/leonardo-silva?_format=hal_json",
+                "lang": "pt-br"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/work\/field_gallery": [
+            {
+                "href": "https:\/\/xulispa.lndo.site\/arquivo\/imagem\/captura-de-tela-2017-09-02-as-224854png?_format=hal_json"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/work\/field_tags": [
+            {
+                "href": "https:\/\/xulispa.lndo.site\/tags\/app?_format=hal_json"
+            },
+            {
+                "href": "https:\/\/xulispa.lndo.site\/tags\/mobile?_format=hal_json"
+            },
+            {
+                "href": "https:\/\/xulispa.lndo.site\/tags\/cannabis?_format=hal_json"
+            },
+            {
+                "href": "https:\/\/xulispa.lndo.site\/tags\/cultivo?_format=hal_json"
+            },
+            {
+                "href": "https:\/\/xulispa.lndo.site\/tags\/agile?_format=hal_json"
+            },
+            {
+                "href": "https:\/\/xulispa.lndo.site\/tags\/consultoria?_format=hal_json"
+            },
+            {
+                "href": "https:\/\/xulispa.lndo.site\/tags\/mentoria?_format=hal_json"
+            }
+        ]
+    },
+    "nid": [
+        {
+            "value": "102"
+        }
+    ],
+    "uuid": [
+        {
+            "value": "20d3a843-158d-4156-8282-33e8b4bf7224"
+        }
+    ],
+    "vid": [
+        {
+            "value": "163"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "pt-br",
+            "lang": "pt-br"
+        }
+    ],
+    "type": [
+        {
+            "target_id": "work"
+        }
+    ],
+    "revision_timestamp": [
+        {
+            "value": "1553282290"
+        }
+    ],
+    "_embedded": {
+        "http:\/\/drupal.org\/rest\/relation\/node\/work\/revision_uid": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "https:\/\/xulispa.lndo.site\/quem\/leonardo-silva?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "77920eae-c117-4b73-996d-ee62e72fa420"
+                    }
+                ]
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/work\/uid": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "https:\/\/xulispa.lndo.site\/quem\/leonardo-silva?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "77920eae-c117-4b73-996d-ee62e72fa420"
+                    }
+                ],
+                "lang": "pt-br"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/work\/field_gallery": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "https:\/\/xulispa.lndo.site\/arquivo\/imagem\/captura-de-tela-2017-09-02-as-224854png?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/file\/image"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "45e6ca08-98fa-4761-8287-1b165d95e140"
+                    }
+                ],
+                "alt": null,
+                "title": null,
+                "width": "1171",
+                "height": "685"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/work\/field_tags": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "https:\/\/xulispa.lndo.site\/tags\/app?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/taxonomy_term\/tags"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "477c9a09-d38e-4733-839e-70a03ae87c65"
+                    }
+                ]
+            },
+            {
+                "_links": {
+                    "self": {
+                        "href": "https:\/\/xulispa.lndo.site\/tags\/mobile?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/taxonomy_term\/tags"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "fe6c5398-528c-42b9-aa3e-0a2bea9fdac1"
+                    }
+                ]
+            },
+            {
+                "_links": {
+                    "self": {
+                        "href": "https:\/\/xulispa.lndo.site\/tags\/cannabis?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/taxonomy_term\/tags"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "c899cce1-0fe7-4c51-83e0-f366fa0b9002"
+                    }
+                ]
+            },
+            {
+                "_links": {
+                    "self": {
+                        "href": "https:\/\/xulispa.lndo.site\/tags\/cultivo?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/taxonomy_term\/tags"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "bd9e008a-6b6a-43c2-8c8b-f3e16d202fce"
+                    }
+                ]
+            },
+            {
+                "_links": {
+                    "self": {
+                        "href": "https:\/\/xulispa.lndo.site\/tags\/agile?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/taxonomy_term\/tags"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "4eff38c0-7af1-4a68-a5b0-5b6ad9722871"
+                    }
+                ]
+            },
+            {
+                "_links": {
+                    "self": {
+                        "href": "https:\/\/xulispa.lndo.site\/tags\/consultoria?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/taxonomy_term\/tags"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "6ebb8cd9-506f-40d2-8502-0faef77cef0d"
+                    }
+                ]
+            },
+            {
+                "_links": {
+                    "self": {
+                        "href": "https:\/\/xulispa.lndo.site\/tags\/mentoria?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/taxonomy_term\/tags"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "871ad139-da00-415a-b415-bbc07c85f3d8"
+                    }
+                ]
+            }
+        ]
+    },
+    "status": [
+        {
+            "value": "1",
+            "lang": "pt-br"
+        }
+    ],
+    "title": [
+        {
+            "value": "Agile Coach",
+            "lang": "pt-br"
+        }
+    ],
+    "created": [
+        {
+            "value": "1504403363",
+            "lang": "pt-br"
+        }
+    ],
+    "changed": [
+        {
+            "value": "1553282290",
+            "lang": "pt-br"
+        }
+    ],
+    "promote": [
+        {
+            "value": "1",
+            "lang": "pt-br"
+        }
+    ],
+    "sticky": [
+        {
+            "value": "0",
+            "lang": "pt-br"
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": "1",
+            "lang": "pt-br"
+        }
+    ],
+    "revision_translation_affected": [
+        {
+            "value": "1",
+            "lang": "pt-br"
+        }
+    ],
+    "metatag": [
+        {
+            "value": {
+                "title": "Agile Coach | Xulispa, n\u00eago!",
+                "description": "Fun\u00e7\u00f5es desenvolvidas:\n\nDescoberta dos me\u0301todos aplicados no desenvolvimento;\n\tAna\u0301lise de gargalos e comportamento;\n\tPlanejamento de ac\u0327o\u0303es para adoc\u0327a\u0303o;\n\tImplementac\u0327a\u0303o de me\u0301todos para melhoria no aproveitamento dos recursos disponi\u0301veis;\n\tAplicac\u0327a\u0303o de ac\u0327o\u0303es para evoluc\u0327a\u0303o e melhoria conti\u0301nua;\n\tFacilitac\u0327a\u0303o na interac\u0327a\u0303o entre pessoas;\n\tAplicac\u0327a\u0303o e mediac\u0327a\u0303o de cerimo\u0302nias;\n\tSuporte em gesta\u0303o e evoluc\u0327a\u0303o de backlog;\n\tSuporte em gesta\u0303o de pessoas;"
+            }
+        }
+    ],
+    "path": [
+        {
+            "alias": "\/portfolio\/agile-coach-budbudsus",
+            "pid": "343",
+            "langcode": "pt-br",
+            "lang": "pt-br"
+        }
+    ],
+    "body": [
+        {
+            "value": "<p>Fun\u00e7\u00f5es desenvolvidas:<\/p>\r\n\r\n<ul>\r\n\t<li>Descoberta dos me\u0301todos aplicados no desenvolvimento;<\/li>\r\n\t<li>Ana\u0301lise de gargalos e comportamento;<\/li>\r\n\t<li>Planejamento de ac\u0327o\u0303es para adoc\u0327a\u0303o;<\/li>\r\n\t<li>Implementac\u0327a\u0303o de me\u0301todos para melhoria no aproveitamento dos recursos disponi\u0301veis;<\/li>\r\n\t<li>Aplicac\u0327a\u0303o de ac\u0327o\u0303es para evoluc\u0327a\u0303o e melhoria conti\u0301nua;<\/li>\r\n\t<li>Facilitac\u0327a\u0303o na interac\u0327a\u0303o entre pessoas;<\/li>\r\n\t<li>Aplicac\u0327a\u0303o e mediac\u0327a\u0303o de cerimo\u0302nias;<\/li>\r\n\t<li>Suporte em gesta\u0303o e evoluc\u0327a\u0303o de backlog;<\/li>\r\n\t<li>Suporte em gesta\u0303o de pessoas;<\/li>\r\n<\/ul>\r\n",
+            "format": "full_html",
+            "processed": "<p>Fun\u00e7\u00f5es desenvolvidas:<\/p>\n\n<ul><li>Descoberta dos me\u0301todos aplicados no desenvolvimento;<\/li>\n\t<li>Ana\u0301lise de gargalos e comportamento;<\/li>\n\t<li>Planejamento de ac\u0327o\u0303es para adoc\u0327a\u0303o;<\/li>\n\t<li>Implementac\u0327a\u0303o de me\u0301todos para melhoria no aproveitamento dos recursos disponi\u0301veis;<\/li>\n\t<li>Aplicac\u0327a\u0303o de ac\u0327o\u0303es para evoluc\u0327a\u0303o e melhoria conti\u0301nua;<\/li>\n\t<li>Facilitac\u0327a\u0303o na interac\u0327a\u0303o entre pessoas;<\/li>\n\t<li>Aplicac\u0327a\u0303o e mediac\u0327a\u0303o de cerimo\u0302nias;<\/li>\n\t<li>Suporte em gesta\u0303o e evoluc\u0327a\u0303o de backlog;<\/li>\n\t<li>Suporte em gesta\u0303o de pessoas;<\/li>\n<\/ul>",
+            "summary": "",
+            "lang": "pt-br"
+        }
+    ],
+    "field_client": [
+        {
+            "value": "BudBuds"
+        }
+    ],
+    "field_date": [
+        {
+            "value": "2016-08-01"
+        }
+    ],
+    "field_date_end": [
+        {
+            "value": "2017-01-01"
+        }
+    ],
+    "field_link": [
+        {
+            "uri": "http:\/\/budbuds.us",
+            "title": "Veja o site",
+            "options": {
+                "attributes": {
+                    "target": "_blank",
+                    "rel": "nofollow",
+                    "class": [
+                        ""
+                    ]
+                }
+            },
+            "lang": "pt-br"
+        }
+    ],
+    "field_sub_title": [
+        {
+            "value": "budbuds.us"
+        }
+    ]
+}

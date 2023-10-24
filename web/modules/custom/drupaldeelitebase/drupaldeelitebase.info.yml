@@ -1,0 +1,5 @@
+name: DrupaldeEliteBase
+description: Módulo base para o Drupal de Elite
+package: Drupal de Elite
+type: module
+core_version_requirement: ^10
