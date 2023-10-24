@@ -1,0 +1,17 @@
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - node.type.forum
+id: node.forum.changed
+field_name: changed
+entity_type: node
+bundle: forum
+label: Alterado
+description: 'The time that the node was last edited.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

@@ -1,0 +1,20 @@
+langcode: pt-br
+status: true
+dependencies:
+  module:
+    - webform_shortcuts
+id: config_sync.module.webform_shortcuts
+snapshotSet: config_sync
+extensionType: module
+extensionName: webform_shortcuts
+items:
+  -
+    collection: ''
+    name: webform_shortcuts.settings
+    data:
+      add_element: ctrl+e
+      add_page: ctrl+p
+      add_layout: ctrl+l
+      save_elements: ctrl+s
+      reset_elements: ctrl+r
+      toggle_weights: ctrl+w

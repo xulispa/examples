@@ -1,0 +1,25 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - social_post
+    - system
+  theme:
+    - ecultura_theme
+id: ecultura_theme_postonprofileblock
+theme: ecultura_theme
+region: hidden
+weight: -27
+provider: null
+plugin: post_profile_block
+settings:
+  id: post_profile_block
+  label: 'Post on profile block'
+  provider: social_post
+  label_display: '0'
+visibility:
+  request_path:
+    id: request_path
+    pages: '/user/*/stream'
+    negate: false
+    context_mapping: {  }

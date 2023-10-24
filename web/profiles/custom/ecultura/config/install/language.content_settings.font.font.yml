@@ -1,0 +1,10 @@
+langcode: pt-br
+status: true
+dependencies:
+  module:
+    - social_font
+id: font.font
+target_entity_type_id: font
+target_bundle: font
+default_langcode: site_default
+language_alterable: false

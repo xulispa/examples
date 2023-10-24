@@ -1,0 +1,22 @@
+langcode: pt-br
+status: true
+dependencies:
+  module:
+    - dropdown_language
+  theme:
+    - ecultura_theme
+id: ecultura_theme_drop_language_switcher_block
+theme: ecultura_theme
+region: header
+weight: -30
+provider: null
+plugin: 'dropdown_language:language_interface'
+settings:
+  id: 'dropdown_language:language_interface'
+  label: 'Dropdown Language'
+  provider: dropdown_language
+  label_display: '0'
+  labels:
+    pt-br: pt-br
+    en: en
+visibility: {  }

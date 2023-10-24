@@ -1,0 +1,46 @@
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - comment.type.comment_forum
+    - core.entity_view_mode.comment.token
+    - field.field.comment.comment_forum.comment_body
+    - field.field.comment.comment_forum.field_comment_files
+    - image.style.social_x_large
+  module:
+    - social_comment_upload
+    - text
+id: comment.comment_forum.token
+targetEntityType: comment
+bundle: comment_forum
+mode: token
+content:
+  comment_body:
+    label: hidden
+    type: text_default
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_comment_files:
+    weight: 1
+    label: hidden
+    settings:
+      image_style: social_x_large
+      image_link: content
+    third_party_settings: {  }
+    type: file_image_default
+    region: content
+  like_and_dislike:
+    weight: 3
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  links:
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  langcode: true
+  private_message_link: true

@@ -1,0 +1,12 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - flag
+id: flag_action.report_node.unflag
+label: 'Update or remove report'
+type: node
+plugin: 'flag_action:report_node.unflag'
+configuration:
+  flag_id: report_node
+  flag_action: unflag

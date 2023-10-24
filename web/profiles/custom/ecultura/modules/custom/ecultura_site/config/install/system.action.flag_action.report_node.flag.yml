@@ -1,0 +1,12 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - flag
+id: flag_action.report_node.flag
+label: 'Report as inappropriate'
+type: node
+plugin: 'flag_action:report_node.flag'
+configuration:
+  flag_id: report_node
+  flag_action: flag

@@ -1,0 +1,2185 @@
+langcode: pt-br
+status: true
+dependencies:
+  module:
+    - webform_templates
+id: config_sync.module.webform_templates
+snapshotSet: config_sync
+extensionType: module
+extensionName: webform_templates
+items:
+  -
+    collection: ''
+    name: webform.webform.template_contact
+    data:
+      langcode: en
+      status: closed
+      dependencies:
+        enforced:
+          module:
+            - webform_templates
+      open: null
+      close: null
+      weight: 0
+      uid: null
+      template: true
+      archive: false
+      id: template_contact
+      title: 'Contact Us'
+      description: 'A basic contact webform template.'
+      category: ''
+      elements: "name:\n  '#title': 'Your Name'\n  '#type': textfield\n  '#required': true\nemail:\n  '#title': 'Your Email'\n  '#type': email\n  '#required': true\nsubject:\n  '#title': Subject\n  '#type': textfield\n  '#required': true\nmessage:\n  '#title': Message\n  '#type': textarea\n  '#required': true\nactions:\n  '#type': webform_actions\n  '#title': 'Submit button(s)'\n  '#submit__label': 'Send message'\n"
+      css: ''
+      javascript: ''
+      settings:
+        ajax: false
+        ajax_scroll_top: form
+        ajax_progress_type: ''
+        ajax_effect: ''
+        ajax_speed: null
+        page: true
+        page_submit_path: ''
+        page_confirm_path: ''
+        page_admin_theme: false
+        form_title: source_entity_webform
+        form_submit_once: false
+        form_exception_message: ''
+        form_open_message: ''
+        form_close_message: ''
+        form_previous_submissions: true
+        form_confidential: false
+        form_confidential_message: ''
+        form_remote_addr: true
+        form_convert_anonymous: false
+        form_prepopulate: false
+        form_prepopulate_source_entity: false
+        form_prepopulate_source_entity_required: false
+        form_prepopulate_source_entity_type: ''
+        form_reset: false
+        form_disable_autocomplete: false
+        form_novalidate: false
+        form_disable_inline_errors: false
+        form_required: false
+        form_unsaved: false
+        form_disable_back: false
+        form_submit_back: false
+        form_autofocus: false
+        form_details_toggle: false
+        form_access_denied: default
+        form_access_denied_title: ''
+        form_access_denied_message: ''
+        form_access_denied_attributes: {  }
+        form_file_limit: ''
+        submission_label: ''
+        submission_log: false
+        submission_views: {  }
+        submission_views_replace: {  }
+        submission_user_columns: {  }
+        submission_user_duplicate: false
+        submission_access_denied: default
+        submission_access_denied_title: ''
+        submission_access_denied_message: ''
+        submission_access_denied_attributes: {  }
+        submission_exception_message: ''
+        submission_locked_message: ''
+        submission_excluded_elements: {  }
+        submission_exclude_empty: false
+        submission_exclude_empty_checkbox: false
+        previous_submission_message: ''
+        previous_submissions_message: ''
+        autofill: false
+        autofill_message: ''
+        autofill_excluded_elements: {  }
+        wizard_progress_bar: true
+        wizard_progress_pages: false
+        wizard_progress_percentage: false
+        wizard_progress_link: false
+        wizard_start_label: ''
+        wizard_preview_link: false
+        wizard_confirmation: true
+        wizard_confirmation_label: ''
+        wizard_track: ''
+        preview: 0
+        preview_label: ''
+        preview_title: ''
+        preview_message: ''
+        preview_attributes: {  }
+        preview_excluded_elements: {  }
+        preview_exclude_empty: true
+        preview_exclude_empty_checkbox: false
+        draft: none
+        draft_multiple: false
+        draft_auto_save: false
+        draft_saved_message: ''
+        draft_loaded_message: ''
+        draft_pending_single_message: ''
+        draft_pending_multiple_message: ''
+        confirmation_type: url_message
+        confirmation_title: ''
+        confirmation_message: 'Your message has been sent.'
+        confirmation_url: '<front>'
+        confirmation_attributes: {  }
+        confirmation_back: true
+        confirmation_back_label: ''
+        confirmation_back_attributes: {  }
+        confirmation_exclude_query: false
+        confirmation_exclude_token: false
+        confirmation_update: false
+        limit_total: null
+        limit_total_interval: null
+        limit_total_message: ''
+        limit_total_unique: false
+        limit_user: null
+        limit_user_interval: null
+        limit_user_message: ''
+        limit_user_unique: false
+        entity_limit_total: null
+        entity_limit_total_interval: null
+        entity_limit_user: null
+        entity_limit_user_interval: null
+        purge: none
+        purge_days: null
+        results_disabled: false
+        results_disabled_ignore: false
+        token_update: false
+      access:
+        create:
+          roles:
+            - anonymous
+            - authenticated
+          users: {  }
+          permissions: {  }
+        view_any:
+          roles: {  }
+          users: {  }
+          permissions: {  }
+        update_any:
+          roles: {  }
+          users: {  }
+          permissions: {  }
+        delete_any:
+          roles: {  }
+          users: {  }
+          permissions: {  }
+        purge_any:
+          roles: {  }
+          users: {  }
+          permissions: {  }
+        view_own:
+          roles: {  }
+          users: {  }
+          permissions: {  }
+        update_own:
+          roles: {  }
+          users: {  }
+          permissions: {  }
+        delete_own:
+          roles: {  }
+          users: {  }
+          permissions: {  }
+        administer:
+          roles: {  }
+          users: {  }
+          permissions: {  }
+        test:
+          roles: {  }
+          users: {  }
+          permissions: {  }
+        configuration:
+          roles: {  }
+          users: {  }
+          permissions: {  }
+      handlers:
+        email_confirmation:
+          id: email
+          label: 'Email confirmation'
+          handler_id: email_confirmation
+          status: true
+          conditions: {  }
+          weight: 1
+          settings:
+            states:
+              - completed
+            to_mail: '[webform_submission:values:email:raw]'
+            to_options: {  }
+            cc_mail: ''
+            cc_options: {  }
+            bcc_mail: ''
+            bcc_options: {  }
+            from_mail: _default
+            from_options: {  }
+            from_name: _default
+            subject: '[webform_submission:values:subject:raw]'
+            body: '[webform_submission:values:message:value]'
+            excluded_elements: {  }
+            ignore_access: false
+            exclude_empty: true
+            exclude_empty_checkbox: false
+            html: true
+            attachments: false
+            twig: false
+            theme_name: ''
+            debug: false
+            reply_to: ''
+            return_path: ''
+            sender_mail: ''
+            sender_name: ''
+        email_notification:
+          id: email
+          label: 'Email notification'
+          handler_id: email_notification
+          status: true
+          conditions: {  }
+          weight: 2
+          settings:
+            states:
+              - completed
+            to_mail: _default
+            to_options: {  }
+            cc_mail: ''
+            cc_options: {  }
+            bcc_mail: ''
+            bcc_options: {  }
+            from_mail: '[webform_submission:values:email:raw]'
+            from_options: {  }
+            from_name: '[webform_submission:values:name:raw]'
+            subject: '[webform_submission:values:subject:raw]'
+            body: '[webform_submission:values:message:value]'
+            excluded_elements: {  }
+            ignore_access: false
+            exclude_empty: true
+            exclude_empty_checkbox: false
+            html: true
+            attachments: false
+            twig: false
+            theme_name: ''
+            debug: false
+            reply_to: ''
+            return_path: ''
+            sender_mail: ''
+            sender_name: ''
+  -
+    collection: ''
+    name: webform.webform.template_employee_evaluation
+    data:
+      langcode: en
+      status: closed
+      dependencies:
+        enforced:
+          module:
+            - webform_templates
+      open: null
+      close: null
+      weight: 0
+      uid: null
+      template: true
+      archive: false
+      id: template_employee_evaluation
+      title: 'Employee Evaluation'
+      description: 'An employee evaluation webform template.'
+      category: ''
+      elements: "evaluator_information:\n  '#title': 'Your Information'\n  '#type': webform_section\n  evaluator_first_name:\n    '#title': 'First Name'\n    '#type': textfield\n    '#required': true\n  evaluator_last_name:\n    '#title': 'Last Name'\n    '#type': textfield\n    '#required': true\n  evaluator_job_title:\n    '#type': textfield\n    '#title': 'Job Title'\n    '#required': true\n  evaluator_relationship:\n    '#type': webform_select_other\n    '#title': 'Relationship with employee'\n    '#options':\n      Coworker: Coworker\n      Supervisor: Supervisor\n    '#required': true\nemployee_information:\n  '#title': 'Employee Information'\n  '#type': webform_section\n  employee_first_name:\n    '#title': 'First Name'\n    '#type': textfield\n    '#required': true\n  employee_last_name:\n    '#title': 'Last Name'\n    '#type': textfield\n    '#required': true\n  employee_job_title:\n    '#type': textfield\n    '#title': 'Job Title'\n    '#required': true\n  employee_ratings:\n    '#type': webform_likert\n    '#title': 'How would you rate the employee''s…'\n    '#questions':\n      attendance: Attendance\n      attire: Attire\n      professionalism: Professionalism\n      work_area: 'Work area'\n      ability: 'Ability to do the job'\n      work_with_others: 'Ability to work with others'\n      receive_feedback: 'Ability to receive feedback/criticism'\n      adaptabily: 'Ability to adapt'\n      learning: 'Willingness to learn'\n      participation: 'Willingness to participate'\n      work_ethic: 'Work ethic'\n      quality: 'Quality of work'\n    '#answers': likert_quality\n    '#required': true\n  employee_qualities:\n    '#type': textarea\n    '#title': 'What are the employee''s top qualities?'\n    '#required': true\n  employee_improve:\n    '#type': textarea\n    '#title': 'In what ways could the employee improve?'\n    '#required': true\nactions:\n  '#type': webform_actions\n  '#title': 'Submit button(s)'\n  '#submit__label': Apply\n"
+      css: ''
+      javascript: ''
+      settings:
+        ajax: false
+        ajax_scroll_top: form
+        ajax_progress_type: ''
+        ajax_effect: ''
+        ajax_speed: null
+        page: true
+        page_submit_path: ''
+        page_confirm_path: ''
+        page_admin_theme: false
+        form_title: source_entity_webform
+        form_submit_once: false
+        form_exception_message: ''
+        form_open_message: ''
+        form_close_message: ''
+        form_previous_submissions: true
+        form_confidential: false
+        form_confidential_message: ''
+        form_remote_addr: true
+        form_convert_anonymous: false
+        form_prepopulate: false
+        form_prepopulate_source_entity: false
+        form_prepopulate_source_entity_required: false
+        form_prepopulate_source_entity_type: ''
+        form_reset: false
+        form_disable_autocomplete: false
+        form_novalidate: false
+        form_disable_inline_errors: false
+        form_required: false
+        form_unsaved: false
+        form_disable_back: false
+        form_submit_back: false
+        form_autofocus: false
+        form_details_toggle: false
+        form_access_denied: default
+        form_access_denied_title: ''
+        form_access_denied_message: ''
+        form_access_denied_attributes: {  }
+        form_file_limit: ''
+        submission_label: ''
+        submission_log: false
+        submission_views: {  }
+        submission_views_replace: {  }
+        submission_user_columns: {  }
+        submission_user_duplicate: false
+        submission_access_denied: default
+        submission_access_denied_title: ''
+        submission_access_denied_message: ''
+        submission_access_denied_attributes: {  }
+        submission_exception_message: ''
+        submission_locked_message: ''
+        submission_excluded_elements: {  }
+        submission_exclude_empty: false
+        submission_exclude_empty_checkbox: false
+        previous_submission_message: ''
+        previous_submissions_message: ''
+        autofill: false
+        autofill_message: ''
+        autofill_excluded_elements: {  }
+        wizard_progress_bar: true
+        wizard_progress_pages: false
+        wizard_progress_percentage: false
+        wizard_progress_link: false
+        wizard_start_label: ''
+        wizard_preview_link: false
+        wizard_confirmation: true
+        wizard_confirmation_label: ''
+        wizard_track: ''
+        preview: 0
+        preview_label: ''
+        preview_title: ''
+        preview_message: ''
+        preview_attributes: {  }
+        preview_excluded_elements: {  }
+        preview_exclude_empty: true
+        preview_exclude_empty_checkbox: false
+        draft: none
+        draft_multiple: false
+        draft_auto_save: false
+        draft_saved_message: ''
+        draft_loaded_message: ''
+        draft_pending_single_message: ''
+        draft_pending_multiple_message: ''
+        confirmation_type: page
+        confirmation_title: ''
+        confirmation_message: 'Thank you for applying.'
+        confirmation_url: ''
+        confirmation_attributes: {  }
+        confirmation_back: true
+        confirmation_back_label: ''
+        confirmation_back_attributes: {  }
+        confirmation_exclude_query: false
+        confirmation_exclude_token: false
+        confirmation_update: false
+        limit_total: null
+        limit_total_interval: null
+        limit_total_message: ''
+        limit_total_unique: false
+        limit_user: null
+        limit_user_interval: null
+        limit_user_message: ''
+        limit_user_unique: false
+        entity_limit_total: null
+        entity_limit_total_interval: null
+        entity_limit_user: null
+        entity_limit_user_interval: null
+        purge: none
+        purge_days: null
+        results_disabled: false
+        results_disabled_ignore: false
+        token_update: false
+      access:
+        create:
+          roles:
+            - anonymous
+            - authenticated
+          users: {  }
+          permissions: {  }
+        view_any:
+          roles: {  }
+          users: {  }
+          permissions: {  }
+        update_any:
+          roles: {  }
+          users: {  }
+          permissions: {  }
+        delete_any:
+          roles: {  }
+          users: {  }
+          permissions: {  }
+        purge_any:
+          roles: {  }
+          users: {  }
+          permissions: {  }
+        view_own:
+          roles: {  }
+          users: {  }
+          permissions: {  }
+        update_own:
+          roles: {  }
+          users: {  }
+          permissions: {  }
+        delete_own:
+          roles: {  }
+          users: {  }
+          permissions: {  }
+        administer:
+          roles: {  }
+          users: {  }
+          permissions: {  }
+        test:
+          roles: {  }
+          users: {  }
+          permissions: {  }
+        configuration:
+          roles: {  }
+          users: {  }
+          permissions: {  }
+      handlers: {  }
+  -
+    collection: ''
+    name: webform.webform.template_feedback
+    data:
+      langcode: en
+      status: closed
+      dependencies:
+        enforced:
+          module:
+            - webform_templates
+      open: null
+      close: null
+      weight: 0
+      uid: null
+      template: true
+      archive: false
+      id: template_feedback
+      title: Feedback
+      description: 'A basic feedback template.'
+      category: ''
+      elements: "type:\n  '#title': 'Type of Feedback'\n  '#type': webform_radios_other\n  '#required': true\n  '#options':\n    Comments: Comments\n    'Report a Bug': 'Report a Bug'\n    Questions: Questions\n  '#options_display': side_by_side\ncomments:\n  '#title': 'Your Feedback'\n  '#type': textarea\n  '#required': true\nname:\n  '#title': 'Your Name'\n  '#type': textfield\n  '#required': true\nemail:\n  '#title': 'Your Email'\n  '#type': email\n  '#required': true\nactions:\n  '#type': webform_actions\n  '#title': 'Submit button(s)'\n  '#submit__label': 'Submit feedback'\n"
+      css: ''
+      javascript: ''
+      settings:
+        ajax: false
+        ajax_scroll_top: form
+        ajax_progress_type: ''
+        ajax_effect: ''
+        ajax_speed: null
+        page: true
+        page_submit_path: ''
+        page_confirm_path: ''
+        page_admin_theme: false
+        form_title: source_entity_webform
+        form_submit_once: false
+        form_exception_message: ''
+        form_open_message: ''
+        form_close_message: ''
+        form_previous_submissions: true
+        form_confidential: false
+        form_confidential_message: ''
+        form_remote_addr: true
+        form_convert_anonymous: false
+        form_prepopulate: false
+        form_prepopulate_source_entity: false
+        form_prepopulate_source_entity_required: false
+        form_prepopulate_source_entity_type: ''
+        form_reset: false
+        form_disable_autocomplete: false
+        form_novalidate: false
+        form_disable_inline_errors: false
+        form_required: false
+        form_unsaved: false
+        form_disable_back: false
+        form_submit_back: false
+        form_autofocus: false
+        form_details_toggle: false
+        form_access_denied: default
+        form_access_denied_title: ''
+        form_access_denied_message: ''
+        form_access_denied_attributes: {  }
+        form_file_limit: ''
+        submission_label: ''
+        submission_log: false
+        submission_views: {  }
+        submission_views_replace: {  }
+        submission_user_columns: {  }
+        submission_user_duplicate: false
+        submission_access_denied: default
+        submission_access_denied_title: ''
+        submission_access_denied_message: ''
+        submission_access_denied_attributes: {  }
+        submission_exception_message: ''
+        submission_locked_message: ''
+        submission_excluded_elements: {  }
+        submission_exclude_empty: false
+        submission_exclude_empty_checkbox: false
+        previous_submission_message: ''
+        previous_submissions_message: ''
+        autofill: false
+        autofill_message: ''
+        autofill_excluded_elements: {  }
+        wizard_progress_bar: true
+        wizard_progress_pages: false
+        wizard_progress_percentage: false
+        wizard_progress_link: false
+        wizard_start_label: ''
+        wizard_preview_link: false
+        wizard_confirmation: true
+        wizard_confirmation_label: ''
+        wizard_track: ''
+        preview: 0
+        preview_label: ''
+        preview_title: ''
+        preview_message: ''
+        preview_attributes: {  }
+        preview_excluded_elements: {  }
+        preview_exclude_empty: true
+        preview_exclude_empty_checkbox: false
+        draft: none
+        draft_multiple: false
+        draft_auto_save: false
+        draft_saved_message: ''
+        draft_loaded_message: ''
+        draft_pending_single_message: ''
+        draft_pending_multiple_message: ''
+        confirmation_type: page
+        confirmation_title: ''
+        confirmation_message: 'Thank you for your feedback.'
+        confirmation_url: '<front>'
+        confirmation_attributes: {  }
+        confirmation_back: true
+        confirmation_back_label: ''
+        confirmation_back_attributes: {  }
+        confirmation_exclude_query: false
+        confirmation_exclude_token: false
+        confirmation_update: false
+        limit_total: null
+        limit_total_interval: null
+        limit_total_message: ''
+        limit_total_unique: false
+        limit_user: null
+        limit_user_interval: null
+        limit_user_message: ''
+        limit_user_unique: false
+        entity_limit_total: null
+        entity_limit_total_interval: null
+        entity_limit_user: null
+        entity_limit_user_interval: null
+        purge: none
+        purge_days: null
+        results_disabled: false
+        results_disabled_ignore: false
+        token_update: false
+      access:
+        create:
+          roles:
+            - anonymous
+            - authenticated
+          users: {  }
+          permissions: {  }
+        view_any:
+          roles: {  }
+          users: {  }
+          permissions: {  }
+        update_any:
+          roles: {  }
+          users: {  }
+          permissions: {  }
+        delete_any:
+          roles: {  }
+          users: {  }
+          permissions: {  }
+        purge_any:
+          roles: {  }
+          users: {  }
+          permissions: {  }
+        view_own:
+          roles: {  }
+          users: {  }
+          permissions: {  }
+        update_own:
+          roles: {  }
+          users: {  }
+          permissions: {  }
+        delete_own:
+          roles: {  }
+          users: {  }
+          permissions: {  }
+        administer:
+          roles: {  }
+          users: {  }
+          permissions: {  }
+        test:
+          roles: {  }
+          users: {  }
+          permissions: {  }
+        configuration:
+          roles: {  }
+          users: {  }
+          permissions: {  }
+      handlers:
+        email_confirmation:
+          id: email
+          label: 'Email confirmation'
+          handler_id: email_confirmation
+          status: true
+          conditions: {  }
+          weight: 1
+          settings:
+            states:
+              - completed
+            to_mail: '[webform_submission:values:email:raw]'
+            to_options: {  }
+            cc_mail: ''
+            cc_options: {  }
+            bcc_mail: ''
+            bcc_options: {  }
+            from_mail: _default
+            from_options: {  }
+            from_name: _default
+            subject: _default
+            body: '[webform_submission:values:comments:value]'
+            excluded_elements: {  }
+            ignore_access: false
+            exclude_empty: true
+            exclude_empty_checkbox: false
+            html: true
+            attachments: false
+            twig: false
+            theme_name: ''
+            debug: false
+            reply_to: ''
+            return_path: ''
+            sender_mail: ''
+            sender_name: ''
+        email_notification:
+          id: email
+          label: 'Email notification'
+          handler_id: email_notification
+          status: true
+          conditions: {  }
+          weight: 2
+          settings:
+            states:
+              - completed
+            to_mail: '[webform_submission:values:type:raw]'
+            to_options:
+              -
+                value: Comments
+                text: '[site:mail]'
+              -
+                value: 'Report a Bug'
+                text: '[site:mail]'
+              -
+                value: Questions
+                text: '[site:mail]'
+              -
+                value: _other_
+                text: '[site:mail]'
+              -
+                value: _default
+                text: '[site:mail]'
+            cc_mail: ''
+            cc_options: {  }
+            bcc_mail: ''
+            bcc_options: {  }
+            from_mail: '[webform_submission:values:email:raw]'
+            from_options: {  }
+            from_name: '[webform_submission:values:name:raw]'
+            subject: _default
+            body: '[webform_submission:values:comments:value]'
+            excluded_elements: {  }
+            ignore_access: false
+            exclude_empty: true
+            exclude_empty_checkbox: false
+            html: true
+            attachments: false
+            twig: false
+            theme_name: ''
+            debug: false
+            reply_to: ''
+            return_path: ''
+            sender_mail: ''
+            sender_name: ''
+  -
+    collection: ''
+    name: webform.webform.template_issue
+    data:
+      langcode: en
+      status: closed
+      dependencies:
+        enforced:
+          module:
+            - webform_templates
+      open: null
+      close: null
+      weight: 0
+      uid: null
+      template: true
+      archive: false
+      id: template_issue
+      title: Issue
+      description: 'An issue webform template.'
+      category: ''
+      elements: "meta_data_details:\n  '#title': 'Issue Meta Data'\n  '#type': details\n  '#open': true\n  meta_data_01:\n    '#type': webform_flexbox\n    title:\n      '#type': textfield\n      '#title': Title\n      '#required': true\n    project:\n      '#type': select\n      '#title': Project\n      '#required': true\n      '#options':\n        'Project I': 'Project I'\n        'Project II': 'Project II'\n        'Project III': 'Project III'\n  meta_data_02:\n    '#type': webform_flexbox\n    category:\n      '#type': select\n      '#title': Category\n      '#required': true\n      '#options':\n        'Bug report': 'Bug report'\n        Task: Task\n        'Feature request': 'Feature request'\n        'Support request': 'Support request'\n        Plan: Plan\n    priority:\n      '#type': select\n      '#title': Priority\n      '#required': true\n      '#options':\n        4: Critical\n        3: Major\n        2: Normal\n        1: Minor\n    status:\n      '#type': webform_select_other\n      '#title': Status\n      '#required': true\n      '#options':\n        Active: Active\n        'Needs work': 'Needs work'\n        'Needs review': 'Needs review'\n        'Reviewed & tested by the community': 'Reviewed & tested by the community'\n        'Patch (to be ported)': 'Patch (to be ported)'\n        Fixed: Fixed\n        Postponed: Postponed\n        'Postponed (maintainer needs more info)': 'Postponed (maintainer needs more info)'\n        'Closed (duplicate)': 'Closed (duplicate)'\n        'Closed (won''t fix)': 'Closed (won''t fix)'\n        'Closed (works as designed)': 'Closed (works as designed)'\n        'Closed (cannot reproduce)': 'Closed (cannot reproduce)'\n        'Closed (outdated)': 'Closed (outdated)'\n    version:\n      '#type': webform_autocomplete\n      '#title': Version\n      '#required': true\n      '#autocomplete_existing': true\n    component:\n      '#type': webform_select_other\n      '#title': Component\n      '#required': true\n      '#options':\n        Code: Code\n        Documentation: Documentation\n        Miscellaneous: Miscellaneous\n        'User interface': 'User interface'\n    assigned:\n      '#type': entity_autocomplete\n      '#title': Assigned\n      '#target_type': user\n      '#selection_handler': 'default:user'\n      '#selection_settings':\n        include_anonymous: false\n  meta_data_03:\n    '#type': webform_flexbox\n    tags:\n      '#type': entity_autocomplete\n      '#title': 'Issue Tags'\n      '#description': 'Do <strong>NOT</strong> use tags for adding random keywords or duplicating any other fields.  Separate terms with a comma, not a space.'\n      '#tags': true\n      '#target_type': taxonomy_term\n      '#selection_handler': 'default:taxonomy_term'\n      '#selection_settings':\n        target_bundles:\n          tags: tags\n        auto_create: 1\n        auto_create_bundle: tags\nsummary_and_relationshsips_details:\n  '#title': 'Issue Summary'\n  '#type': details\n  '#open': true\n  summary:\n    '#type': text_format\n    '#title': Summary\n    '#description': 'An issue summary is a concise overview of a full issue report. Issue summaries need to be written if the issue has more than a few comments and/or an average developer cannot understand the subject matter after a few minutes of study. These summaries are key sources of information for core developers, patch reviewers and users who need to skim large amounts of issues and information quickly.'\nfiles_details:\n  '#title': Files\n  '#type': details\n  '#open': true\n  files:\n    '#type': managed_file\n    '#title': Files\n    '#multiple': true\n"
+      css: ''
+      javascript: ''
+      settings:
+        ajax: false
+        ajax_scroll_top: form
+        ajax_progress_type: ''
+        ajax_effect: ''
+        ajax_speed: null
+        page: true
+        page_submit_path: ''
+        page_confirm_path: ''
+        page_admin_theme: false
+        form_title: source_entity_webform
+        form_submit_once: false
+        form_exception_message: ''
+        form_open_message: ''
+        form_close_message: ''
+        form_previous_submissions: true
+        form_confidential: false
+        form_confidential_message: ''
+        form_remote_addr: true
+        form_convert_anonymous: false
+        form_prepopulate: false
+        form_prepopulate_source_entity: false
+        form_prepopulate_source_entity_required: false
+        form_prepopulate_source_entity_type: ''
+        form_reset: false
+        form_disable_autocomplete: false
+        form_novalidate: false
+        form_disable_inline_errors: false
+        form_required: false
+        form_unsaved: false
+        form_disable_back: false
+        form_submit_back: false
+        form_autofocus: false
+        form_details_toggle: false
+        form_access_denied: default
+        form_access_denied_title: ''
+        form_access_denied_message: ''
+        form_access_denied_attributes: {  }
+        form_file_limit: ''
+        submission_label: ''
+        submission_log: false
+        submission_views: {  }
+        submission_views_replace: {  }
+        submission_user_columns: {  }
+        submission_user_duplicate: false
+        submission_access_denied: default
+        submission_access_denied_title: ''
+        submission_access_denied_message: ''
+        submission_access_denied_attributes: {  }
+        submission_exception_message: ''
+        submission_locked_message: ''
+        submission_excluded_elements: {  }
+        submission_exclude_empty: false
+        submission_exclude_empty_checkbox: false
+        previous_submission_message: ''
+        previous_submissions_message: ''
+        autofill: false
+        autofill_message: ''
+        autofill_excluded_elements: {  }
+        wizard_progress_bar: false
+        wizard_progress_pages: false
+        wizard_progress_percentage: false
+        wizard_progress_link: false
+        wizard_start_label: ''
+        wizard_preview_link: false
+        wizard_confirmation: true
+        wizard_confirmation_label: ''
+        wizard_track: ''
+        preview: 1
+        preview_label: ''
+        preview_title: ''
+        preview_message: ''
+        preview_attributes: {  }
+        preview_excluded_elements: {  }
+        preview_exclude_empty: true
+        preview_exclude_empty_checkbox: false
+        draft: none
+        draft_multiple: false
+        draft_auto_save: false
+        draft_saved_message: ''
+        draft_loaded_message: ''
+        draft_pending_single_message: ''
+        draft_pending_multiple_message: ''
+        confirmation_type: page
+        confirmation_title: ''
+        confirmation_message: ''
+        confirmation_url: ''
+        confirmation_attributes: {  }
+        confirmation_back: true
+        confirmation_back_label: ''
+        confirmation_back_attributes: {  }
+        confirmation_exclude_query: false
+        confirmation_exclude_token: false
+        confirmation_update: false
+        limit_total: null
+        limit_total_interval: null
+        limit_total_message: ''
+        limit_total_unique: false
+        limit_user: null
+        limit_user_interval: null
+        limit_user_message: ''
+        limit_user_unique: false
+        entity_limit_total: null
+        entity_limit_total_interval: null
+        entity_limit_user: null
+        entity_limit_user_interval: null
+        purge: none
+        purge_days: null
+        results_disabled: false
+        results_disabled_ignore: false
+        token_update: false
+      access:
+        create:
+          roles:
+            - anonymous
+            - authenticated
+          users: {  }
+          permissions: {  }
+        view_any:
+          roles: {  }
+          users: {  }
+          permissions: {  }
+        update_any:
+          roles: {  }
+          users: {  }
+          permissions: {  }
+        delete_any:
+          roles: {  }
+          users: {  }
+          permissions: {  }
+        purge_any:
+          roles: {  }
+          users: {  }
+          permissions: {  }
+        view_own:
+          roles: {  }
+          users: {  }
+          permissions: {  }
+        update_own:
+          roles: {  }
+          users: {  }
+          permissions: {  }
+        delete_own:
+          roles: {  }
+          users: {  }
+          permissions: {  }
+        administer:
+          roles: {  }
+          users: {  }
+          permissions: {  }
+        test:
+          roles: {  }
+          users: {  }
+          permissions: {  }
+        configuration:
+          roles: {  }
+          users: {  }
+          permissions: {  }
+      handlers: {  }
+  -
+    collection: ''
+    name: webform.webform.template_job_application
+    data:
+      langcode: en
+      status: closed
+      dependencies:
+        enforced:
+          module:
+            - webform_templates
+      open: null
+      close: null
+      weight: 0
+      uid: null
+      template: true
+      archive: false
+      id: template_job_application
+      title: 'Job Application'
+      description: 'A job application webform template.'
+      category: ''
+      elements: "information:\n  '#title': 'Your Information'\n  '#type': webform_section\n  first_name:\n    '#title': 'First Name'\n    '#type': textfield\n    '#required': true\n  last_name:\n    '#title': 'Last Name'\n    '#type': textfield\n    '#required': true\n  gender:\n    '#type': webform_radios_other\n    '#title': Gender\n    '#options': gender\n    '#required': true\ncontact_information:\n  '#title': 'Contact Information'\n  '#type': webform_section\n  contact:\n    '#type': webform_contact\n    '#title': Contact\n    '#title_display': invisible\n    '#name__access': false\n    '#company__access': false\nresume:\n  '#title': 'Your Resume'\n  '#type': webform_section\n  resume_method:\n    '#type': radios\n    '#options':\n      attach: 'Attach resume file'\n      paste: 'Paste your resume'\n    '#prefix': '<div class=\"container-inline\">'\n    '#suffix': '</div>'\n    '#default_value': attach\n  resume_file:\n    '#type': managed_file\n    '#title': Resume\n    '#title_display': invisible\n    '#states':\n      visible:\n        ':input[name=\"resume_method\"]':\n          value: attach\n      required:\n        ':input[name=\"resume_method\"]':\n          value: attach\n      enabled:\n        ':input[name=\"resume_method\"]':\n          value: attach\n  resume_text:\n    '#type': textarea\n    '#title': Resume\n    '#title_display': invisible\n    '#states':\n      visible:\n        ':input[name=\"resume_method\"]':\n          value: paste\n      required:\n        ':input[name=\"resume_method\"]':\n          value: paste\n      enabled:\n        ':input[name=\"resume_method\"]':\n          value: paste\nactions:\n  '#type': webform_actions\n  '#title': 'Submit button(s)'\n  '#submit__label': Apply\n"
+      css: ''
+      javascript: ''
+      settings:
+        ajax: false
+        ajax_scroll_top: form
+        ajax_progress_type: ''
+        ajax_effect: ''
+        ajax_speed: null
+        page: true
+        page_submit_path: ''
+        page_confirm_path: ''
+        page_admin_theme: false
+        form_title: source_entity_webform
+        form_submit_once: false
+        form_exception_message: ''
+        form_open_message: ''
+        form_close_message: ''
+        form_previous_submissions: true
+        form_confidential: false
+        form_confidential_message: ''
+        form_remote_addr: true
+        form_convert_anonymous: false
+        form_prepopulate: false
+        form_prepopulate_source_entity: false
+        form_prepopulate_source_entity_required: false
+        form_prepopulate_source_entity_type: ''
+        form_reset: false
+        form_disable_autocomplete: false
+        form_novalidate: false
+        form_disable_inline_errors: false
+        form_required: false
+        form_unsaved: false
+        form_disable_back: false
+        form_submit_back: false
+        form_autofocus: false
+        form_details_toggle: false
+        form_access_denied: default
+        form_access_denied_title: ''
+        form_access_denied_message: ''
+        form_access_denied_attributes: {  }
+        form_file_limit: ''
+        submission_label: ''
+        submission_log: false
+        submission_views: {  }
+        submission_views_replace: {  }
+        submission_user_columns: {  }
+        submission_user_duplicate: false
+        submission_access_denied: default
+        submission_access_denied_title: ''
+        submission_access_denied_message: ''
+        submission_access_denied_attributes: {  }
+        submission_exception_message: ''
+        submission_locked_message: ''
+        submission_excluded_elements: {  }
+        submission_exclude_empty: false
+        submission_exclude_empty_checkbox: false
+        previous_submission_message: ''
+        previous_submissions_message: ''
+        autofill: false
+        autofill_message: ''
+        autofill_excluded_elements: {  }
+        wizard_progress_bar: true
+        wizard_progress_pages: false
+        wizard_progress_percentage: false
+        wizard_progress_link: false
+        wizard_start_label: ''
+        wizard_preview_link: false
+        wizard_confirmation: true
+        wizard_confirmation_label: ''
+        wizard_track: ''
+        preview: 0
+        preview_label: ''
+        preview_title: ''
+        preview_message: ''
+        preview_attributes: {  }
+        preview_excluded_elements: {  }
+        preview_exclude_empty: true
+        preview_exclude_empty_checkbox: false
+        draft: none
+        draft_multiple: false
+        draft_auto_save: false
+        draft_saved_message: ''
+        draft_loaded_message: ''
+        draft_pending_single_message: ''
+        draft_pending_multiple_message: ''
+        confirmation_type: page
+        confirmation_title: ''
+        confirmation_message: 'Thank you for applying.'
+        confirmation_url: ''
+        confirmation_attributes: {  }
+        confirmation_back: true
+        confirmation_back_label: ''
+        confirmation_back_attributes: {  }
+        confirmation_exclude_query: false
+        confirmation_exclude_token: false
+        confirmation_update: false
+        limit_total: null
+        limit_total_interval: null
+        limit_total_message: ''
+        limit_total_unique: false
+        limit_user: null
+        limit_user_interval: null
+        limit_user_message: ''
+        limit_user_unique: false
+        entity_limit_total: null
+        entity_limit_total_interval: null
+        entity_limit_user: null
+        entity_limit_user_interval: null
+        purge: none
+        purge_days: null
+        results_disabled: false
+        results_disabled_ignore: false
+        token_update: false
+      access:
+        create:
+          roles:
+            - anonymous
+            - authenticated
+          users: {  }
+          permissions: {  }
+        view_any:
+          roles: {  }
+          users: {  }
+          permissions: {  }
+        update_any:
+          roles: {  }
+          users: {  }
+          permissions: {  }
+        delete_any:
+          roles: {  }
+          users: {  }
+          permissions: {  }
+        purge_any:
+          roles: {  }
+          users: {  }
+          permissions: {  }
+        view_own:
+          roles: {  }
+          users: {  }
+          permissions: {  }
+        update_own:
+          roles: {  }
+          users: {  }
+          permissions: {  }
+        delete_own:
+          roles: {  }
+          users: {  }
+          permissions: {  }
+        administer:
+          roles: {  }
+          users: {  }
+          permissions: {  }
+        test:
+          roles: {  }
+          users: {  }
+          permissions: {  }
+        configuration:
+          roles: {  }
+          users: {  }
+          permissions: {  }
+      handlers:
+        email_notification:
+          id: email
+          label: 'Email Notification'
+          handler_id: email_notification
+          status: true
+          conditions: {  }
+          weight: 1
+          settings:
+            states:
+              - completed
+            to_mail: _default
+            to_options: {  }
+            cc_mail: ''
+            cc_options: {  }
+            bcc_mail: ''
+            bcc_options: {  }
+            from_mail: '[webform_submission:values:email:raw]'
+            from_options: {  }
+            from_name: '[webform_submission:values:first_name] [webform_submission:values:last_name]'
+            subject: _default
+            body: _default
+            excluded_elements: {  }
+            ignore_access: false
+            exclude_empty: true
+            exclude_empty_checkbox: false
+            html: true
+            attachments: false
+            twig: false
+            theme_name: ''
+            debug: false
+            reply_to: ''
+            return_path: ''
+            sender_mail: ''
+            sender_name: ''
+  -
+    collection: ''
+    name: webform.webform.template_job_seeker_profile
+    data:
+      langcode: en
+      status: closed
+      dependencies:
+        enforced:
+          module:
+            - webform_templates
+      open: null
+      close: null
+      weight: 0
+      uid: null
+      template: true
+      archive: false
+      id: template_job_seeker_profile
+      title: 'Job Seeker Profile'
+      description: 'A job seeker profile webform template.'
+      category: ''
+      elements: "introduction:\n  '#markup': |\n    <p>Creating a job seeker profile will help companies find you:</p>\n    <ul>\n    <li>Upload a resume</li>\n    <li>Providing more information gives a better picture to employers</li>\n    <li>Salary requirements, location preferences and skill level are all important factors in the hiring decision</li>\n    </ul>\n    \ninformation:\n  '#title': 'Job Seeker Information'\n  '#type': webform_section\n  first_name:\n    '#title': 'First Name'\n    '#type': textfield\n    '#required': true\n  last_name:\n    '#title': 'Last Name'\n    '#type': textfield\n    '#required': true\n  address:\n    '#type': webform_address\n    '#required': true\n  current_title:\n    '#type': textfield\n    '#title': 'Current Job Title'\n  current_organization:\n    '#type': textfield\n    '#title': 'Current Place of Occupation'\n  positions:\n    '#type': textfield\n    '#title': 'Position you are looking for'\n  relocation:\n    '#type': checkbox\n    '#title': 'Willing to relocate'\n  salary:\n    '#title': 'Salary Minimum'\n    '#type': textfield\n    '#description': 'Add currency sign/currency code if desired. e.g. 500,000 USD, 500,000 CAD, ¥ 100,000'\n  skill:\n    '#title': 'Skill Level'\n    '#type': radios\n    '#options_display': two_columns\n    '#options':\n      Novice/Beginner: Novice/Beginner\n      Intermediate/Proficient: Intermediate/Proficient\n      Expert/Advanced: Expert/Advanced\n  categories:\n    '#title': 'Job Categories'\n    '#type': checkboxes\n    '#options_display': two_columns\n    '#options':\n      'Account Manager': 'Account Manager'\n      Back-End: Back-End\n      Designer: Designer\n      DevOps: DevOps\n      Front-End: Front-End\n      'Project Manager': 'Project Manager'\n      Sales: Sales\n      'Site Builder': 'Site Builder'\n      Themer: Themer\n  resume:\n    '#type': managed_file\n    '#title': Resume\n  url:\n    '#type': url\n    '#title': Website\n    '#description': 'Enter your existing profile/resume/portfolio link.'\n"
+      css: ''
+      javascript: ''
+      settings:
+        ajax: false
+        ajax_scroll_top: form
+        ajax_progress_type: ''
+        ajax_effect: ''
+        ajax_speed: null
+        page: true
+        page_submit_path: ''
+        page_confirm_path: ''
+        page_admin_theme: false
+        form_title: source_entity_webform
+        form_submit_once: false
+        form_exception_message: ''
+        form_open_message: ''
+        form_close_message: ''
+        form_previous_submissions: true
+        form_confidential: false
+        form_confidential_message: ''
+        form_remote_addr: true
+        form_convert_anonymous: false
+        form_prepopulate: false
+        form_prepopulate_source_entity: false
+        form_prepopulate_source_entity_required: false
+        form_prepopulate_source_entity_type: ''
+        form_reset: false
+        form_disable_autocomplete: false
+        form_novalidate: false
+        form_disable_inline_errors: false
+        form_required: false
+        form_unsaved: false
+        form_disable_back: false
+        form_submit_back: false
+        form_autofocus: false
+        form_details_toggle: false
+        form_access_denied: default
+        form_access_denied_title: ''
+        form_access_denied_message: ''
+        form_access_denied_attributes: {  }
+        form_file_limit: ''
+        submission_label: ''
+        submission_log: false
+        submission_views: {  }
+        submission_views_replace: {  }
+        submission_user_columns: {  }
+        submission_user_duplicate: false
+        submission_access_denied: default
+        submission_access_denied_title: ''
+        submission_access_denied_message: ''
+        submission_access_denied_attributes: {  }
+        submission_exception_message: ''
+        submission_locked_message: ''
+        submission_excluded_elements: {  }
+        submission_exclude_empty: false
+        submission_exclude_empty_checkbox: false
+        previous_submission_message: ''
+        previous_submissions_message: ''
+        autofill: false
+        autofill_message: ''
+        autofill_excluded_elements: {  }
+        wizard_progress_bar: true
+        wizard_progress_pages: false
+        wizard_progress_percentage: false
+        wizard_progress_link: false
+        wizard_start_label: ''
+        wizard_preview_link: false
+        wizard_confirmation: true
+        wizard_confirmation_label: ''
+        wizard_track: ''
+        preview: 0
+        preview_label: ''
+        preview_title: ''
+        preview_message: ''
+        preview_attributes: {  }
+        preview_excluded_elements: {  }
+        preview_exclude_empty: true
+        preview_exclude_empty_checkbox: false
+        draft: none
+        draft_multiple: false
+        draft_auto_save: false
+        draft_saved_message: ''
+        draft_loaded_message: ''
+        draft_pending_single_message: ''
+        draft_pending_multiple_message: ''
+        confirmation_type: page
+        confirmation_title: ''
+        confirmation_message: 'Thank you for applying.'
+        confirmation_url: ''
+        confirmation_attributes: {  }
+        confirmation_back: true
+        confirmation_back_label: ''
+        confirmation_back_attributes: {  }
+        confirmation_exclude_query: false
+        confirmation_exclude_token: false
+        confirmation_update: false
+        limit_total: null
+        limit_total_interval: null
+        limit_total_message: ''
+        limit_total_unique: false
+        limit_user: null
+        limit_user_interval: null
+        limit_user_message: ''
+        limit_user_unique: false
+        entity_limit_total: null
+        entity_limit_total_interval: null
+        entity_limit_user: null
+        entity_limit_user_interval: null
+        purge: none
+        purge_days: null
+        results_disabled: false
+        results_disabled_ignore: false
+        token_update: false
+      access:
+        create:
+          roles:
+            - anonymous
+            - authenticated
+          users: {  }
+          permissions: {  }
+        view_any:
+          roles: {  }
+          users: {  }
+          permissions: {  }
+        update_any:
+          roles: {  }
+          users: {  }
+          permissions: {  }
+        delete_any:
+          roles: {  }
+          users: {  }
+          permissions: {  }
+        purge_any:
+          roles: {  }
+          users: {  }
+          permissions: {  }
+        view_own:
+          roles: {  }
+          users: {  }
+          permissions: {  }
+        update_own:
+          roles: {  }
+          users: {  }
+          permissions: {  }
+        delete_own:
+          roles: {  }
+          users: {  }
+          permissions: {  }
+        administer:
+          roles: {  }
+          users: {  }
+          permissions: {  }
+        test:
+          roles: {  }
+          users: {  }
+          permissions: {  }
+        configuration:
+          roles: {  }
+          users: {  }
+          permissions: {  }
+      handlers:
+        email_notification:
+          id: email
+          label: 'Email Notification'
+          handler_id: email_notification
+          status: true
+          conditions: {  }
+          weight: 1
+          settings:
+            states:
+              - completed
+            to_mail: _default
+            to_options: {  }
+            cc_mail: ''
+            cc_options: {  }
+            bcc_mail: ''
+            bcc_options: {  }
+            from_mail: '[webform_submission:values:email:raw]'
+            from_options: {  }
+            from_name: '[webform_submission:values:first_name] [webform_submission:values:last_name]'
+            subject: _default
+            body: _default
+            excluded_elements: {  }
+            ignore_access: false
+            exclude_empty: true
+            exclude_empty_checkbox: false
+            html: true
+            attachments: false
+            twig: false
+            theme_name: ''
+            debug: false
+            reply_to: ''
+            return_path: ''
+            sender_mail: ''
+            sender_name: ''
+  -
+    collection: ''
+    name: webform.webform.template_registration
+    data:
+      langcode: en
+      status: closed
+      dependencies:
+        enforced:
+          module:
+            - webform_templates
+      open: null
+      close: null
+      weight: 0
+      uid: null
+      template: true
+      archive: false
+      id: template_registration
+      title: Registration
+      description: 'A registration webform template.'
+      category: ''
+      elements: "personal_information:\n  '#title': 'Your Personal Information'\n  '#type': webform_section\n  first_name:\n    '#title': 'First Name'\n    '#type': textfield\n    '#required': true\n  last_name:\n    '#title': 'Last Name'\n    '#type': textfield\n    '#required': true\ncontact_information:\n  '#title': 'Your Contact Information'\n  '#type': webform_section\n  contact:\n    '#type': webform_contact\n    '#title': Contact\n    '#title_display': invisible\n    '#name__access': false\n    '#company__access': false\nmailinglist:\n  '#title': 'Mailing List'\n  '#type': webform_section\n  subscribe:\n    '#title': 'Please subscribe me to your mailing list.'\n    '#type': checkbox\nadditional_information:\n  '#title': 'Additional Information'\n  '#type': webform_section\n  '#open': true\n  notes:\n    '#title': Comments\n    '#type': textarea\nactions:\n  '#type': webform_actions\n  '#title': 'Submit button(s)'\n  '#submit__label': Register\n"
+      css: ''
+      javascript: ''
+      settings:
+        ajax: false
+        ajax_scroll_top: form
+        ajax_progress_type: ''
+        ajax_effect: ''
+        ajax_speed: null
+        page: true
+        page_submit_path: ''
+        page_confirm_path: ''
+        page_admin_theme: false
+        form_title: source_entity_webform
+        form_submit_once: false
+        form_exception_message: ''
+        form_open_message: ''
+        form_close_message: ''
+        form_previous_submissions: true
+        form_confidential: false
+        form_confidential_message: ''
+        form_remote_addr: true
+        form_convert_anonymous: false
+        form_prepopulate: false
+        form_prepopulate_source_entity: false
+        form_prepopulate_source_entity_required: false
+        form_prepopulate_source_entity_type: ''
+        form_reset: false
+        form_disable_autocomplete: false
+        form_novalidate: false
+        form_disable_inline_errors: false
+        form_required: false
+        form_unsaved: false
+        form_disable_back: false
+        form_submit_back: false
+        form_autofocus: false
+        form_details_toggle: false
+        form_access_denied: default
+        form_access_denied_title: ''
+        form_access_denied_message: ''
+        form_access_denied_attributes: {  }
+        form_file_limit: ''
+        submission_label: ''
+        submission_log: false
+        submission_views: {  }
+        submission_views_replace: {  }
+        submission_user_columns: {  }
+        submission_user_duplicate: false
+        submission_access_denied: default
+        submission_access_denied_title: ''
+        submission_access_denied_message: ''
+        submission_access_denied_attributes: {  }
+        submission_exception_message: ''
+        submission_locked_message: ''
+        submission_excluded_elements: {  }
+        submission_exclude_empty: false
+        submission_exclude_empty_checkbox: false
+        previous_submission_message: ''
+        previous_submissions_message: ''
+        autofill: false
+        autofill_message: ''
+        autofill_excluded_elements: {  }
+        wizard_progress_bar: true
+        wizard_progress_pages: false
+        wizard_progress_percentage: false
+        wizard_progress_link: false
+        wizard_start_label: ''
+        wizard_preview_link: false
+        wizard_confirmation: true
+        wizard_confirmation_label: ''
+        wizard_track: ''
+        preview: 0
+        preview_label: ''
+        preview_title: ''
+        preview_message: ''
+        preview_attributes: {  }
+        preview_excluded_elements: {  }
+        preview_exclude_empty: true
+        preview_exclude_empty_checkbox: false
+        draft: none
+        draft_multiple: false
+        draft_auto_save: false
+        draft_saved_message: ''
+        draft_loaded_message: ''
+        draft_pending_single_message: ''
+        draft_pending_multiple_message: ''
+        confirmation_type: page
+        confirmation_title: ''
+        confirmation_message: 'Thank you for registering.'
+        confirmation_url: ''
+        confirmation_attributes: {  }
+        confirmation_back: true
+        confirmation_back_label: ''
+        confirmation_back_attributes: {  }
+        confirmation_exclude_query: false
+        confirmation_exclude_token: false
+        confirmation_update: false
+        limit_total: null
+        limit_total_interval: null
+        limit_total_message: ''
+        limit_total_unique: false
+        limit_user: null
+        limit_user_interval: null
+        limit_user_message: ''
+        limit_user_unique: false
+        entity_limit_total: null
+        entity_limit_total_interval: null
+        entity_limit_user: null
+        entity_limit_user_interval: null
+        purge: none
+        purge_days: null
+        results_disabled: false
+        results_disabled_ignore: false
+        token_update: false
+      access:
+        create:
+          roles:
+            - anonymous
+            - authenticated
+          users: {  }
+          permissions: {  }
+        view_any:
+          roles: {  }
+          users: {  }
+          permissions: {  }
+        update_any:
+          roles: {  }
+          users: {  }
+          permissions: {  }
+        delete_any:
+          roles: {  }
+          users: {  }
+          permissions: {  }
+        purge_any:
+          roles: {  }
+          users: {  }
+          permissions: {  }
+        view_own:
+          roles: {  }
+          users: {  }
+          permissions: {  }
+        update_own:
+          roles: {  }
+          users: {  }
+          permissions: {  }
+        delete_own:
+          roles: {  }
+          users: {  }
+          permissions: {  }
+        administer:
+          roles: {  }
+          users: {  }
+          permissions: {  }
+        test:
+          roles: {  }
+          users: {  }
+          permissions: {  }
+        configuration:
+          roles: {  }
+          users: {  }
+          permissions: {  }
+      handlers:
+        email_notification:
+          id: email
+          label: 'Email Notification'
+          handler_id: email_notification
+          status: true
+          conditions: {  }
+          weight: 1
+          settings:
+            states:
+              - completed
+            to_mail: _default
+            to_options: {  }
+            cc_mail: ''
+            cc_options: {  }
+            bcc_mail: ''
+            bcc_options: {  }
+            from_mail: '[webform_submission:values:email:raw]'
+            from_options: {  }
+            from_name: '[webform_submission:values:first_name] [webform_submission:values:last_name]'
+            subject: _default
+            body: _default
+            excluded_elements: {  }
+            ignore_access: false
+            exclude_empty: true
+            exclude_empty_checkbox: false
+            html: true
+            attachments: false
+            twig: false
+            theme_name: ''
+            debug: false
+            reply_to: ''
+            return_path: ''
+            sender_mail: ''
+            sender_name: ''
+  -
+    collection: ''
+    name: webform.webform.template_session_evaluation
+    data:
+      langcode: en
+      status: closed
+      dependencies:
+        enforced:
+          module:
+            - webform_templates
+      open: null
+      close: null
+      weight: 0
+      uid: null
+      template: true
+      archive: false
+      id: template_session_evaluation
+      title: 'Session Evaluation'
+      description: 'A session evaluation webform template.'
+      category: ''
+      elements: "overall:\n  '#type': radios\n  '#title': 'How was the session overall?'\n  '#options_display': side_by_side\n  '#options': likert_quality\n  '#required': true\nspeaker:\n  '#type': webform_likert\n  '#title': 'Please rate the speaker''s…'\n  '#questions':\n    mastery: 'Mastery of this topic'\n    presentation: 'Presentation skills'\n    quality: 'Quality of slides and visual aids'\n  '#answers': likert_quality\n  '#na_answer': true\n  '#required': true\nlearn:\n  '#type': radios\n  '#title': 'Did you learn something in this session you can use in real life?'\n  '#options_display': side_by_side\n  '#options':\n    'Yes': 'Yes'\n    'No': 'No'\n    N/A: N/A\n  '#required': true\ncomments:\n  '#type': textarea\n  '#title': Comments\n  '#description': 'What did you like most? What would you change? Advice for the speaker to make this session better?'\n"
+      css: ''
+      javascript: ''
+      settings:
+        ajax: false
+        ajax_scroll_top: form
+        ajax_progress_type: ''
+        ajax_effect: ''
+        ajax_speed: null
+        page: true
+        page_submit_path: ''
+        page_confirm_path: ''
+        page_admin_theme: false
+        form_title: source_entity_webform
+        form_submit_once: false
+        form_exception_message: ''
+        form_open_message: ''
+        form_close_message: ''
+        form_previous_submissions: true
+        form_confidential: false
+        form_confidential_message: ''
+        form_remote_addr: true
+        form_convert_anonymous: false
+        form_prepopulate: false
+        form_prepopulate_source_entity: false
+        form_prepopulate_source_entity_required: false
+        form_prepopulate_source_entity_type: ''
+        form_reset: false
+        form_disable_autocomplete: false
+        form_novalidate: false
+        form_disable_inline_errors: false
+        form_required: false
+        form_unsaved: false
+        form_disable_back: false
+        form_submit_back: false
+        form_autofocus: false
+        form_details_toggle: false
+        form_access_denied: default
+        form_access_denied_title: ''
+        form_access_denied_message: ''
+        form_access_denied_attributes: {  }
+        form_file_limit: ''
+        submission_label: ''
+        submission_log: false
+        submission_views: {  }
+        submission_views_replace: {  }
+        submission_user_columns: {  }
+        submission_user_duplicate: false
+        submission_access_denied: default
+        submission_access_denied_title: ''
+        submission_access_denied_message: ''
+        submission_access_denied_attributes: {  }
+        submission_exception_message: ''
+        submission_locked_message: ''
+        submission_excluded_elements: {  }
+        submission_exclude_empty: false
+        submission_exclude_empty_checkbox: false
+        previous_submission_message: ''
+        previous_submissions_message: ''
+        autofill: false
+        autofill_message: ''
+        autofill_excluded_elements: {  }
+        wizard_progress_bar: false
+        wizard_progress_pages: false
+        wizard_progress_percentage: false
+        wizard_progress_link: false
+        wizard_start_label: ''
+        wizard_preview_link: false
+        wizard_confirmation: true
+        wizard_confirmation_label: ''
+        wizard_track: ''
+        preview: 1
+        preview_label: ''
+        preview_title: ''
+        preview_message: ''
+        preview_attributes: {  }
+        preview_excluded_elements: {  }
+        preview_exclude_empty: true
+        preview_exclude_empty_checkbox: false
+        draft: none
+        draft_multiple: false
+        draft_auto_save: false
+        draft_saved_message: ''
+        draft_loaded_message: ''
+        draft_pending_single_message: ''
+        draft_pending_multiple_message: ''
+        confirmation_type: page
+        confirmation_title: ''
+        confirmation_message: 'Thank you for your feedback.'
+        confirmation_url: ''
+        confirmation_attributes: {  }
+        confirmation_back: true
+        confirmation_back_label: ''
+        confirmation_back_attributes: {  }
+        confirmation_exclude_query: false
+        confirmation_exclude_token: false
+        confirmation_update: false
+        limit_total: null
+        limit_total_interval: null
+        limit_total_message: ''
+        limit_total_unique: false
+        limit_user: null
+        limit_user_interval: null
+        limit_user_message: ''
+        limit_user_unique: false
+        entity_limit_total: null
+        entity_limit_total_interval: null
+        entity_limit_user: null
+        entity_limit_user_interval: null
+        purge: none
+        purge_days: null
+        results_disabled: false
+        results_disabled_ignore: false
+        token_update: false
+      access:
+        create:
+          roles:
+            - anonymous
+            - authenticated
+          users: {  }
+          permissions: {  }
+        view_any:
+          roles: {  }
+          users: {  }
+          permissions: {  }
+        update_any:
+          roles: {  }
+          users: {  }
+          permissions: {  }
+        delete_any:
+          roles: {  }
+          users: {  }
+          permissions: {  }
+        purge_any:
+          roles: {  }
+          users: {  }
+          permissions: {  }
+        view_own:
+          roles: {  }
+          users: {  }
+          permissions: {  }
+        update_own:
+          roles: {  }
+          users: {  }
+          permissions: {  }
+        delete_own:
+          roles: {  }
+          users: {  }
+          permissions: {  }
+        administer:
+          roles: {  }
+          users: {  }
+          permissions: {  }
+        test:
+          roles: {  }
+          users: {  }
+          permissions: {  }
+        configuration:
+          roles: {  }
+          users: {  }
+          permissions: {  }
+      handlers:
+        email_notification:
+          id: email
+          label: 'Email Notification'
+          handler_id: email_notification
+          status: true
+          conditions: {  }
+          weight: 1
+          settings:
+            states:
+              - completed
+            to_mail: _default
+            to_options: {  }
+            cc_mail: ''
+            cc_options: {  }
+            bcc_mail: ''
+            bcc_options: {  }
+            from_mail: '[webform_submission:values:email:raw]'
+            from_options: {  }
+            from_name: '[webform_submission:values:first_name] [webform_submission:values:last_name]'
+            subject: _default
+            body: _default
+            excluded_elements: {  }
+            ignore_access: false
+            exclude_empty: true
+            exclude_empty_checkbox: false
+            html: true
+            attachments: false
+            twig: false
+            theme_name: ''
+            debug: false
+            reply_to: ''
+            return_path: ''
+            sender_mail: ''
+            sender_name: ''
+  -
+    collection: ''
+    name: webform.webform.template_subscribe
+    data:
+      langcode: en
+      status: closed
+      dependencies:
+        enforced:
+          module:
+            - webform_templates
+      open: null
+      close: null
+      weight: 0
+      uid: null
+      template: true
+      archive: false
+      id: template_subscribe
+      title: Subscribe
+      description: 'A subscribe to mailing list webform template.'
+      category: ''
+      elements: "first_name:\n  '#title': 'First Name'\n  '#type': textfield\n  '#required': true\nlast_name:\n  '#title': 'Last Name'\n  '#type': textfield\n  '#required': true\nemail:\n  '#title': Email\n  '#type': email\n  '#required': true\nactions:\n  '#type': webform_actions\n  '#title': 'Submit button(s)'\n  '#submit__label': Subscribe\n"
+      css: ''
+      javascript: ''
+      settings:
+        ajax: false
+        ajax_scroll_top: form
+        ajax_progress_type: ''
+        ajax_effect: ''
+        ajax_speed: null
+        page: true
+        page_submit_path: ''
+        page_confirm_path: ''
+        page_admin_theme: false
+        form_title: source_entity_webform
+        form_submit_once: false
+        form_exception_message: ''
+        form_open_message: ''
+        form_close_message: ''
+        form_previous_submissions: true
+        form_confidential: false
+        form_confidential_message: ''
+        form_remote_addr: true
+        form_convert_anonymous: false
+        form_prepopulate: false
+        form_prepopulate_source_entity: false
+        form_prepopulate_source_entity_required: false
+        form_prepopulate_source_entity_type: ''
+        form_reset: false
+        form_disable_autocomplete: false
+        form_novalidate: false
+        form_disable_inline_errors: false
+        form_required: false
+        form_unsaved: false
+        form_disable_back: false
+        form_submit_back: false
+        form_autofocus: false
+        form_details_toggle: false
+        form_access_denied: default
+        form_access_denied_title: ''
+        form_access_denied_message: ''
+        form_access_denied_attributes: {  }
+        form_file_limit: ''
+        submission_label: ''
+        submission_log: false
+        submission_views: {  }
+        submission_views_replace: {  }
+        submission_user_columns: {  }
+        submission_user_duplicate: false
+        submission_access_denied: default
+        submission_access_denied_title: ''
+        submission_access_denied_message: ''
+        submission_access_denied_attributes: {  }
+        submission_exception_message: ''
+        submission_locked_message: ''
+        submission_excluded_elements: {  }
+        submission_exclude_empty: false
+        submission_exclude_empty_checkbox: false
+        previous_submission_message: ''
+        previous_submissions_message: ''
+        autofill: false
+        autofill_message: ''
+        autofill_excluded_elements: {  }
+        wizard_progress_bar: true
+        wizard_progress_pages: false
+        wizard_progress_percentage: false
+        wizard_progress_link: false
+        wizard_start_label: ''
+        wizard_preview_link: false
+        wizard_confirmation: true
+        wizard_confirmation_label: ''
+        wizard_track: ''
+        preview: 0
+        preview_label: ''
+        preview_title: ''
+        preview_message: ''
+        preview_attributes: {  }
+        preview_excluded_elements: {  }
+        preview_exclude_empty: true
+        preview_exclude_empty_checkbox: false
+        draft: none
+        draft_multiple: false
+        draft_auto_save: false
+        draft_saved_message: ''
+        draft_loaded_message: ''
+        draft_pending_single_message: ''
+        draft_pending_multiple_message: ''
+        confirmation_type: page
+        confirmation_title: ''
+        confirmation_message: 'Thank you for subscribing.'
+        confirmation_url: ''
+        confirmation_attributes: {  }
+        confirmation_back: true
+        confirmation_back_label: ''
+        confirmation_back_attributes: {  }
+        confirmation_exclude_query: false
+        confirmation_exclude_token: false
+        confirmation_update: false
+        limit_total: null
+        limit_total_interval: null
+        limit_total_message: ''
+        limit_total_unique: false
+        limit_user: null
+        limit_user_interval: null
+        limit_user_message: ''
+        limit_user_unique: false
+        entity_limit_total: null
+        entity_limit_total_interval: null
+        entity_limit_user: null
+        entity_limit_user_interval: null
+        purge: none
+        purge_days: null
+        results_disabled: false
+        results_disabled_ignore: false
+        token_update: false
+      access:
+        create:
+          roles:
+            - anonymous
+            - authenticated
+          users: {  }
+          permissions: {  }
+        view_any:
+          roles: {  }
+          users: {  }
+          permissions: {  }
+        update_any:
+          roles: {  }
+          users: {  }
+          permissions: {  }
+        delete_any:
+          roles: {  }
+          users: {  }
+          permissions: {  }
+        purge_any:
+          roles: {  }
+          users: {  }
+          permissions: {  }
+        view_own:
+          roles: {  }
+          users: {  }
+          permissions: {  }
+        update_own:
+          roles: {  }
+          users: {  }
+          permissions: {  }
+        delete_own:
+          roles: {  }
+          users: {  }
+          permissions: {  }
+        administer:
+          roles: {  }
+          users: {  }
+          permissions: {  }
+        test:
+          roles: {  }
+          users: {  }
+          permissions: {  }
+        configuration:
+          roles: {  }
+          users: {  }
+          permissions: {  }
+      handlers:
+        email_notification:
+          id: email
+          label: 'Email Notification'
+          handler_id: email_notification
+          status: true
+          conditions: {  }
+          weight: 1
+          settings:
+            states:
+              - completed
+            to_mail: _default
+            to_options: {  }
+            cc_mail: ''
+            cc_options: {  }
+            bcc_mail: ''
+            bcc_options: {  }
+            from_mail: '[webform_submission:values:email:raw]'
+            from_options: {  }
+            from_name: '[webform_submission:values:first_name] [webform_submission:values:last_name]'
+            subject: _default
+            body: _default
+            excluded_elements: {  }
+            ignore_access: false
+            exclude_empty: true
+            exclude_empty_checkbox: false
+            html: true
+            attachments: false
+            twig: false
+            theme_name: ''
+            debug: false
+            reply_to: ''
+            return_path: ''
+            sender_mail: ''
+            sender_name: ''
+  -
+    collection: ''
+    name: webform.webform.template_user_profile
+    data:
+      langcode: en
+      status: closed
+      dependencies:
+        enforced:
+          module:
+            - webform_templates
+      open: null
+      close: null
+      weight: 0
+      uid: null
+      template: true
+      archive: false
+      id: template_user_profile
+      title: 'User Profile'
+      description: 'A user profile webform template.'
+      category: ''
+      elements: "account_information:\n  '#title': 'Your Account Information'\n  '#type': webform_section\n  user_name:\n    '#type': textfield\n    '#title': 'User Name'\n  picture:\n    '#type': managed_file\n    '#title': Picture\n    '#description': 'Your virtual face or picture. Pictures larger than 1024x1024 pixels will be scaled down.'\n    '#max_filesize': '2'\n    '#file_extensions': 'gif jpg png svg'\npersonal_information:\n  '#title': 'Your Personal Information'\n  '#type': webform_section\n  first_name:\n    '#title': 'First Name'\n    '#type': textfield\n    '#required': true\n  last_name:\n    '#type': textfield\n    '#title': 'Last Name'\n    '#required': true\n  country:\n    '#type': select\n    '#title': Country\n    '#options': country_names\n  location:\n    '#type': webform_location_places\n    '#title': Location\n    '#title_display': invisible\n    '#description': 'Your location will be saved and may be shared.'\n    '#geolocation': true\n    '#address__title': Locations\n  languages:\n    '#type': select\n    '#title': 'Languages Spoken'\n    '#description': 'Select one or more languages you speak.'\n    '#multiple': true\n    '#select2': true\n    '#options': languages\n  gender:\n    '#type': webform_radios_other\n    '#title': Gender\n    '#options': gender\n  biography:\n    '#type': text_format\n    '#title': Biography\n    '#description': 'Please include a short blurb about yourself to let us know who you are outside of Drupal.'\n  website:\n    '#type': url\n    '#title': Website\n  irc:\n    '#type': textfield\n    '#title': IRC\n    '#description': 'The nickname you use on various channels of irc.freenode.net'\n  twitter:\n    '#type': textfield\n    '#title': Twitter\n    '#description': 'Your Twitter handle.'\n  github:\n    '#type': textfield\n    '#title': GitHub\n    '#description': 'Your GitHub user name.'\nwork_information:\n  '#title': 'Your Work Information'\n  '#type': webform_section\n  current_organization:\n    '#type': textfield\n    '#title': 'Current Organization'\n  current_title:\n    '#type': textfield\n    '#title': 'Current Job Title'\n  organizations:\n    '#type': textarea\n    '#title': 'Past Organizations'\n    '#description': 'List companies or institutions you have worked for.'\n  industries:\n    '#type': webform_select_other\n    '#title': 'Industries Worked In'\n    '#options': industry\n    '#multiple': true\n    '#select2': true\nemail_settings:\n  '#title': 'Email addresses'\n  '#type': webform_section\n  email:\n    '#type': email\n    '#title': 'Primary E-mail Address'\n    '#description': 'Enter your primary email addresses, which will be used for all email communications.'\n  emails:\n    '#type': webform_email_multiple\n    '#title': 'Secondary E-mail Addresses'\n    '#description': 'Enter multiple email addresses separated by commas.'\nregional_settings:\n  '#title': 'Regional Settings'\n  '#type': webform_section\n  time_zone:\n    '#type': select\n    '#title': Timezone\n    '#options': time_zones\n  language:\n    '#type': select\n    '#title': 'Preferred Language'\n    '#description': 'This account''s default language for emails, and preferred language for site presentation.'\n    '#options': languages\nactions:\n  '#type': webform_actions\n  '#title': 'Submit button(s)'\n  '#submit__label': Register\n"
+      css: ''
+      javascript: ''
+      settings:
+        ajax: false
+        ajax_scroll_top: form
+        ajax_progress_type: ''
+        ajax_effect: ''
+        ajax_speed: null
+        page: true
+        page_submit_path: ''
+        page_confirm_path: ''
+        page_admin_theme: false
+        form_title: source_entity_webform
+        form_submit_once: false
+        form_exception_message: ''
+        form_open_message: ''
+        form_close_message: ''
+        form_previous_submissions: true
+        form_confidential: false
+        form_confidential_message: ''
+        form_remote_addr: true
+        form_convert_anonymous: false
+        form_prepopulate: false
+        form_prepopulate_source_entity: false
+        form_prepopulate_source_entity_required: false
+        form_prepopulate_source_entity_type: ''
+        form_reset: false
+        form_disable_autocomplete: false
+        form_novalidate: false
+        form_disable_inline_errors: false
+        form_required: false
+        form_unsaved: false
+        form_disable_back: false
+        form_submit_back: false
+        form_autofocus: false
+        form_details_toggle: false
+        form_access_denied: default
+        form_access_denied_title: ''
+        form_access_denied_message: ''
+        form_access_denied_attributes: {  }
+        form_file_limit: ''
+        submission_label: ''
+        submission_log: false
+        submission_views: {  }
+        submission_views_replace: {  }
+        submission_user_columns: {  }
+        submission_user_duplicate: false
+        submission_access_denied: default
+        submission_access_denied_title: ''
+        submission_access_denied_message: ''
+        submission_access_denied_attributes: {  }
+        submission_exception_message: ''
+        submission_locked_message: ''
+        submission_excluded_elements: {  }
+        submission_exclude_empty: false
+        submission_exclude_empty_checkbox: false
+        previous_submission_message: ''
+        previous_submissions_message: ''
+        autofill: false
+        autofill_message: ''
+        autofill_excluded_elements: {  }
+        wizard_progress_bar: true
+        wizard_progress_pages: false
+        wizard_progress_percentage: false
+        wizard_progress_link: false
+        wizard_start_label: ''
+        wizard_preview_link: false
+        wizard_confirmation: true
+        wizard_confirmation_label: ''
+        wizard_track: ''
+        preview: 0
+        preview_label: ''
+        preview_title: ''
+        preview_message: ''
+        preview_attributes: {  }
+        preview_excluded_elements: {  }
+        preview_exclude_empty: true
+        preview_exclude_empty_checkbox: false
+        draft: none
+        draft_multiple: false
+        draft_auto_save: false
+        draft_saved_message: ''
+        draft_loaded_message: ''
+        draft_pending_single_message: ''
+        draft_pending_multiple_message: ''
+        confirmation_type: page
+        confirmation_title: ''
+        confirmation_message: ''
+        confirmation_url: ''
+        confirmation_attributes: {  }
+        confirmation_back: true
+        confirmation_back_label: ''
+        confirmation_back_attributes: {  }
+        confirmation_exclude_query: false
+        confirmation_exclude_token: false
+        confirmation_update: false
+        limit_total: null
+        limit_total_interval: null
+        limit_total_message: ''
+        limit_total_unique: false
+        limit_user: null
+        limit_user_interval: null
+        limit_user_message: ''
+        limit_user_unique: false
+        entity_limit_total: null
+        entity_limit_total_interval: null
+        entity_limit_user: null
+        entity_limit_user_interval: null
+        purge: none
+        purge_days: null
+        results_disabled: false
+        results_disabled_ignore: false
+        token_update: false
+      access:
+        create:
+          roles:
+            - anonymous
+            - authenticated
+          users: {  }
+          permissions: {  }
+        view_any:
+          roles: {  }
+          users: {  }
+          permissions: {  }
+        update_any:
+          roles: {  }
+          users: {  }
+          permissions: {  }
+        delete_any:
+          roles: {  }
+          users: {  }
+          permissions: {  }
+        purge_any:
+          roles: {  }
+          users: {  }
+          permissions: {  }
+        view_own:
+          roles: {  }
+          users: {  }
+          permissions: {  }
+        update_own:
+          roles: {  }
+          users: {  }
+          permissions: {  }
+        delete_own:
+          roles: {  }
+          users: {  }
+          permissions: {  }
+        administer:
+          roles: {  }
+          users: {  }
+          permissions: {  }
+        test:
+          roles: {  }
+          users: {  }
+          permissions: {  }
+        configuration:
+          roles: {  }
+          users: {  }
+          permissions: {  }
+      handlers:
+        email_notification:
+          id: email
+          label: 'Email Notification'
+          handler_id: email_notification
+          status: true
+          conditions: {  }
+          weight: 1
+          settings:
+            states:
+              - completed
+            to_mail: _default
+            to_options: {  }
+            cc_mail: ''
+            cc_options: {  }
+            bcc_mail: ''
+            bcc_options: {  }
+            from_mail: '[webform_submission:values:email:raw]'
+            from_options: {  }
+            from_name: '[webform_submission:values:first_name] [webform_submission:values:last_name]'
+            subject: _default
+            body: _default
+            excluded_elements: {  }
+            ignore_access: false
+            exclude_empty: true
+            exclude_empty_checkbox: false
+            html: true
+            attachments: false
+            twig: false
+            theme_name: ''
+            debug: false
+            reply_to: ''
+            return_path: ''
+            sender_mail: ''
+            sender_name: ''

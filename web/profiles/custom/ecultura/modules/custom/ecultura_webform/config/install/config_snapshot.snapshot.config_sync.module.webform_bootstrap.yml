@@ -1,0 +1,10 @@
+langcode: pt-br
+status: true
+dependencies:
+  module:
+    - webform_bootstrap
+id: config_sync.module.webform_bootstrap
+snapshotSet: config_sync
+extensionType: module
+extensionName: webform_bootstrap
+items: {  }

@@ -1,0 +1,9 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - social_event
+id: event_enrollment.token
+label: Token
+targetEntityType: event_enrollment
+cache: true

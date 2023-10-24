@@ -1,0 +1,96 @@
+name: eCultura
+description: 'eCultura Portal'
+type: profile
+core_version_requirement: ^10
+dependencies:
+  - block
+  - block_content
+  - color
+  - config_snapshot
+  - content_translation
+  - ctools
+  - datetime
+  - dropdown_language
+  - ecultura_core
+  - field
+  - file
+  - geolocation
+  - group
+  - help
+  - language
+  - node
+  - options
+  - path
+  - shariff
+  - shortcut
+  - social_activity
+  - social_core
+  - social_course
+  - social_course_advanced
+  - social_course_basic
+  - social_event
+  - social_follow_content
+  - social_font
+  - social_group
+  - social_language
+  - social_post
+  - social_profile
+  - social_search
+  - social_tagging
+  - social_topic
+  - social_tour
+  - social_user
+  - system
+  - text
+  - tour
+  - user
+  - views
+themes:
+  - bartik
+  - seven
+package: eCultura
+distribution:
+  name: eCultura
+install:
+  - block
+  - block_content
+  - color
+  - config_snapshot
+  - content_translation
+  - ctools
+  - datetime
+  - dropdown_language
+  - ecultura_core
+  - field
+  - file
+  - geolocation
+  - group
+  - help
+  - language
+  - node
+  - options
+  - path
+  - shariff
+  - shortcut
+  - social_activity
+  - social_core
+  - social_course
+  - social_course_advanced
+  - social_course_basic
+  - social_event
+  - social_follow_content
+  - social_font
+  - social_group
+  - social_language
+  - social_post
+  - social_profile
+  - social_search
+  - social_tagging
+  - social_topic
+  - social_tour
+  - social_user
+  - system
+  - text
+  - tour
+  - user
+  - views

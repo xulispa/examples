@@ -1,0 +1,17 @@
+langcode: pt-br
+status: true
+dependencies:
+  theme:
+    - ecultura_theme
+id: ecultura_theme_primary_admin_actions
+theme: ecultura_theme
+region: content
+weight: -35
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  provider: core
+  label_display: '0'
+visibility: {  }

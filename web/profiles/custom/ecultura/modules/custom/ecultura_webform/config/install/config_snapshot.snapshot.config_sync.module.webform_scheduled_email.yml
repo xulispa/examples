@@ -1,0 +1,15 @@
+langcode: pt-br
+status: true
+dependencies:
+  module:
+    - webform_scheduled_email
+id: config_sync.module.webform_scheduled_email
+snapshotSet: config_sync
+extensionType: module
+extensionName: webform_scheduled_email
+items:
+  -
+    collection: ''
+    name: webform_scheduled_email.settings
+    data:
+      schedule_type: date

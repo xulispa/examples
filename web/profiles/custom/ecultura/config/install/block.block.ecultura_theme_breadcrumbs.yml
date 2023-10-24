@@ -1,0 +1,28 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+    - user
+  theme:
+    - ecultura_theme
+id: ecultura_theme_breadcrumbs
+theme: ecultura_theme
+region: secondary_navigation
+weight: -32
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  provider: system
+  label_display: '0'
+visibility:
+  user_role:
+    id: user_role
+    roles:
+      authenticated: authenticated
+      administrator: administrator
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'

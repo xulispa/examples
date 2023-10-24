@@ -1,0 +1,10 @@
+langcode: pt-br
+status: true
+dependencies:
+  module:
+    - webform_access
+id: config_sync.module.webform_access
+snapshotSet: config_sync
+extensionType: module
+extensionName: webform_access
+items: {  }

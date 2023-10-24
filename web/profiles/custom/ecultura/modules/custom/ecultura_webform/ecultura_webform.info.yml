@@ -1,0 +1,33 @@
+name: Webform
+description: 'Provides Webform content type and related configuration. A basic page with a webform attached.'
+type: module
+core: 8.x
+dependencies:
+  - config_snapshot
+  - content_translation
+  - handsontable_yml_webform
+  - language
+  - maestro_webform
+  - path
+  - rules_webform
+  - webform
+  - webform_access
+  - webform_analysis
+  - webform_attachment
+  - webform_bootstrap
+  - webform_iban_field
+  - webform_image_select
+  - webform_invitation
+  - webform_mass_email
+  - webform_node
+  - webform_node_analysis
+  - webform_node_element
+  - webform_scheduled_email
+  - webform_scheduled_tasks
+  - webform_shortcuts
+  - webform_submission_files_download
+  - webform_submission_log
+  - webform_templates
+  - webform_ui
+  - webform_views
+package: eCultura

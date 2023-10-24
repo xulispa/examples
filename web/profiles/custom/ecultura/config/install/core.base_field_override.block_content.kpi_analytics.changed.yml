@@ -1,0 +1,17 @@
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - block_content.type.kpi_analytics
+id: block_content.kpi_analytics.changed
+field_name: changed
+entity_type: block_content
+bundle: kpi_analytics
+label: Alterado
+description: 'The time that the custom block was last edited.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

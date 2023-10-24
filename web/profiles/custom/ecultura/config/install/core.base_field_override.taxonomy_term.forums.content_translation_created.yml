@@ -1,0 +1,17 @@
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.forums
+id: taxonomy_term.forums.content_translation_created
+field_name: content_translation_created
+entity_type: taxonomy_term
+bundle: forums
+label: 'Translation created time'
+description: 'The Unix timestamp when the translation was created.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

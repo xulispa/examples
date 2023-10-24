@@ -1,0 +1,17 @@
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - group.content_type.course_advanced-group_node-forum
+id: group_content.course_advanced-group_node-forum.metatag
+field_name: metatag
+entity_type: group_content
+bundle: course_advanced-group_node-forum
+label: Metatags
+description: 'The meta tags for the entity.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: map

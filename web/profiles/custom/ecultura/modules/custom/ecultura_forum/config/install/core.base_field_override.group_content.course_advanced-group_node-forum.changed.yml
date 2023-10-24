@@ -1,0 +1,17 @@
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - group.content_type.course_advanced-group_node-forum
+id: group_content.course_advanced-group_node-forum.changed
+field_name: changed
+entity_type: group_content
+bundle: course_advanced-group_node-forum
+label: 'Changed on'
+description: 'The time that the group content was last edited.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

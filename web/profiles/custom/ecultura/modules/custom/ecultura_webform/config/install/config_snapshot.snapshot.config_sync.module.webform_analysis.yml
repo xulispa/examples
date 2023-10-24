@@ -1,0 +1,10 @@
+langcode: pt-br
+status: true
+dependencies:
+  module:
+    - webform_analysis
+id: config_sync.module.webform_analysis
+snapshotSet: config_sync
+extensionType: module
+extensionName: webform_analysis
+items: {  }

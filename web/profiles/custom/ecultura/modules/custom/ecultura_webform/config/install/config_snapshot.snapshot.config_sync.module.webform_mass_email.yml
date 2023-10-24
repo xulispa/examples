@@ -1,0 +1,17 @@
+langcode: pt-br
+status: true
+dependencies:
+  module:
+    - webform_mass_email
+id: config_sync.module.webform_mass_email
+snapshotSet: config_sync
+extensionType: module
+extensionName: webform_mass_email
+items:
+  -
+    collection: ''
+    name: webform_mass_email.settings
+    data:
+      cron: 15
+      html: false
+      log: false

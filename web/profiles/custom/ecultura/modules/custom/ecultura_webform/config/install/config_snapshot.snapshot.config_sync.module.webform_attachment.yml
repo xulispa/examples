@@ -1,0 +1,10 @@
+langcode: pt-br
+status: true
+dependencies:
+  module:
+    - webform_attachment
+id: config_sync.module.webform_attachment
+snapshotSet: config_sync
+extensionType: module
+extensionName: webform_attachment
+items: {  }

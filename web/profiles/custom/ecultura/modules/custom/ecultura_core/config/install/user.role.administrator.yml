@@ -1,0 +1,7 @@
+langcode: pt-br
+status: true
+dependencies: {  }
+id: administrator
+label: Administrador
+weight: -6
+is_admin: true

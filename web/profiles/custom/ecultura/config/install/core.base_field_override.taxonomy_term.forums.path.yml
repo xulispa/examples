@@ -1,0 +1,19 @@
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.forums
+  module:
+    - path
+id: taxonomy_term.forums.path
+field_name: path
+entity_type: taxonomy_term
+bundle: forums
+label: 'URL alternativa'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

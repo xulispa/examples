@@ -1,0 +1,12 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - flag
+id: flag_action.report_comment.flag
+label: 'Report as inappropriate'
+type: comment
+plugin: 'flag_action:report_comment.flag'
+configuration:
+  flag_id: report_comment
+  flag_action: flag

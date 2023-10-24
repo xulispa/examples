@@ -1,0 +1,21 @@
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.forums
+id: taxonomy_term.forums.content_translation_outdated
+field_name: content_translation_outdated
+entity_type: taxonomy_term
+bundle: forums
+label: 'Translation outdated'
+description: 'Um booleano que indica se essa tradução precisa ser atualizada'
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

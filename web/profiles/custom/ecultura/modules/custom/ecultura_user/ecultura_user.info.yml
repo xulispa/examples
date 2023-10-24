@@ -1,0 +1,18 @@
+name: User
+description: 'Provide User related configuration.'
+type: module
+core: 8.x
+dependencies:
+  - block
+  - dropdown
+  - field
+  - private_message
+  - social_group
+  - social_post
+  - social_topic
+  - system
+  - text
+  - user
+  - video_embed_field
+  - views
+package: eCultura

@@ -1,0 +1,9 @@
+langcode: pt-br
+status: true
+dependencies:
+  module:
+    - private_message
+id: private_message.user
+label: User
+targetEntityType: private_message
+cache: true

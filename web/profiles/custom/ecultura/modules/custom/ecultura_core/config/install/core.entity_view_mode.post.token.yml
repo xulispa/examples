@@ -1,0 +1,9 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - social_post
+id: post.token
+label: Token
+targetEntityType: post
+cache: true

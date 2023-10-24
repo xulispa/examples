@@ -1,0 +1,10 @@
+langcode: pt-br
+status: true
+dependencies:
+  enforced:
+    module:
+      - forum
+name: Fóruns
+vid: forums
+description: 'Forum navigation vocabulary'
+weight: -10

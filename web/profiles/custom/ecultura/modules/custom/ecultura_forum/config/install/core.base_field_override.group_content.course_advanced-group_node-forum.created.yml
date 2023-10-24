@@ -1,0 +1,17 @@
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - group.content_type.course_advanced-group_node-forum
+id: group_content.course_advanced-group_node-forum.created
+field_name: created
+entity_type: group_content
+bundle: course_advanced-group_node-forum
+label: 'Criado em'
+description: 'The time that the group content was created.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

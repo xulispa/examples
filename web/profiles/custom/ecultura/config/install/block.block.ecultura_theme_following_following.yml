@@ -1,0 +1,22 @@
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - views.view.following
+  module:
+    - views
+  theme:
+    - ecultura_theme
+id: ecultura_theme_following_following
+theme: ecultura_theme
+region: complementary_top
+weight: 0
+provider: null
+plugin: 'views_exposed_filter_block:following-following'
+settings:
+  id: 'views_exposed_filter_block:following-following'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+visibility: {  }

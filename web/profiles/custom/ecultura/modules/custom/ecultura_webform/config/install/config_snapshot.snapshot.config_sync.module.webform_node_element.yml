@@ -1,0 +1,10 @@
+langcode: pt-br
+status: true
+dependencies:
+  module:
+    - webform_node_element
+id: config_sync.module.webform_node_element
+snapshotSet: config_sync
+extensionType: module
+extensionName: webform_node_element
+items: {  }

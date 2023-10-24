@@ -1,0 +1,25 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - social_post
+    - system
+  theme:
+    - ecultura_theme
+id: ecultura_theme_postblock
+theme: ecultura_theme
+region: hidden
+weight: -28
+provider: null
+plugin: post_block
+settings:
+  id: post_block
+  label: 'Post block'
+  provider: social_post
+  label_display: '0'
+visibility:
+  request_path:
+    id: request_path
+    pages: /stream
+    negate: false
+    context_mapping: {  }

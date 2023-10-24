@@ -1,0 +1,12 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - flag
+id: flag_action.report_post.flag
+label: 'Report as inappropriate'
+type: post
+plugin: 'flag_action:report_post.flag'
+configuration:
+  flag_id: report_post
+  flag_action: flag

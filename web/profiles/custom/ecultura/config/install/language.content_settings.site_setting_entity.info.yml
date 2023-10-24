@@ -1,0 +1,17 @@
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - site_settings.site_setting_entity_type.info
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: site_setting_entity.info
+target_entity_type_id: site_setting_entity
+target_bundle: info
+default_langcode: site_default
+language_alterable: false

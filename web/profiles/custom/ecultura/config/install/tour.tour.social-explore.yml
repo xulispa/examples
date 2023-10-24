@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - social_tour
+id: social-explore
+label: 'Explore functionality.'
+module: social_tour
+routes:
+  -
+    route_name: view.user_information.user_information
+tips:
+  explore_tooltip:
+    id: explore_tooltip
+    plugin: text
+    location: bottom
+    body: 'Click on the explore button to browse to all content in the community'
+    weight: 1
+    attributes:
+      data-id: main-navigation

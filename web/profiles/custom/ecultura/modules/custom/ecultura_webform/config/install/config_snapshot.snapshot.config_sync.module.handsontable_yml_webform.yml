@@ -1,0 +1,10 @@
+langcode: pt-br
+status: true
+dependencies:
+  module:
+    - handsontable_yml_webform
+id: config_sync.module.handsontable_yml_webform
+snapshotSet: config_sync
+extensionType: module
+extensionName: handsontable_yml_webform
+items: {  }

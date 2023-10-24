@@ -1,0 +1,10 @@
+langcode: pt-br
+status: true
+dependencies:
+  module:
+    - webform_submission_log
+id: config_sync.module.webform_submission_log
+snapshotSet: config_sync
+extensionType: module
+extensionName: webform_submission_log
+items: {  }

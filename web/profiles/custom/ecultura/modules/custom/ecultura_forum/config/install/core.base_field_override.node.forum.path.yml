@@ -1,0 +1,19 @@
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - node.type.forum
+  module:
+    - path
+id: node.forum.path
+field_name: path
+entity_type: node
+bundle: forum
+label: 'URL alternativa'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

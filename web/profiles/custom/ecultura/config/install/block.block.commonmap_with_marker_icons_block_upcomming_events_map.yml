@@ -1,0 +1,23 @@
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - views.view.social_geolocation_leaflet_commonmap_with_marker_icons
+  module:
+    - views
+  theme:
+    - ecultura_theme
+id: commonmap_with_marker_icons_block_upcomming_events_map
+theme: ecultura_theme
+region: complementary_top
+weight: 0
+provider: null
+plugin: 'views_block:social_geolocation_leaflet_commonmap_with_marker_icons-block_upcomming_events_map'
+settings:
+  id: 'views_block:social_geolocation_leaflet_commonmap_with_marker_icons-block_upcomming_events_map'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility: {  }

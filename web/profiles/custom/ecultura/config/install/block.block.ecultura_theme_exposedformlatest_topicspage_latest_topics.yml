@@ -1,0 +1,28 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.latest_topics
+  module:
+    - system
+    - views
+  theme:
+    - ecultura_theme
+id: ecultura_theme_exposedformlatest_topicspage_latest_topics
+theme: ecultura_theme
+region: complementary_top
+weight: -18
+provider: null
+plugin: 'views_exposed_filter_block:latest_topics-page_latest_topics'
+settings:
+  id: 'views_exposed_filter_block:latest_topics-page_latest_topics'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: Filter
+visibility:
+  request_path:
+    id: request_path
+    pages: /all-topics
+    negate: false
+    context_mapping: {  }

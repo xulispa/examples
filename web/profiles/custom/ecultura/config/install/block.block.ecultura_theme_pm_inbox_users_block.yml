@@ -1,0 +1,28 @@
+langcode: pt-br
+status: true
+dependencies:
+  module:
+    - ctools
+    - system
+  theme:
+    - ecultura_theme
+id: ecultura_theme_pm_inbox_users_block
+theme: ecultura_theme
+region: complementary_top
+weight: -20
+provider: null
+plugin: 'entity_view:user'
+settings:
+  id: 'entity_view:user'
+  label: 'Persons on this thread'
+  provider: ctools
+  label_display: visible
+  view_mode: compact
+  context_mapping:
+    entity: '@social_user.user_route_context:user'
+visibility:
+  request_path:
+    id: request_path
+    pages: "/private_messages\r\n/private_messages/*"
+    negate: false
+    context_mapping: {  }

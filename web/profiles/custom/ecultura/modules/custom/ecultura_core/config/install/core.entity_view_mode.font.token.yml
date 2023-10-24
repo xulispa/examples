@@ -1,0 +1,9 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - social_font
+id: font.token
+label: Token
+targetEntityType: font
+cache: true

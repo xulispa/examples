@@ -1,0 +1,9 @@
+langcode: pt-br
+status: true
+dependencies:
+  module:
+    - private_message
+id: private_message_thread.inbox_block_
+label: 'Inbox block user'
+targetEntityType: private_message_thread
+cache: true

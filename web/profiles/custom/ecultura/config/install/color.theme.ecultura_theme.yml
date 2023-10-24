@@ -1,0 +1,17 @@
+palette:
+  brand-primary: '#601b9b'
+  brand-secondary: '#1b0031'
+  brand-accent: '#ffac5a'
+  brand-link: '#612f8d'
+  navbar-bg: '#291937'
+  navbar-text: '#ffffff'
+  navbar-active-bg: '#3b284c'
+  navbar-active-text: '#ba9bd8'
+  navbar-sec-bg: '#190059'
+  navbar-sec-text: '#f9f9f9'
+logo: 'public://color/ecultura_theme-5d4fef26/logo.svg'
+stylesheets:
+  - 'public://color/ecultura_theme-5d4fef26/brand.css'
+files:
+  - 'public://color/ecultura_theme-5d4fef26/logo.svg'
+  - 'public://color/ecultura_theme-5d4fef26/brand.css'

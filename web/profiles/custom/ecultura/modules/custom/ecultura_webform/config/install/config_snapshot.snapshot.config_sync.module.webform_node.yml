@@ -1,0 +1,276 @@
+langcode: pt-br
+status: true
+dependencies:
+  module:
+    - webform_node
+id: config_sync.module.webform_node
+snapshotSet: config_sync
+extensionType: module
+extensionName: webform_node
+items:
+  -
+    collection: ''
+    name: core.base_field_override.node.webform.promote
+    data:
+      langcode: en
+      status: true
+      dependencies:
+        config:
+          - node.type.webform
+      id: node.webform.promote
+      field_name: promote
+      entity_type: node
+      bundle: webform
+      label: 'Promoted to front page'
+      description: ''
+      required: false
+      translatable: true
+      default_value:
+        -
+          value: 0
+      default_value_callback: ''
+      settings:
+        on_label: 'On'
+        off_label: 'Off'
+      field_type: boolean
+  -
+    collection: ''
+    name: core.entity_form_display.node.webform.default
+    data:
+      langcode: en
+      status: true
+      dependencies:
+        config:
+          - field.field.node.webform.body
+          - field.field.node.webform.webform
+          - node.type.webform
+        module:
+          - path
+          - text
+          - webform
+      id: node.webform.default
+      targetEntityType: node
+      bundle: webform
+      mode: default
+      content:
+        body:
+          type: text_textarea_with_summary
+          weight: 0
+          settings:
+            rows: 9
+            summary_rows: 3
+            placeholder: ''
+          third_party_settings: {  }
+        created:
+          type: datetime_timestamp
+          weight: 10
+          settings: {  }
+          third_party_settings: {  }
+        path:
+          type: path
+          weight: 30
+          settings: {  }
+          third_party_settings: {  }
+        promote:
+          type: boolean_checkbox
+          settings:
+            display_label: true
+          weight: 15
+          third_party_settings: {  }
+        sticky:
+          type: boolean_checkbox
+          settings:
+            display_label: true
+          weight: 16
+          third_party_settings: {  }
+        title:
+          type: string_textfield
+          weight: -5
+          settings:
+            size: 60
+            placeholder: ''
+          third_party_settings: {  }
+        uid:
+          type: entity_reference_autocomplete
+          weight: 5
+          settings:
+            match_operator: CONTAINS
+            size: 60
+            placeholder: ''
+          third_party_settings: {  }
+        webform:
+          weight: 0
+          settings: {  }
+          third_party_settings: {  }
+          type: webform_entity_reference_select
+      hidden: {  }
+  -
+    collection: ''
+    name: core.entity_view_display.node.webform.default
+    data:
+      langcode: en
+      status: true
+      dependencies:
+        config:
+          - field.field.node.webform.body
+          - field.field.node.webform.webform
+          - node.type.webform
+        module:
+          - text
+          - user
+          - webform
+      id: node.webform.default
+      targetEntityType: node
+      bundle: webform
+      mode: default
+      content:
+        body:
+          label: hidden
+          type: text_default
+          weight: 101
+          settings: {  }
+          third_party_settings: {  }
+        links:
+          weight: 100
+          settings: {  }
+          third_party_settings: {  }
+        webform:
+          weight: 102
+          label: hidden
+          settings: {  }
+          third_party_settings: {  }
+          type: webform_entity_reference_entity_view
+      hidden: {  }
+  -
+    collection: ''
+    name: core.entity_view_display.node.webform.teaser
+    data:
+      langcode: en
+      status: true
+      dependencies:
+        config:
+          - core.entity_view_mode.node.teaser
+          - field.field.node.webform.body
+          - field.field.node.webform.webform
+          - node.type.webform
+        module:
+          - text
+          - user
+      id: node.webform.teaser
+      targetEntityType: node
+      bundle: webform
+      mode: teaser
+      content:
+        body:
+          label: hidden
+          type: text_summary_or_trimmed
+          weight: 101
+          settings:
+            trim_length: 600
+          third_party_settings: {  }
+        links:
+          weight: 100
+          settings: {  }
+          third_party_settings: {  }
+      hidden:
+        webform: true
+  -
+    collection: ''
+    name: field.field.node.webform.body
+    data:
+      langcode: en
+      status: true
+      dependencies:
+        config:
+          - field.storage.node.body
+          - node.type.webform
+        module:
+          - text
+      id: node.webform.body
+      field_name: body
+      entity_type: node
+      bundle: webform
+      label: Body
+      description: ''
+      required: false
+      translatable: true
+      default_value: {  }
+      default_value_callback: ''
+      settings:
+        display_summary: true
+      field_type: text_with_summary
+  -
+    collection: ''
+    name: field.field.node.webform.webform
+    data:
+      langcode: en
+      status: true
+      dependencies:
+        config:
+          - field.storage.node.webform
+          - node.type.webform
+        module:
+          - webform
+      id: node.webform.webform
+      field_name: webform
+      entity_type: node
+      bundle: webform
+      label: Webform
+      description: 'Select the webform that you would like to attach to this node.'
+      required: false
+      translatable: false
+      default_value:
+        -
+          default_data: ''
+          status: open
+          open: ''
+          close: ''
+          target_uuid: ''
+      default_value_callback: ''
+      settings:
+        handler: 'default:webform'
+        handler_settings: {  }
+      field_type: webform
+  -
+    collection: ''
+    name: field.storage.node.webform
+    data:
+      langcode: en
+      status: true
+      dependencies:
+        module:
+          - node
+          - webform
+        enforced:
+          module:
+            - webform_node
+      id: node.webform
+      field_name: webform
+      entity_type: node
+      type: webform
+      settings:
+        target_type: webform
+      module: webform
+      locked: false
+      cardinality: 1
+      translatable: true
+      indexes: {  }
+      persist_with_no_fields: false
+      custom_storage: false
+  -
+    collection: ''
+    name: node.type.webform
+    data:
+      langcode: en
+      status: true
+      dependencies:
+        enforced:
+          module:
+            - webform_node
+      name: Webform
+      type: webform
+      description: 'A basic page with a webform attached.'
+      help: ''
+      new_revision: false
+      preview_mode: 1
+      display_submitted: true

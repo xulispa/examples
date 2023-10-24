@@ -1,0 +1,19 @@
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.forums
+id: taxonomy_term.forums.content_translation_uid
+field_name: content_translation_uid
+entity_type: taxonomy_term
+bundle: forums
+label: 'Translation author'
+description: 'The author of this translation.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: 'Drupal\taxonomy\TermTranslationHandler::getDefaultOwnerId'
+settings:
+  handler: default
+  handler_settings: {  }
+field_type: entity_reference

@@ -1,0 +1,10 @@
+langcode: pt-br
+status: true
+dependencies:
+  module:
+    - webform_views
+id: config_sync.module.webform_views
+snapshotSet: config_sync
+extensionType: module
+extensionName: webform_views
+items: {  }

@@ -1,0 +1,28 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.following
+  module:
+    - system
+    - views
+  theme:
+    - ecultura_theme
+id: ecultura_theme_exposedformfollowingfollowing
+theme: ecultura_theme
+region: complementary_top
+weight: -25
+provider: null
+plugin: 'views_exposed_filter_block:following-following'
+settings:
+  id: 'views_exposed_filter_block:following-following'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: Filter
+visibility:
+  request_path:
+    id: request_path
+    pages: /following
+    negate: false
+    context_mapping: {  }

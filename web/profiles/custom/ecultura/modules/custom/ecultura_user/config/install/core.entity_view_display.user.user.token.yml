@@ -1,0 +1,45 @@
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.user.token
+  module:
+    - user
+id: user.user.token
+targetEntityType: user
+bundle: user
+mode: token
+content:
+  flag_following:
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  groups_type_course_advanced:
+    label: above
+    weight: -5
+    region: content
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+  groups_type_course_basic:
+    label: above
+    weight: -5
+    region: content
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+hidden:
+  groups: true
+  groups_type_closed_group: true
+  groups_type_open_group: true
+  groups_type_public_group: true
+  langcode: true
+  linked_username: true
+  member_for: true
+  private_message_link: true
+  profile_main: true
+  profile_profile: true
+  profile_profiles: true

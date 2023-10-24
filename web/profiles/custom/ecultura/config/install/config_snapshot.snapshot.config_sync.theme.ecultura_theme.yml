@@ -1,0 +1,29 @@
+langcode: pt-br
+status: true
+dependencies:
+  theme:
+    - ecultura_theme
+id: config_sync.theme.ecultura_theme
+snapshotSet: config_sync
+extensionType: theme
+extensionName: ecultura_theme
+items:
+  -
+    collection: ''
+    name: ecultura_theme.settings
+    data:
+      font_primary: Lato
+      card_radius: '0'
+      hero_gradient_opacity: 70
+      form_control_radius: '0'
+      button_radius: '0'
+      color_primary: '#601b9b'
+      color_secondary: '#1b0031'
+      color_accent: '#ffac5a'
+      color_link: '#612f8d'
+      color_navbar_bg: '#291937'
+      color_navbar_text: '#ffffff'
+      'color_navbar_active_bg''': '#3b284c'
+      'color_navbar_active_text''': '#ba9bd8'
+      'color_navbar_sec_bg''': '#190059'
+      'color_navbar_sec_text''': '#f9f9f9'

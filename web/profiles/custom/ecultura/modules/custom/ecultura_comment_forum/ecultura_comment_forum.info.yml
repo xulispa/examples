@@ -1,0 +1,13 @@
+name: Comment_forum
+description: 'Provides Comment_forum tipo de comentário and related configuration. Default comment field'
+type: module
+core: 8.x
+dependencies:
+  - comment
+  - field
+  - file
+  - social_comment
+  - social_comment_upload
+  - social_core
+  - text
+package: eCultura

@@ -1,0 +1,28 @@
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - social_tagging
+  module:
+    - social_tagging
+    - system
+  theme:
+    - ecultura_theme
+id: ecultura_theme_socialgrouptagsblock
+theme: ecultura_theme
+region: complementary_top
+weight: -22
+provider: null
+plugin: social_group_tags_block
+settings:
+  id: social_group_tags_block
+  label: 'Group Tags'
+  provider: social_tagging
+  label_display: visible
+visibility:
+  request_path:
+    id: request_path
+    pages: '/group/*'
+    negate: false
+    context_mapping: {  }

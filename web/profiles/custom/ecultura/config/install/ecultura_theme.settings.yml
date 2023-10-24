@@ -1,0 +1,52 @@
+font_primary: '9'
+card_radius: '0'
+hero_gradient_opacity: '73'
+form_control_radius: '0'
+button_radius: '0'
+color_primary: '#29abe2'
+color_secondary: '#1f80aa'
+color_accent: '#ffc142'
+color_link: '#33b5e5'
+color_navbar_bg: '#333333'
+color_navbar_text: '#ffffff'
+'color_navbar_active_bg''': '#1f1f1f'
+'color_navbar_active_text''': '#f3f3f3'
+'color_navbar_sec_bg''': '#1f7ea7'
+'color_navbar_sec_text''': '#f9f9f9'
+favicon:
+  mimetype: image/vnd.microsoft.icon
+  path: ''
+  url: 'http://ecultura.local/themes/custom/ecultura_theme/favicon.ico'
+  use_default: 1
+schemas:
+  bootstrap: 8000
+  socialbase: 8000
+  ecultura_theme: 8000
+email_logo:
+  - '18'
+cdn_provider: ''
+cdn_cache_ttl_versions: 0
+cdn_cache_ttl_themes: 0
+cdn_cache_ttl_assets: 0
+cdn_cache_ttl_library: 0
+forms_smart_descriptions: 1
+popover_content: main
+popover_delay: '100'
+popover_placement: auto
+popover_title: eCultura!
+tooltip_delay: '100'
+tooltip_placement: auto
+modal_size: modal-lg
+features:
+  comment_user_picture: true
+  comment_user_verification: 1
+  favicon: 1
+  node_user_picture: true
+logo:
+  path: ''
+  url: ''
+  use_default: 1
+navbar_position: fixed-top
+reset_http_request_cache: ''
+table: ''
+langcode: pt-br

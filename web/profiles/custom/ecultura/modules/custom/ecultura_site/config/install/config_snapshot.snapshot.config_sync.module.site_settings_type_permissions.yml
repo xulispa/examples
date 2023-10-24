@@ -1,0 +1,10 @@
+langcode: pt-br
+status: true
+dependencies:
+  module:
+    - site_settings_type_permissions
+id: config_sync.module.site_settings_type_permissions
+snapshotSet: config_sync
+extensionType: module
+extensionName: site_settings_type_permissions
+items: {  }

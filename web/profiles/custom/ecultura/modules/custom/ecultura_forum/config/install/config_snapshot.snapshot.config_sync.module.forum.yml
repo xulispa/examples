@@ -1,0 +1,693 @@
+langcode: pt-br
+status: true
+dependencies:
+  module:
+    - forum
+id: config_sync.module.forum
+snapshotSet: config_sync
+extensionType: module
+extensionName: forum
+items:
+  -
+    collection: ''
+    name: comment.type.comment_forum
+    data:
+      langcode: en
+      status: true
+      dependencies:
+        enforced:
+          module:
+            - forum
+      id: comment_forum
+      label: Comment_forum
+      target_entity_type_id: node
+      description: 'Default comment field'
+  -
+    collection: ''
+    name: core.base_field_override.node.forum.promote
+    data:
+      langcode: en
+      status: true
+      dependencies:
+        config:
+          - node.type.forum
+      id: node.forum.promote
+      field_name: promote
+      entity_type: node
+      bundle: forum
+      label: 'Promoted to front page'
+      description: ''
+      required: false
+      translatable: true
+      default_value:
+        -
+          value: 0
+      default_value_callback: ''
+      settings:
+        on_label: 'On'
+        off_label: 'Off'
+      field_type: boolean
+  -
+    collection: ''
+    name: core.base_field_override.node.forum.title
+    data:
+      langcode: en
+      status: true
+      dependencies:
+        config:
+          - node.type.forum
+      id: node.forum.title
+      field_name: title
+      entity_type: node
+      bundle: forum
+      label: Subject
+      description: ''
+      required: true
+      translatable: true
+      default_value: {  }
+      default_value_callback: ''
+      settings: {  }
+      field_type: string
+  -
+    collection: ''
+    name: core.entity_form_display.comment.comment_forum.default
+    data:
+      langcode: en
+      status: true
+      dependencies:
+        config:
+          - comment.type.comment_forum
+          - field.field.comment.comment_forum.comment_body
+        module:
+          - text
+      id: comment.comment_forum.default
+      targetEntityType: comment
+      bundle: comment_forum
+      mode: default
+      content:
+        author:
+          weight: -2
+          region: content
+        comment_body:
+          type: text_textarea
+          weight: 11
+          region: content
+          settings:
+            rows: 5
+            placeholder: ''
+          third_party_settings: {  }
+        subject:
+          type: string_textfield
+          weight: 10
+          region: content
+          settings:
+            size: 60
+            placeholder: ''
+          third_party_settings: {  }
+      hidden: {  }
+  -
+    collection: ''
+    name: core.entity_form_display.node.forum.default
+    data:
+      langcode: en
+      status: true
+      dependencies:
+        config:
+          - field.field.node.forum.body
+          - field.field.node.forum.comment_forum
+          - field.field.node.forum.taxonomy_forums
+          - node.type.forum
+        module:
+          - comment
+          - text
+      id: node.forum.default
+      targetEntityType: node
+      bundle: forum
+      mode: default
+      content:
+        body:
+          type: text_textarea_with_summary
+          weight: 27
+          region: content
+          settings:
+            rows: 9
+            summary_rows: 3
+            placeholder: ''
+          third_party_settings: {  }
+        comment_forum:
+          type: comment_default
+          weight: 20
+          region: content
+          settings: {  }
+          third_party_settings: {  }
+        created:
+          type: datetime_timestamp
+          weight: 10
+          region: content
+          settings: {  }
+          third_party_settings: {  }
+        promote:
+          type: boolean_checkbox
+          settings:
+            display_label: true
+          weight: 15
+          region: content
+          third_party_settings: {  }
+        status:
+          type: boolean_checkbox
+          settings:
+            display_label: true
+          weight: 120
+          region: content
+          third_party_settings: {  }
+        sticky:
+          type: boolean_checkbox
+          settings:
+            display_label: true
+          weight: 16
+          region: content
+          third_party_settings: {  }
+        taxonomy_forums:
+          type: options_select
+          weight: 26
+          region: content
+          settings: {  }
+          third_party_settings: {  }
+        title:
+          type: string_textfield
+          weight: -5
+          region: content
+          settings:
+            size: 60
+            placeholder: ''
+          third_party_settings: {  }
+        uid:
+          type: entity_reference_autocomplete
+          weight: 5
+          region: content
+          settings:
+            match_operator: CONTAINS
+            size: 60
+            placeholder: ''
+          third_party_settings: {  }
+      hidden: {  }
+  -
+    collection: ''
+    name: core.entity_form_display.taxonomy_term.forums.default
+    data:
+      langcode: en
+      status: true
+      dependencies:
+        config:
+          - field.field.taxonomy_term.forums.forum_container
+          - taxonomy.vocabulary.forums
+        module:
+          - text
+      id: taxonomy_term.forums.default
+      targetEntityType: taxonomy_term
+      bundle: forums
+      mode: default
+      content:
+        description:
+          type: text_textfield
+          weight: 0
+          region: content
+          settings: {  }
+          third_party_settings: {  }
+        name:
+          type: string_textfield
+          weight: -5
+          region: content
+          settings:
+            size: 60
+            placeholder: ''
+          third_party_settings: {  }
+      hidden:
+        forum_container: true
+  -
+    collection: ''
+    name: core.entity_view_display.comment.comment_forum.default
+    data:
+      langcode: en
+      status: true
+      dependencies:
+        config:
+          - comment.type.comment_forum
+          - field.field.comment.comment_forum.comment_body
+        module:
+          - text
+      id: comment.comment_forum.default
+      targetEntityType: comment
+      bundle: comment_forum
+      mode: default
+      content:
+        comment_body:
+          label: hidden
+          type: text_default
+          weight: 0
+          region: content
+          settings: {  }
+          third_party_settings: {  }
+        links:
+          weight: 100
+          region: content
+      hidden: {  }
+  -
+    collection: ''
+    name: core.entity_view_display.node.forum.default
+    data:
+      langcode: en
+      status: true
+      dependencies:
+        config:
+          - core.entity_view_display.comment.comment_forum.default
+          - field.field.node.forum.body
+          - field.field.node.forum.comment_forum
+          - field.field.node.forum.taxonomy_forums
+          - node.type.forum
+        module:
+          - comment
+          - text
+          - user
+      id: node.forum.default
+      targetEntityType: node
+      bundle: forum
+      mode: default
+      content:
+        body:
+          label: hidden
+          type: text_default
+          weight: 0
+          region: content
+          settings: {  }
+          third_party_settings: {  }
+        comment_forum:
+          label: hidden
+          type: comment_default
+          weight: 20
+          region: content
+          settings:
+            view_mode: default
+            pager_id: 0
+          third_party_settings: {  }
+        links:
+          weight: 100
+          region: content
+        taxonomy_forums:
+          type: entity_reference_label
+          weight: -1
+          region: content
+          label: above
+          settings:
+            link: true
+          third_party_settings: {  }
+      hidden: {  }
+  -
+    collection: ''
+    name: core.entity_view_display.node.forum.teaser
+    data:
+      langcode: en
+      status: true
+      dependencies:
+        config:
+          - core.entity_view_mode.node.teaser
+          - field.field.node.forum.body
+          - field.field.node.forum.comment_forum
+          - field.field.node.forum.taxonomy_forums
+          - node.type.forum
+        module:
+          - text
+          - user
+      id: node.forum.teaser
+      targetEntityType: node
+      bundle: forum
+      mode: teaser
+      content:
+        body:
+          label: hidden
+          type: text_summary_or_trimmed
+          weight: 100
+          region: content
+          settings:
+            trim_length: 600
+          third_party_settings: {  }
+        links:
+          weight: 101
+          region: content
+        taxonomy_forums:
+          type: entity_reference_label
+          weight: 10
+          region: content
+          label: above
+          settings:
+            link: true
+          third_party_settings: {  }
+      hidden:
+        comment_forum: true
+  -
+    collection: ''
+    name: core.entity_view_display.taxonomy_term.forums.default
+    data:
+      langcode: en
+      status: true
+      dependencies:
+        config:
+          - field.field.taxonomy_term.forums.forum_container
+          - taxonomy.vocabulary.forums
+        module:
+          - text
+      id: taxonomy_term.forums.default
+      targetEntityType: taxonomy_term
+      bundle: forums
+      mode: default
+      content:
+        description:
+          type: text_default
+          weight: 0
+          region: content
+          settings: {  }
+          third_party_settings: {  }
+          label: above
+      hidden:
+        forum_container: true
+  -
+    collection: ''
+    name: field.field.comment.comment_forum.comment_body
+    data:
+      langcode: en
+      status: true
+      dependencies:
+        config:
+          - comment.type.comment_forum
+          - field.storage.comment.comment_body
+        module:
+          - text
+      id: comment.comment_forum.comment_body
+      field_name: comment_body
+      entity_type: comment
+      bundle: comment_forum
+      label: Comment
+      description: ''
+      required: true
+      translatable: true
+      default_value: {  }
+      default_value_callback: ''
+      settings: {  }
+      field_type: text_long
+  -
+    collection: ''
+    name: field.field.node.forum.body
+    data:
+      langcode: en
+      status: true
+      dependencies:
+        config:
+          - field.storage.node.body
+          - node.type.forum
+        module:
+          - text
+      id: node.forum.body
+      field_name: body
+      entity_type: node
+      bundle: forum
+      label: Body
+      description: ''
+      required: false
+      translatable: true
+      default_value: {  }
+      default_value_callback: ''
+      settings:
+        display_summary: true
+      field_type: text_with_summary
+  -
+    collection: ''
+    name: field.field.node.forum.comment_forum
+    data:
+      langcode: en
+      status: true
+      dependencies:
+        config:
+          - field.storage.node.comment_forum
+          - node.type.forum
+        module:
+          - comment
+      id: node.forum.comment_forum
+      field_name: comment_forum
+      entity_type: node
+      bundle: forum
+      label: Comments
+      description: ''
+      required: true
+      translatable: true
+      default_value:
+        -
+          status: 2
+          cid: 0
+          last_comment_name: null
+          last_comment_timestamp: 0
+          last_comment_uid: 0
+          comment_count: 0
+      default_value_callback: ''
+      settings:
+        default_mode: 0
+        per_page: 50
+        form_location: true
+        anonymous: 0
+        preview: 1
+      field_type: comment
+  -
+    collection: ''
+    name: field.field.node.forum.taxonomy_forums
+    data:
+      langcode: en
+      status: true
+      dependencies:
+        config:
+          - field.storage.node.taxonomy_forums
+          - node.type.forum
+          - taxonomy.vocabulary.forums
+      id: node.forum.taxonomy_forums
+      field_name: taxonomy_forums
+      entity_type: node
+      bundle: forum
+      label: Forums
+      description: ''
+      required: true
+      translatable: true
+      default_value: {  }
+      default_value_callback: ''
+      settings:
+        handler: 'default:taxonomy_term'
+        handler_settings:
+          target_bundles:
+            forums: forums
+          sort:
+            field: _none
+          auto_create: true
+      field_type: entity_reference
+  -
+    collection: ''
+    name: field.field.taxonomy_term.forums.forum_container
+    data:
+      langcode: en
+      status: true
+      dependencies:
+        config:
+          - field.storage.taxonomy_term.forum_container
+          - taxonomy.vocabulary.forums
+      id: taxonomy_term.forums.forum_container
+      field_name: forum_container
+      entity_type: taxonomy_term
+      bundle: forums
+      label: Container
+      description: ''
+      required: true
+      translatable: true
+      default_value:
+        -
+          value: 0
+      default_value_callback: ''
+      settings:
+        on_label: 'Yes'
+        off_label: 'No'
+      field_type: boolean
+  -
+    collection: ''
+    name: field.storage.node.comment_forum
+    data:
+      langcode: en
+      status: true
+      dependencies:
+        module:
+          - comment
+          - node
+      id: node.comment_forum
+      field_name: comment_forum
+      entity_type: node
+      type: comment
+      settings:
+        comment_type: comment_forum
+      module: comment
+      locked: false
+      cardinality: 1
+      translatable: true
+      indexes: {  }
+      persist_with_no_fields: false
+      custom_storage: false
+  -
+    collection: ''
+    name: field.storage.node.taxonomy_forums
+    data:
+      langcode: en
+      status: true
+      dependencies:
+        module:
+          - node
+          - taxonomy
+      id: node.taxonomy_forums
+      field_name: taxonomy_forums
+      entity_type: node
+      type: entity_reference
+      settings:
+        target_type: taxonomy_term
+      module: core
+      locked: false
+      cardinality: 1
+      translatable: true
+      indexes: {  }
+      persist_with_no_fields: false
+      custom_storage: false
+  -
+    collection: ''
+    name: field.storage.taxonomy_term.forum_container
+    data:
+      langcode: en
+      status: true
+      dependencies:
+        module:
+          - taxonomy
+      id: taxonomy_term.forum_container
+      field_name: forum_container
+      entity_type: taxonomy_term
+      type: boolean
+      settings: {  }
+      module: core
+      locked: true
+      cardinality: 1
+      translatable: false
+      indexes: {  }
+      persist_with_no_fields: false
+      custom_storage: false
+  -
+    collection: ''
+    name: forum.settings
+    data:
+      block:
+        active:
+          limit: 5
+        new:
+          limit: 5
+      topics:
+        hot_threshold: 15
+        order: 1
+        page_limit: 25
+      vocabulary: forums
+  -
+    collection: ''
+    name: node.type.forum
+    data:
+      langcode: en
+      status: true
+      dependencies:
+        enforced:
+          module:
+            - forum
+      name: 'Forum topic'
+      type: forum
+      description: 'A <em>forum topic</em> starts a new discussion thread within a forum.'
+      help: ''
+      new_revision: false
+      preview_mode: 1
+      display_submitted: true
+  -
+    collection: ''
+    name: rdf.mapping.node.forum
+    data:
+      langcode: en
+      status: true
+      dependencies:
+        config:
+          - node.type.forum
+        module:
+          - node
+      id: node.forum
+      targetEntityType: node
+      bundle: forum
+      types:
+        - 'schema:Discussion'
+      fieldMappings:
+        title:
+          properties:
+            - 'schema:name'
+        created:
+          properties:
+            - 'schema:dateCreated'
+          datatype_callback:
+            callable: 'Drupal\rdf\CommonDataConverter::dateIso8601Value'
+        changed:
+          properties:
+            - 'schema:dateModified'
+          datatype_callback:
+            callable: 'Drupal\rdf\CommonDataConverter::dateIso8601Value'
+        body:
+          properties:
+            - 'schema:text'
+        uid:
+          properties:
+            - 'schema:author'
+          mapping_type: rel
+        comment_count:
+          properties:
+            - 'schema:interactionCount'
+          datatype_callback:
+            callable: 'Drupal\rdf\SchemaOrgDataConverter::interactionCount'
+            arguments:
+              interaction_type: UserComments
+  -
+    collection: ''
+    name: rdf.mapping.taxonomy_term.forums
+    data:
+      langcode: en
+      status: true
+      dependencies:
+        config:
+          - taxonomy.vocabulary.forums
+        module:
+          - taxonomy
+      id: taxonomy_term.forums
+      targetEntityType: taxonomy_term
+      bundle: forums
+      types:
+        - 'sioc:Container'
+        - 'sioc:Forum'
+      fieldMappings:
+        name:
+          properties:
+            - 'schema:name'
+        description:
+          properties:
+            - 'schema:description'
+  -
+    collection: ''
+    name: taxonomy.vocabulary.forums
+    data:
+      langcode: en
+      status: true
+      dependencies:
+        enforced:
+          module:
+            - forum
+      name: Forums
+      vid: forums
+      description: 'Forum navigation vocabulary'
+      weight: -10

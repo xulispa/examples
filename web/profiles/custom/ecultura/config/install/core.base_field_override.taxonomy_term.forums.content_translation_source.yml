@@ -1,0 +1,19 @@
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.forums
+id: taxonomy_term.forums.content_translation_source
+field_name: content_translation_source
+entity_type: taxonomy_term
+bundle: forums
+label: 'Translation source'
+description: 'The source language from which this translation was created.'
+required: false
+translatable: false
+default_value:
+  -
+    value: und
+default_value_callback: ''
+settings: {  }
+field_type: language

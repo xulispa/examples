@@ -1,0 +1,7 @@
+langcode: pt-br
+status: true
+dependencies: {  }
+id: kpi_analytics
+label: 'KPI Analytics block'
+revision: 1
+description: 'Block type to create KPI blocks for analytics. Combines multiple plugins (datasource, data formatter and visualization)'

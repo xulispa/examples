@@ -1,0 +1,7 @@
+langcode: en
+status: true
+dependencies: {  }
+id: sitemanager
+label: 'Site manager'
+weight: -7
+is_admin: null

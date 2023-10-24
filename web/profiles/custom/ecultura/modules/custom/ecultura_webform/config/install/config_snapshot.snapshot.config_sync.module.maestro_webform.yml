@@ -1,0 +1,10 @@
+langcode: pt-br
+status: true
+dependencies:
+  module:
+    - maestro_webform
+id: config_sync.module.maestro_webform
+snapshotSet: config_sync
+extensionType: module
+extensionName: maestro_webform
+items: {  }

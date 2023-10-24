@@ -1,0 +1,10 @@
+langcode: pt-br
+status: true
+dependencies:
+  module:
+    - webform_scheduled_tasks
+id: config_sync.module.webform_scheduled_tasks
+snapshotSet: config_sync
+extensionType: module
+extensionName: webform_scheduled_tasks
+items: {  }

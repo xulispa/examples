@@ -1,0 +1,10 @@
+langcode: pt-br
+status: true
+dependencies:
+  module:
+    - webform_ui
+id: config_sync.module.webform_ui
+snapshotSet: config_sync
+extensionType: module
+extensionName: webform_ui
+items: {  }
